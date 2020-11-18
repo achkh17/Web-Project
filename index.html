@@ -27,19 +27,19 @@
 		.header {
 			background-color: white;
 			z-index: 100;
-			display: flex;
-			justify-content: space-between;
+			/*display: flex;*/
+			/*justify-content: space-between;*/
 			height: 160px;
 		}
 
 		.upperAds {
+			float: left;
 			background-color: white;
 			display: flex;
 			justify-content: flex-end;
 			margin: 0 auto;
-			width: 70%;
-			height: 55px;
-			margin-right: 300px;
+			width: 50%;
+			height: 60px;
 			margin-top: 10px;
 		}
 
@@ -62,11 +62,11 @@
 		}
 
 		.sponsorsLogo {
-			height: 55px;
+			height: 60px;
 		}
 
 		.main-logo-container {
-			width: 510px;
+			width: 381px;
 		    height: 160px;
 		    transition: all 300ms ease 0s;
 		    background-image: url(https://www.acmilan.com/images/logoCircles.png);
@@ -74,6 +74,8 @@
 		    background-position: 0px -114px;
     		background-size: 381px;
     		z-index: 101;
+    		float: left;
+    		display: inline;
 		}
 
 		.main-logo {
@@ -81,6 +83,72 @@
 			position: absolute;
 		    top: 80px;
 		    left: 340px;
+		}
+
+		.menu {
+			display: block;
+			height: 200px;
+		    display: flex;
+		    -webkit-box-align: stretch;
+		    align-items: stretch;
+		    -webkit-box-pack: justify;
+		    justify-content: space-between;
+		    color: black;
+		    z-index: 100;
+		    width: 1200px;
+		}
+
+		.menuItem {
+			list-style-type: none;
+			float: left;
+			margin-top: 20px;
+			min-width: 150px;
+		}
+
+		.menuItem:hover > .subMenu {
+			display: block;
+		}
+
+		.menuItemName {
+			display: block;
+			padding: 20px;
+			opacity: 0.7;
+		    transition: opacity 0.2s ease-in 0s;
+		    color: black;
+		    text-decoration: none;
+		    font-size: 16px;
+		    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		}
+
+		.subMenu {
+			display: none;
+			list-style-type: none;
+			position: absolute;
+			opacity: 0.8;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 0;
+			margin: auto;
+		}
+
+		.subMenu > li > a {
+			text-decoration: none;
+			transition: opacity 0.2s ease-in 0s;
+		    color: white;
+		    display: flex;
+		    height: 100%;
+		    align-items: flex-end;
+		    padding: 7px 7px;
+		    text-transform: capitalize;
+		    /*width: 100%;*/
+		    min-width: 150px;
+		    margin: auto;
+		    background-color: rgb(0, 0, 0);
+		}
+
+		.subMenu > li > a:hover {
+			background-color: gray
 		}
 
 	</style>
@@ -103,7 +171,7 @@
 
 				<ul class="upperIconsUl">
 					<li>
-						<a href="https://www.facebook.com/ACMilan">
+						<a href="https://www.facebook.com/ACMilan" target="_blank">
 							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/6250e884-0207-40f3-b7a2-ff475161a53b/fb_gr@4x.png&amp;auto=format" srcset="
 							    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/6250e884-0207-40f3-b7a2-ff475161a53b/fb_gr@4x.png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 							    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/6250e884-0207-40f3-b7a2-ff475161a53b/fb_gr@4x.png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -113,7 +181,7 @@
 					</li>
 
 					<li>
-						<a href="https://www.instagram.com/acmilan/?hl=it">
+						<a href="https://www.instagram.com/acmilan/?hl=it" target="_blank">
 							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c93307e6-719d-4d8e-b3e5-df3c070a616e/instagram_gr@4x.png&amp;auto=format" srcSet="
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c93307e6-719d-4d8e-b3e5-df3c070a616e/instagram_gr@4x.png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c93307e6-719d-4d8e-b3e5-df3c070a616e/instagram_gr@4x.png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -123,7 +191,7 @@
 					</li>
 
 					<li>
-  						<a href="https://it.linkedin.com/company/ac-milan">
+  						<a href="https://it.linkedin.com/company/ac-milan" target="_blank">
   							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/18fcf6c4-34cd-4348-b5ff-612368bd62bf/linkedin_gr@4x.png&amp;auto=format" srcSet="
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/18fcf6c4-34cd-4348-b5ff-612368bd62bf/linkedin_gr@4x.png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/18fcf6c4-34cd-4348-b5ff-612368bd62bf/linkedin_gr@4x.png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -133,7 +201,7 @@
   					</li>
 
   					<li>
-  						<a href="https://www.tiktok.com/@acmilan?language=it">
+  						<a href="https://www.tiktok.com/@acmilan?language=it" target="_blank">
   							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c3acd81d-c76f-4c00-af51-875ae9f303c0/tiktok_gr@4x.png&amp;auto=format" srcSet="
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c3acd81d-c76f-4c00-af51-875ae9f303c0/tiktok_gr@4x.png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c3acd81d-c76f-4c00-af51-875ae9f303c0/tiktok_gr@4x.png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -143,7 +211,7 @@
 					</li>
 
 					<li>
-						<a href="https://www.youtube.com/acmilan">
+						<a href="https://www.youtube.com/acmilan" target="_blank">
 							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/161d1ea9-f544-44d1-a7ba-1376b9628888/youtub_gr@4x%20(1).png&amp;auto=format" srcSet="
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/161d1ea9-f544-44d1-a7ba-1376b9628888/youtub_gr@4x%20(1).png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/161d1ea9-f544-44d1-a7ba-1376b9628888/youtub_gr@4x%20(1).png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -153,7 +221,7 @@
 					</li>
 
 					<li>
-						<a href="https://twitter.com/acmilan">
+						<a href="https://twitter.com/acmilan" target="_blank">
 							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c094a282-4793-415b-86c0-a647e922ef16/twitter_gr@4x%20(1).png&amp;auto=format" srcSet="
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c094a282-4793-415b-86c0-a647e922ef16/twitter_gr@4x%20(1).png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/c094a282-4793-415b-86c0-a647e922ef16/twitter_gr@4x%20(1).png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -163,7 +231,7 @@
 					</li>
 
 					<li>
-						<a href="https://www.weibo.com/acmilanofficial">
+						<a href="https://www.weibo.com/acmilanofficial" target="_blank">
 							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/7fd2dbe2-8959-4f8c-8dab-13f257688ac6/weibo_gr@4x.png&amp;auto=format" srcSet="
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/7fd2dbe2-8959-4f8c-8dab-13f257688ac6/weibo_gr@4x.png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/7fd2dbe2-8959-4f8c-8dab-13f257688ac6/weibo_gr@4x.png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -173,7 +241,7 @@
 					</li>
 
 					<li>
-						<a href="https://www.acmilan.com/it/fan/ac-milan-music">
+						<a href="https://www.acmilan.com/it/fan/ac-milan-music" target="_blank">
 							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3e4778ff-43c5-473b-8357-91275ed1355a/ACMMusic@4x.png&amp;auto=format" srcSet="
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3e4778ff-43c5-473b-8357-91275ed1355a/ACMMusic@4x.png?w=undefined&amp;h=15&amp;dpr=1&amp;auto=format,
 						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3e4778ff-43c5-473b-8357-91275ed1355a/ACMMusic@4x.png?w=undefined&amp;h=15&amp;dpr=2&amp;auto=format 2x,
@@ -186,15 +254,91 @@
 
 				<div class="upperSponsors">
 
-					<a href="https://www.puma.com">
+					<a href="https://www.puma.com" target="_blank">
 						<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/28aa448e-19f1-4c27-8ec2-2af25c679693/Puma_Resize_2.png" class="sponsorsLogo" />
 					</a>
 
-					<a href="https://www.emirates.com/it/italian/">
+					<a href="https://www.emirates.com/it/italian/" target="_blank">
 						<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/a54a6f36-c71a-498e-8879-80f5005a87a7/Emirates_Resize_2.png" class="sponsorsLogo" />
 					</a>
 
 				</div> 
+				
+			</div>
+
+
+			<div class="menu">
+				<ul>
+
+					<li class="menuItem">
+						<a href="#" class="menuItemName">News</a>
+						<ul class="subMenu">
+							<li><a href="#">All the News</a></li>
+							<li><a href="#">Transfer Window</a></li>
+							<li><a href="#">Photo Galleries</a></li>
+						</ul>	
+					</li>
+
+
+					<li class="menuItem">
+						<a href="#" class="menuItemName">Tickets</a>
+						<ul class="subMenu">
+							<li><a href="#">Museum Tickets</a></li>
+							<li><a href="https://hospitality.acmilan.com/" target="_blank">Premium & Hospitality</a></li>
+							<li><a href="#">Accreditations</a></li>
+							<li><a href="#">Banners</a></li>
+						</ul>	
+					</li>
+
+					<li class="menuItem">
+						<a href="#" class="menuItemName">Teams</a>
+						<ul class="subMenu">
+							<li><a href="#">Men's Team</a></li>
+							<li><a href="#">Women's team</a></li>
+						</ul>	
+					</li>
+
+					<li class="menuItem">
+						<a href="#" class="menuItemName">Season</a>
+						<ul class="subMenu">
+							<li><a href="#">Schedules</a></li>
+							<li><a href="#">Standings</a></li>
+						</ul>	
+					</li>
+
+					<li class="menuItem">
+						<a href="#" class="menuItemName">Club</a>
+						<ul class="subMenu">
+							<li><a href="#">History</a></li>
+							<li><a href="#">Venues</a></li>
+							<li><a href="#">The Club</a></li>
+							<li><a href="#">Managment</a></li>
+							<li><a href="#">Our Partners</a></li>
+							<li><a href="https://www.nuovostadiomilano.com/en" target="_blank">New Stadium</a></li>
+						</ul>	
+					</li>
+
+					<li class="menuItem">
+						<a href="#" class="menuItemName">Shop</a>
+						<ul class="subMenu">
+
+							<li>
+								<a href="https://store.acmilan.com/en/" target="_blank">Store Online</a>
+							</li>
+							<li>
+								<a href="http://casamilan.acmilan.com/en/milan-store"target="_blank">Casa Milan Store</a>
+							</li>
+							<li>
+								<a href="https://store.acmilan.com/en/milan-megastore"target="_blank">Milan Megastore</a>
+							</li>
+							<li>
+								<a href="https://www.sansirostadium.com/en/store"target="_blank">San Siro Store</a>
+							</li>
+
+						</ul>	
+					</li>
+
+				</ul>
 				
 			</div>
 			
