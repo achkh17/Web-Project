@@ -11,8 +11,6 @@
 	<style type="text/css">
 
 		body {
-			/*margin: 0 auto;
-			width: 70%;*/
 			font-size: 14px;
 			background-color: rgb(245, 245, 245);
 			width: 100%;
@@ -24,12 +22,12 @@
 			margin-top: 0;
 		}
 
+		/* !header css */
 		.header {
 			background-color: white;
 			z-index: 100;
-			/*display: flex;*/
-			/*justify-content: space-between;*/
 			height: 160px;
+			/*position: fixed;*/
 		}
 
 		.upperAds {
@@ -141,7 +139,6 @@
 		    align-items: flex-end;
 		    padding: 7px 7px;
 		    text-transform: capitalize;
-		    /*width: 100%;*/
 		    min-width: 150px;
 		    margin: auto;
 		    background-color: rgb(0, 0, 0);
@@ -149,6 +146,97 @@
 
 		.subMenu > li > a:hover {
 			background-color: gray
+		}
+
+
+		/* main css */
+		.main {
+			height: 5000px; 
+			margin: 0 auto; 
+			width: 70%;
+			background-color: blue;
+
+		}
+
+		/* footer css */
+		.footer {
+		    flex: 0 0 auto;
+		    padding: 0px 20px 20px;
+		    background-color: black;
+		    color: white;
+		    height: 405px;
+		    margin: auto;
+		}
+
+		.footer-center-container {
+    		height: 180px;
+    		display: flex;
+		    flex-direction: row;
+		    top: 180px;
+		    /*-webkit-box-pack: center;*/
+		    justify-content: space-between;
+		    align-items: flex-start;
+		    width: 50%;
+    		margin: auto;
+		}
+
+		.alwaysMilan {
+		    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    font-size: 26px;
+		    font-weight: bold;
+		    letter-spacing: 0.61px;
+		    position: relative;
+		    text-transform: uppercase;
+		    text-align: right;
+		    margin-top: 40px;
+		}
+
+		.footer-logo {
+			height: 150px;
+			margin-top: -70px;
+		}
+
+		.footerSponsors {
+			font-size: 14px;
+		    text-transform: uppercase;
+		    text-align: center;
+		    letter-spacing: 0.44px;
+		    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    margin-left: 40px;
+		}
+
+		.footerIcons {
+			list-style-type: none;
+			display: flex;
+		    -webkit-box-pack: center;
+		    justify-content: center;
+		    margin-top: 10px;
+		    margin-bottom: 10px;
+
+		}
+
+		.footerIcons > li {
+			float: left;
+			padding: 0px 16.5px;
+		}
+
+		.FooterLine {
+			margin: 20px auto 0px;
+		    width: 30%;
+		    height: 1px;
+		    opacity: 0.1;
+		    border: 1px solid rgb(255, 255, 255);
+		}
+
+		.copyright {
+			font-size: 12px;
+		    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    font-weight: 300;
+		    line-height: 1.83;
+		    letter-spacing: 0.33px;
+		    color: rgb(255, 255, 255);
+		    text-align: center;
+		    margin-left: 40px;
 		}
 
 	</style>
@@ -349,6 +437,126 @@
 		</div>
 
 		<div class="footer">
+
+			<div class="footer-center-container">
+
+				<span class="alwaysMilan">#ALWAYSMILAN</span>
+
+				<img src="images/logo.png" alt="AC Milan Official Logo" class="footer-logo">
+
+				<span class="alwaysMilan">#SEMPREMILAN</span>
+				
+			</div>
+
+			<div class="footerSponsors">
+				<h2> AC Milan Social Media</h2>
+			</div>
+
+			<div>
+				
+				<ul class="footerIcons">
+					<li>
+						<a href="https://www.facebook.com/ACMilan" target="_blank">
+							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb@4x.png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb@4x.png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb@4x.png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb@4x.png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+					  		" alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.instagram.com/acmilan/?hl=it" target="_blank">
+						  <img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/498d42ba-6990-4896-a928-e3063480061d/instagram@4x.png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/498d42ba-6990-4896-a928-e3063480061d/instagram@4x.png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/498d42ba-6990-4896-a928-e3063480061d/instagram@4x.png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/498d42ba-6990-4896-a928-e3063480061d/instagram@4x.png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+						  " alt="">
+						</a>
+					</li>
+
+					<li>
+  						<a href="https://it.linkedin.com/company/ac-milan" target="_blank">
+  							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin@4x.png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin@4x.png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin@4x.png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin@4x.png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+						  " alt="">
+  						</a>
+  					</li>
+
+  					<li>
+  						<a href="https://www.tiktok.com/@acmilan?language=it" target="_blank">
+  							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok@4x.png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok@4x.png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok@4x.png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok@4x.png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+						  " alt="">
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div>
+
+				<ul class="footerIcons">
+
+					<li>
+						<a href="https://www.youtube.com/acmilan" target="_blank">
+							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube@4x%20(1).png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube@4x%20(1).png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube@4x%20(1).png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube@4x%20(1).png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+						  " alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://twitter.com/acmilan" target="_blank">
+							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/2d37a61f-4593-4079-b5fd-200225326025/twitter@4x%20(1).png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/2d37a61f-4593-4079-b5fd-200225326025/twitter@4x%20(1).png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/2d37a61f-4593-4079-b5fd-200225326025/twitter@4x%20(1).png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/2d37a61f-4593-4079-b5fd-200225326025/twitter@4x%20(1).png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+						  " alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.weibo.com/acmilanofficial" target="_blank">
+							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/9ce8f8b2-70b4-48d1-873c-326e0c3f4abc/weibo@4x.png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/9ce8f8b2-70b4-48d1-873c-326e0c3f4abc/weibo@4x.png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/9ce8f8b2-70b4-48d1-873c-326e0c3f4abc/weibo@4x.png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/9ce8f8b2-70b4-48d1-873c-326e0c3f4abc/weibo@4x.png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+						  " alt="">
+
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.acmilan.com/it/fan/ac-milan-music" target="_blank">
+							<img src="https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3a28d1c1-238f-4696-8e4c-179f5a349b29/ACMMusic.png&amp;auto=format" srcset="
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3a28d1c1-238f-4696-8e4c-179f5a349b29/ACMMusic.png?w=undefined&amp;h=30&amp;dpr=1&amp;auto=format,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3a28d1c1-238f-4696-8e4c-179f5a349b29/ACMMusic.png?w=undefined&amp;h=30&amp;dpr=2&amp;auto=format 2x,
+						    https://assets-eu-01.kc-usercontent.com:443/1293c890-579f-01b7-8480-902cca7de55e/3a28d1c1-238f-4696-8e4c-179f5a349b29/ACMMusic.png?w=undefined&amp;h=30&amp;dpr=3&amp;auto=format 3x
+						  " alt="">
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="FooterLine"></div>
+
+			<div class="copyright">
+				<p>
+					Copyright © 2020
+					<br>
+					All rights reserved
+				</p>
+			</div>
 			
 		</div>
 		
