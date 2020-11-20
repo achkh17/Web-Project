@@ -81,6 +81,7 @@
 			position: absolute;
 		    top: 80px;
 		    left: 340px;
+		    z-index: 101;
 		}
 
 		.menu {
@@ -92,7 +93,7 @@
 		    -webkit-box-pack: justify;
 		    justify-content: space-between;
 		    color: black;
-		    z-index: 100;
+		    z-index: 101;
 		    width: 1200px;
 		}
 
@@ -109,7 +110,7 @@
 
 		.menuItemName {
 			display: block;
-			padding: 20px;
+			padding: 19px;
 			opacity: 0.7;
 		    transition: opacity 0.2s ease-in 0s;
 		    color: black;
@@ -128,6 +129,11 @@
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 			padding: 0;
 			margin: auto;
+			z-index: 102;
+		}
+
+		.subMenu > li {
+			z-index: 103;
 		}
 
 		.subMenu > li > a {
@@ -142,6 +148,7 @@
 		    min-width: 150px;
 		    margin: auto;
 		    background-color: rgb(0, 0, 0);
+		    z-index: 103;
 		}
 
 		.subMenu > li > a:hover {
@@ -154,7 +161,7 @@
 			height: 5000px; 
 			margin: 0 auto; 
 			width: 70%;
-			background-color: blue;
+			/*background-color: blue;*/
 
 		}
 
@@ -237,6 +244,144 @@
 		    color: rgb(255, 255, 255);
 		    text-align: center;
 		    margin-left: 40px;
+		}
+
+		.slideshow-container {
+			position: relative;
+		}
+
+
+		.slide {
+			width: 1280px;
+			height: 600px;
+			position: relative;
+		}
+
+		.slideImage {
+			width: 1280px;
+			height: 600px;
+			z-index: 0;
+			position: absolute;
+		}
+
+		.sildeBackground {
+			background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 87%);
+			width: 1280px;
+			height: 600px;
+			z-index: 100;
+			position: absolute;
+		}
+
+		.slideshowDots {
+			position: absolute;
+		    left: 50%;
+		    bottom: 50px;
+		    transform: translate(-50%,0%);
+		    z-index: 101;
+		}
+
+		.dot {
+			height: 13px;
+		    width: 13px;
+		    padding: 1px 1px;
+		    margin: 1px 3px;
+		    cursor: pointer;
+		    background-color: transparent;
+		    border: 1px solid #ccc;
+		    border-radius: 50%;
+		    color: #fff;
+    		display: inline-block;
+    		z-index: 101;
+		}
+
+		.dot:hover {
+			background-color: white!important
+			z-index: 101;
+		}
+
+		.slideLeftButton {
+			position: absolute;
+		    outline: 0;
+		    transition: all .5s;
+		    border-radius: 35px;
+		    border: 0;
+		    background: white;
+		    min-width: 43px;
+		    min-height: 43px;
+		    opacity: 1;
+		    cursor: pointer;
+		    left: 5%;
+		    top: 50%;
+		    z-index: 101;
+		}
+
+		.slideRightButton {
+			position: absolute;
+		    outline: 0;
+		    transition: all .5s;
+		    border-radius: 35px;
+		    border: 0;
+		    background: white;
+		    min-width: 43px;
+		    min-height: 43px;
+		    opacity: 1;
+		    cursor: pointer;
+		    right: 5%;
+		    top: 50%;
+		    z-index: 101;
+		}
+
+		.slideText {
+		    position: absolute;
+		    bottom: 40px;
+		    width: 100%;
+		    margin: 0 auto;
+		    color: rgb(255, 255, 255);
+		    z-index: 101;
+		}
+
+		.upperSlideText {
+			width: 70%;
+			margin: 0 auto;
+			font-size: 32px;
+			margin-bottom: 10px;
+			font-weight: bold;
+		    text-transform: uppercase;
+		}
+
+		.lowerSlidePart {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.lowerSlideText {
+			width: 70%;
+			margin: 0 auto;
+			margin-left: 155px;
+			margin-bottom: 30px;
+			font-size: 18px;
+			font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		.slideButton {
+			margin-bottom: 20px;
+			margin-right: 30px;
+		}
+
+		.slideButton > a {
+		    padding: 12px 15px;
+		    color: rgb(255, 255, 255);
+		    background-color: rgb(201, 36, 13);
+		    font-weight: bold;
+		    align-items: center;
+		    text-transform: uppercase;
+		    color: white;
+		    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    line-height: 1;
+		    border-radius: 2px;
+		    font-size: 16px;
+		    border: 2px solid transparent;
+		    text-decoration: none;
 		}
 
 	</style>
@@ -432,9 +577,130 @@
 			
 		</div>
 
+
+
+
+
 		<div class="main">
+
+			<div class="slideshow-container">
+
+				<div class="slide">
+					<div class="sildeBackground"></div>
+					<img src="https://cdn.latinus.us/wp-content/uploads/2020/08/31164720/2020.08.31-CS-Rinnovo-Ibra-WebHP-e1598910499334.png" class="slideImage">
+					<div class="slideText">
+					    <h2 class="upperSlideText">
+					    	AC Milan "never had a king, they have a GOD"
+					    </h2>
+
+					    <dir class="lowerSlidePart">
+						    <p class="lowerSlideText">
+						    	Ibrahimovic responds to Lukaku
+							</p>
+
+							<div class="slideButton">
+								<a href="#">Discover more</a>
+							</div>
+						</dir>
+
+					</div>
+
+				</div>
+
+				<div class="slide">
+					<div class="sildeBackground"></div>
+					<img src="https://www.pianetamilan.it/wp-content/uploads/sites/23/2020/10/hauge_ac_milan.png" class="slideImage">
+					<div class="slideText">
+					    <h2 class="upperSlideText">
+					    	Hauge scored his first ever goal for AC Milan
+					    </h2>
+
+					    <dir class="lowerSlidePart">
+						    <p class="lowerSlideText">
+						    	win over Celtic in Thursday night’s Europa League clash
+							</p>
+
+							<div class="slideButton">
+								<a href="#">Discover more</a>
+							</div>
+						</dir>
+
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="sildeBackground"></div>
+					<img src="https://extrasport.net/wp-content/uploads/2020/09/ANTE-e1599933904199.png" class="slideImage">
+					<div class="slideText">
+					    <h2 class="upperSlideText">
+					    	Milan ace shows class once again
+					    </h2>
+
+					    <dir class="lowerSlidePart">
+						    <p class="lowerSlideText">
+						    	Rebic continues to establish himself as key figure
+							</p>
+
+							<div class="slideButton">
+								<a href="#">Discover more</a>
+							</div>
+						</dir>
+
+					</div>
+				</div>
+
+				<button class="slideLeftButton" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="slideRightButton" onclick="plusDivs(1)">&#10095;</button>
+
+				<div class="slideshowDots">
+					<span class="dot" onclick="currentDiv(1)"></span>
+					<span class="dot" onclick="currentDiv(2)"></span>
+					<span class="dot" onclick="currentDiv(3)"></span>
+				</div>
+			</div>
+
+			<script>
+				var slideIndex = 1;
+				timer = null;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function currentDiv(n) {
+				  showDivs(slideIndex = n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  clearTimeout(timer);
+				  var x = document.getElementsByClassName("slide");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n === undefined){ n = slideIndex++; }
+				  if (n > x.length || slideIndex > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+				    x[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				    dots[i].style.backgroundColor = "transparent";
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].style.backgroundColor = "white";
+				  timer = setTimeout(showDivs, 5000);
+				}
+			</script>
 			
 		</div>
+
+
+
+
+
+
+
+
 
 		<div class="footer">
 
