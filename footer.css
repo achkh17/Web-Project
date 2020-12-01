@@ -1,0 +1,129 @@
+.footer {
+	background-color: white;
+}
+
+.whiteFooter {
+	background-color: white;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.footerPartnerText {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    color: rgb(201, 36, 13);
+    padding: 40px 0px 15px;
+}
+
+.footerSponsorsRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+	margin: 0px 15px
+}
+
+.footerSponsorsRowImage {
+    width: 90px;
+	max-width: 90%;
+    max-height: 90%;
+}
+
+.blackFooter {
+	padding: 0px 20px 20px;
+    background-color: black;
+    color: white;
+    height: 405px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.footer-center-container {
+	height: 180px;
+	display: flex;
+    flex-direction: row;
+    top: 180px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+	margin: auto;
+}
+
+.alwaysMilan {
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.61px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 40px;
+}
+
+.footer-logo {
+	height: 150px;
+	margin: -70px auto;
+}
+
+.footerSponsors {
+	font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.44px;
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 40px;
+}
+
+.footerIcons {
+	list-style-type: none;
+	display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.footerIcons > li {
+	float: left;
+	padding: 0px 16.5px;
+}
+
+.FooterLine {
+	margin: 20px auto 0px;
+    width: 30%;
+    height: 1px;
+    opacity: 0.1;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.whiteFooterLine {
+    width: 40%;
+    opacity: 0.1;
+    align-items: center;
+    margin: auto;
+    border-top: 1px solid black;
+}
+
+.copyright {
+	font-size: 12px;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.83;
+    letter-spacing: 0.33px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 40px;
+}
+
+
+@media (max-width: 1280px) {
+
+    .alwaysMilan {
+        display: none;
+    }
+}
