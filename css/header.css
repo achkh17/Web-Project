@@ -1,0 +1,298 @@
+.header {
+	background-color: white;
+	z-index: 100;
+	height: 160px;
+	/*position: fixed;*/
+}
+
+.upperAds {
+	float: left;
+	background-color: white;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 auto;
+	width: 50%;
+	height: 60px;
+	margin-top: 10px;
+}
+
+.upperIconsUl {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    list-style-type: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.upperIconsUl > li {
+	height: 15px;
+	padding: 0px 6px;	
+}
+
+.upperSponsors {
+	padding: 0 0 0 25px;
+    list-style-type: none;
+}
+
+.sponsorsLogo {
+	height: 60px;
+}
+
+.main-logo-container {
+	width: 381px;
+    height: 160px;
+    transition: all 300ms ease 0s;
+    background-image: url(https://www.acmilan.com/images/logoCircles.png);
+    margin-left: 190px;
+    background-position: 0px -114px;
+	background-size: 381px;
+	z-index: 101;
+	float: left;
+	display: inline;
+}
+
+.main-logo {
+	height: 132px;
+	position: absolute;
+    top: 80px;
+    left: 340px;
+    z-index: 101;
+}
+
+
+
+.menu {
+	display: block;
+	height: 200px;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    color: black;
+    z-index: 102;
+    width: 50%;
+}
+
+.menuItem {
+	list-style-type: none;
+	float: left;
+	margin-top: 20px;
+	z-index: 102;
+}
+
+.menuItem:hover > .subMenu {
+	display: block;
+}
+
+.menuItemName {
+	display: block;
+	padding: 19px;
+	opacity: 0.7;
+    transition: opacity 0.2s ease-in 0s;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.subMenu {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	opacity: 0.8;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 0;
+	margin: auto;
+	z-index: 102;
+}
+
+.subMenu > li {
+	z-index: 103;
+}
+
+.subMenu > li > a {
+	text-decoration: none;
+	transition: opacity 0.2s ease-in 0s;
+    color: white;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    padding: 7px 7px;
+    text-transform: capitalize;
+    min-width: 150px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    z-index: 103;
+}
+
+.subMenu > li > a:hover {
+	background-color: gray
+}
+
+
+.navMenuButton {
+	display: none;
+    margin-left: 20px;
+    padding-top: 100px;
+}
+
+.nav-main-logo {
+	height: 60px;
+	margin-left: 35px;
+	position: absolute;
+	left: 75px;
+	top: 75px;
+}
+
+.hamburgerButton {
+    display: inline-block;
+  	cursor: pointer;
+}
+
+.hamburgerButtonSpan1, 
+.hamburgerButtonSpan2, 
+.hamburgerButtonSpan3 {
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .hamburgerButtonSpan1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .hamburgerButtonSpan2 {
+	opacity: 0;
+}
+
+.change .hamburgerButtonSpan3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navMenu {
+	position: fixed;
+    background-color: black;
+    top: 140px;
+    width: 100%;
+    user-select: none;
+    z-index: 200;
+    transition: all 300ms ease-in 0s;
+    -webkit-tap-highlight-color: transparent;
+    overflow: auto;
+    display: none;
+    margin-top: 2%;
+    bottom: 0px;
+    display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10003;
+}
+
+.navMenu > ul {
+	font-size: 16px;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    padding: 25px;
+    list-style-type: none;
+}
+
+.navMenuItem {
+	padding: 15px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.navMenuTitle {
+	display: flex;
+    justify-content: space-between;
+}
+
+.navSubMenuButton {
+	display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    margin-right: 5%;
+}
+
+.navMenuSubMenu {
+	display: none;
+	margin-top: 15px;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navMenuSubMenu > li > a {
+	color: white;
+    text-transform: capitalize;
+    padding: 10px 0px 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1280px) {
+	.main-logo-container,
+	.main-logo {
+		display: none;
+	}
+
+	.navMenuButton,
+	.nav-main-logo,
+	.hamburgerButton {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.sponsorsLogo {
+		height: 40px;
+	}
+
+	.upperIconsUl {
+		padding-left: 0px;
+	}
+
+	.upperAds {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.upperSponsors {
+		padding-top: 10px;
+		padding-left: 0px;
+		margin-right: 25px;
+	}
+}
+
+
+@media (min-width: 1280px) {
+
+	.navMenu {
+		display: none!important;
+	}
+
+	.sticky {
+		position: inherit!important;
+	}
+
+}
