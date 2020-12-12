@@ -144,6 +144,200 @@
 }
 
 
+.standings {
+    background-color: white;
+    margin: 0px;
+    position: relative;
+    top: -35px;
+    z-index: 101;
+    background-color: white;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.standingsSection {
+    padding: 20px 30px 0px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.matches {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.matchScore {
+    display: grid;
+    grid-template-areas:
+        "dateArea dateArea dateArea"
+        "firstTeamArea goalsArea secondTeamArea"
+        "firstTeamArea actionArea secondTeamArea";
+    grid-template-columns: 1fr 130px 1fr;
+    grid-template-rows: 50px 50px 70px;
+    grid-gap: 10px;
+    -webkit-box-align: center;
+    padding: 0px;
+    background-color: white;
+}
+
+.matchText {
+    text-transform: uppercase;
+}
+
+.matchDay {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    grid-area: dateArea / dateArea / dateArea / dateArea;
+    align-content: center;
+    text-transform: capitalize;
+}
+
+.matchDayNum {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+}
+
+.matchDayDate {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.matchesFirstTeam {
+    display: flex;
+    grid-area: firstTeamArea / firstTeamArea / firstTeamArea / firstTeamArea;
+    flex-direction: column-reverse;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.matchesSecodTeam {
+    display: flex;
+    grid-area: secondTeamArea / secondTeamArea / secondTeamArea / secondTeamArea;
+    flex-direction: column-reverse;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.matchesScore {
+    display: flex;
+    flex-direction: column;
+    grid-area: goalsArea / goalsArea / actionArea / actionArea;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.39px;
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.matchesTeamText {
+    font-weight: bold;
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    word-break: break-word;
+}
+
+.matchesTeamLogo {
+    width: 100%;
+    height: 100%;
+    max-width: 58px;
+    max-height: 58px;
+    margin: 0px 10px;
+}
+
+.moreMatchesLink {
+    color: red;
+    text-decoration: underline;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    font-size: 12px;
+    margin: 20px 0px;
+    display: block;
+}
+
+.standingsThread > tr > th {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.standingsTbody > tr {
+    color: inherit;
+    font-weight: normal;
+    height: 42px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+    letter-spacing: 0.33px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.seriaAStandings {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.standingsNum {
+    color: rgb(216, 190, 109);
+    font-weight: bold;
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 40px;
+}
+
+.standingsTeam {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.standingsTable {
+    border-collapse: collapse;
+}
+
+.standingsLogo > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+
+
 @media (max-width: 1280px) {
     .main {
         width: 100%;
@@ -178,4 +372,49 @@
         font-size: 6px;
         padding: 5px;
     }
+
+    .standings {
+        top: -10px;
+        /*width: 100%;*/
+    }
+}
+
+
+@media (min-width: 375px) {
+
+    .standings {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+}
+
+
+@media (min-width: 600px) {
+
+    /*.standings {
+        padding: 40px;
+    }*/
+
+    .matchText {
+        font-size: 24px;
+    }
+
+    .moreMatchesLink {
+        font-size: 14px;
+        font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    
+}
+
+@media (min-width: 834px) {
+
+    .standingsSection {
+        width: 50%;
+    }
+
+    .standings {
+        flex-wrap: nowrap;
+    }
+
 }
