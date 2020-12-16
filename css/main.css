@@ -313,12 +313,6 @@
     vertical-align: middle;
 }
 
-/*.standingsLine {
-    border-left: 1px solid rgba(0, 0, 0, 0.1);;
-    height: auto;
-    margin: 50px auto;
-}*/
-
 .seriaAStandings {
     display: flex;
     flex-direction: column;
@@ -420,6 +414,87 @@
 
 
 
+.lastestNews {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.lastNewsText {
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+}
+
+.newsItemText {
+    transform: translateY(-50%);
+    width: 90%;
+    margin: auto;
+    min-height: 80px;
+    background-color: white;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+.newsItemUpperText {
+    text-transform: capitalize;
+    padding: 8px;
+    letter-spacing: 0.33px;
+}
+
+.newsItemLowerText {
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: Bowlby One SC;
+    font-style: italic;
+} 
+
+.newsItem > a {
+    text-decoration: none;
+}
+
+.upperNewsItem {
+    width: 50%;
+}
+
+.lastNewsSeeMore {
+    color: rgb(201, 36, 13);
+    letter-spacing: 0.25px;
+    border-left: 0.5px solid rgba(20, 20, 20, 0.5);
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.upperNews {
+    display: flex;
+}
+
+.lowerNews {
+    display: flex;
+}
+
+.newsItem {
+    margin-right: 20px;
+}
+
+.newsItem > a > img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 @media (max-width: 1280px) {
 
     .main {
@@ -454,10 +529,30 @@
     .slideButton > a {
         font-size: 6px;
         padding: 5px;
-    }
+    }+
 
     .standings {
         top: -10px;
+    }
+
+}
+
+@media (max-width: 813px) {
+
+    .upperNews {
+        flex-direction: column;
+    }
+
+    .lowerNews {
+        flex-direction: column;
+    }
+
+    .lastNewsText {
+        font-size: 14px;
+    }
+
+    .upperNewsItem {
+        width: 100%;
     }
 
 }
