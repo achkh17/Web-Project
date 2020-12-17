@@ -1,5 +1,5 @@
 .main {
-	height: 5000px; 
+	/*height: 5000px; */
 	margin: 0 auto; 
 	width: 70%;
 	/*background-color: blue;*/
@@ -434,7 +434,6 @@
     transform: translateY(-50%);
     width: 90%;
     margin: auto;
-    min-height: 80px;
     background-color: white;
     font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: black;
@@ -444,19 +443,26 @@
     text-transform: capitalize;
     padding: 8px;
     letter-spacing: 0.33px;
+    color: black;
 }
 
 .newsItemLowerText {
     text-transform: uppercase;
     padding: 5px;
     font-weight: bold;
+    min-height: 80px;
     margin-top: 8px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Bowlby One SC;
     font-style: italic;
+    color: black;
 } 
 
 .newsItem > a {
+    text-decoration: none;
+}
+
+.newsItemText > a {
     text-decoration: none;
 }
 
@@ -485,6 +491,7 @@
 
 .newsItem {
     margin-right: 20px;
+    margin-bottom: -40px;
 }
 
 .newsItem > a > img {
@@ -492,7 +499,49 @@
     height: auto;
 }
 
+.clubInfo {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
 
+.clubInfoItem {
+    margin-right: 20px;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.clubInfoItem > img {
+    width: 100%;
+}
+
+.clubInfoItem > a {
+    text-decoration: none;
+}
+
+.academyInfo {
+    width: 90%;
+    margin: 50px auto;
+    background-color: white;
+    text-align: center;
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.academyInfo > img {
+    width: 100%;
+}
+
+.academyInfo > a {
+    text-decoration: none;
+}
+
+.academyButton {
+    width: 30%!important;
+    margin-top: 30px;
+}
 
 
 @media (max-width: 1280px) {
@@ -529,7 +578,7 @@
     .slideButton > a {
         font-size: 6px;
         padding: 5px;
-    }+
+    }
 
     .standings {
         top: -10px;
@@ -552,6 +601,18 @@
     }
 
     .upperNewsItem {
+        width: 100%;
+    }
+
+    .newsItem {
+        margin-right: 0px;
+    }
+
+    .clubInfo {
+        flex-direction: column;
+    }
+
+    .clubInfoItem {
         width: 100%;
     }
 
