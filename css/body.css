@@ -1,0 +1,30 @@
+body {
+	font-size: 14px;
+	background-color: rgb(245, 245, 245);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.main-container {
+	margin-top: 0;
+}
+
+.center-main {
+	max-width: 960px;
+	margin: auto;
+	font-family: system-ui;
+}
+
+.center-main > img {
+	width: 100%;
+}
+
+.center-main > p {
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	letter-spacing: 0.23px;
+    line-height: 20px;
+    text-align: justify;
+    font-size: 16px;
+}

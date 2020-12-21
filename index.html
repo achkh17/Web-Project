@@ -4,29 +4,30 @@
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/body.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- logo -->
+
 	<title>AC Milan</title>
 
-	<style type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-		body {
-			font-size: 14px;
-			background-color: rgb(245, 245, 245);
-			width: 100%;
-    		height: 100%;
-    		margin: 0;
-		}
+	<script>
+        // $(function() {
+        //     $('#menuItem a').on('click', function(e) {
+        //         e.preventDefault();
+        //         var page = $(this).attr('href');
+        //         // window.history.pushState("", "", '/newpage');
+        //         $('#main').load(page);
+        //         window.location.reload();
+        //     });
+        // });
 
-		.main-container {
-			margin-top: 0;
-		}
-
-	</style>
+        $(function(){
+		  $("#headerSpace").load("html/header.html"); 
+		  $("#footerSpace").load("html/footer.html"); 
+		});
+    </script>
 
 </head>
 
@@ -34,274 +35,7 @@
 
 	<div class="main-container">
 
-		<div class="header" id="header">
-
-			<div class="main-logo-container">
-				<a href="file:///home/anamaria/freeuni/sem7/web/project/Web-Project/index.html#">
-					<img src="images/logo.png" alt="AC Milan Official Logo" class="main-logo">
-				</a>
-			</div>
-
-			<div class="upperAds">
-
-				<ul class="upperIconsUl">
-					<li>
-						<a href="https://www.facebook.com/ACMilan" target="_blank">
-							<img src="images/upper_fb.png" alt="Facebook"/>
-						</a>
-					</li>
-
-					<li>
-						<a href="https://www.instagram.com/acmilan/?hl=it" target="_blank">
-							<img src="images/upper_instagram.png" alt="Instagram"/>
-						</a>
-					</li>
-
-					<li>
-  						<a href="https://it.linkedin.com/company/ac-milan" target="_blank">
-  							<img src="images/upper_linkedin.png" alt="LinkedIn"/>
-  						</a>
-  					</li>
-
-  					<li>
-  						<a href="https://www.tiktok.com/@acmilan?language=it" target="_blank">
-  							<img src="images/upper_tiktok.png" alt="TikTok"/>
-						</a>
-					</li>
-
-					<li>
-						<a href="https://www.youtube.com/acmilan" target="_blank">
-							<img src="images/upper_youtube.png" alt="Youtube"/>
-						</a>
-					</li>
-
-					<li>
-						<a href="https://twitter.com/acmilan" target="_blank">
-							<img src="images/upper_twitter.png" alt="Twitter"/>
-						</a>
-					</li>
-
-					<li>
-						<a href="https://www.weibo.com/acmilanofficial" target="_blank">
-							<img src="images/upper_weibo.png" alt="Weibo"/>
-						</a>
-					</li>
-
-					<li>
-						<a href="https://www.acmilan.com/it/fan/ac-milan-music" target="_blank">
-							<img src="images/upper_music.png" alt="AC Milan Music"/>
-						</a>
-					</li>
-
-				</ul>
-
-				<div class="upperSponsors">
-
-					<a href="https://www.puma.com" target="_blank">
-						<img src="images/upper_puma.png" class="sponsorsLogo" />
-					</a>
-
-					<a href="https://www.emirates.com/it/italian/" target="_blank">
-						<img src="images/upper_emirates.png" class="sponsorsLogo" />
-					</a>
-
-				</div> 
-				
-			</div>
-
-
-			<div class="navMenuButton">
-				<div class="hamburgerButton" onclick="hamburgerMenuClicked(this)">
-					<div class="hamburgerButtonSpan1"></div>
-					<div class="hamburgerButtonSpan2"></div>
-					<div class="hamburgerButtonSpan3"></div>
-				</div>
-
-				<script src="js/hamburgerMenu.js"></script>
-
-				<div>
-					<a href="file:///home/anamaria/freeuni/sem7/web/project/Web-Project/index.html#">
-						<img src="images/logo.png" alt="AC Milan - Official Site" class="nav-main-logo">
-					</a>
-				</div>
-			</div>
-
-			<div class="navMenu" id="navMenu">
-				<ul>	
-					<li class="navMenuItem">
-						<div class="navMenuTitle" onclick="openSubmenu(this)">
-							<div>NEWS</div>
-							<div class="navSubMenuButton"></div>
-						</div>
-
-						<ul class="navMenuSubMenu">
-							<li><a href="#">All the News</a></li>
-							<li><a href="#">Transfer Window</a></li>
-							<li><a href="#">Photo Gallery</a></li>
-							<li><a href="#">Video Gallery</a></li>
-						</ul>
-					</li>
-
-					<li class="navMenuItem">
-						<div class="navMenuTitle" onclick="openSubmenu(this)">
-							<div>TICKETS</div>
-							<div class="navSubMenuButton"></div>
-						</div>
-
-						<ul class="navMenuSubMenu">
-							<li><a href="#">Museum Tickets</a></li>
-							<li><a href="https://hospitality.acmilan.com/" target="_blank">Premium & Hospitality</a></li>
-							<li><a href="#">Accreditations</a></li>
-							<li><a href="#">Banners</a></li>
-						</ul>
-					</li>
-
-					<li class="navMenuItem">
-						<div class="navMenuTitle" onclick="openSubmenu(this)">
-							<div>TEAMS</div>
-							<div class="navSubMenuButton"></div>
-						</div>
-						<ul class="navMenuSubMenu">
-							<li><a href="#">Men's Team</a></li>
-							<li><a href="#">Women's team</a></li>
-						</ul>
-					</li>
-
-					<li class="navMenuItem">
-						<div class="navMenuTitle" onclick="openSubmenu(this)">
-							<div>SEASON</div>
-							<div class="navSubMenuButton"></div>
-						</div>
-						<ul class="navMenuSubMenu">
-							<li><a href="#">Schedules</a></li>
-							<li><a href="#">Standings</a></li>
-						</ul>
-					</li>
-
-					<li class="navMenuItem">
-						<div class="navMenuTitle" onclick="openSubmenu(this)">
-							<div>CLUB</div>
-							<div class="navSubMenuButton"></div>
-						</div>
-
-						<ul class="navMenuSubMenu">
-							<li><a href="#">History</a></li>
-							<li><a href="#">Venues</a></li>
-							<li><a href="#">The Club</a></li>
-							<li><a href="#">Managment</a></li>
-							<li><a href="#">Our Partners</a></li>
-							<li><a href="https://www.nuovostadiomilano.com/en" target="_blank">New Stadium</a></li>
-						</ul>
-					</li>
-
-					<li class="navMenuItem">
-						<div class="navMenuTitle" onclick="openSubmenu(this)">
-							<div>SHOP</div>
-							<div class="navSubMenuButton"></div>
-						</div>
-
-						<ul class="navMenuSubMenu">
-							<li>
-								<a href="https://store.acmilan.com/en/" target="_blank">Store Online</a>
-							</li>
-							<li>
-								<a href="http://casamilan.acmilan.com/en/milan-store"target="_blank">Casa Milan Store</a>
-							</li>
-							<li>
-								<a href="https://store.acmilan.com/en/milan-megastore"target="_blank">Milan Megastore</a>
-							</li>
-							<li>
-								<a href="https://www.sansirostadium.com/en/store"target="_blank">San Siro Store</a>
-							</li>
-						</ul>
-					</li>
-
-				</ul>
-
-			</div>
-
-
-			<div class="menu" id="menu">
-				<ul>
-
-					<li class="menuItem">
-						<a href="#" class="menuItemName">News</a>
-						<ul class="subMenu">
-							<li><a href="#">All the News</a></li>
-							<li><a href="#">Transfer Window</a></li>
-							<li><a href="#">Photo Gallery</a></li>
-							<li><a href="#">Video Gallery</a></li>
-						</ul>	
-					</li>
-
-
-					<li class="menuItem">
-						<a href="#" class="menuItemName">Tickets</a>
-						<ul class="subMenu">
-							<li><a href="#">Museum Tickets</a></li>
-							<li><a href="https://hospitality.acmilan.com/" target="_blank">Premium & Hospitality</a></li>
-							<li><a href="#">Accreditations</a></li>
-							<li><a href="#">Banners</a></li>
-						</ul>	
-					</li>
-
-					<li class="menuItem">
-						<a href="#" class="menuItemName">Teams</a>
-						<ul class="subMenu">
-							<li><a href="#">Men's Team</a></li>
-							<li><a href="#">Women's team</a></li>
-						</ul>	
-					</li>
-
-					<li class="menuItem">
-						<a href="#" class="menuItemName">Season</a>
-						<ul class="subMenu">
-							<li><a href="#">Schedules</a></li>
-							<li><a href="#">Standings</a></li>
-						</ul>	
-					</li>
-
-					<li class="menuItem">
-						<a href="#" class="menuItemName">Club</a>
-						<ul class="subMenu">
-							<li><a href="#">History</a></li>
-							<li><a href="#">Venues</a></li>
-							<li><a href="#">The Club</a></li>
-							<li><a href="#">Managment</a></li>
-							<li><a href="#">Our Partners</a></li>
-							<li><a href="https://www.nuovostadiomilano.com/en" target="_blank">New Stadium</a></li>
-						</ul>	
-					</li>
-
-					<li class="menuItem">
-						<a href="#" class="menuItemName">Shop</a>
-						<ul class="subMenu">
-
-							<li>
-								<a href="https://store.acmilan.com/en/" target="_blank">Store Online</a>
-							</li>
-							<li>
-								<a href="http://casamilan.acmilan.com/en/milan-store"target="_blank">Casa Milan Store</a>
-							</li>
-							<li>
-								<a href="https://store.acmilan.com/en/milan-megastore"target="_blank">Milan Megastore</a>
-							</li>
-							<li>
-								<a href="https://www.sansirostadium.com/en/store"target="_blank">San Siro Store</a>
-							</li>
-
-						</ul>	
-					</li>
-
-				</ul>
-				
-			</div>
-			
-		</div>
-
-
-
-
+ 		<div id="headerSpace"></div>
 
 		<div class="main" id="main">
 
@@ -310,7 +44,7 @@
 
 				<div class="slide">
 					<div class="sildeBackground"></div>
-					<img src="images/slider_zlatan.png" class="slideImage" width="1280" height="600">
+					<img src="images/main/slider_zlatan.png" class="slideImage" width="1280" height="600">
 					<div class="slideText">
 					    <h2 class="upperSlideText">
 					    	AC Milan "never had a king, they have a GOD"
@@ -332,7 +66,7 @@
 
 				<div class="slide">
 					<div class="sildeBackground"></div>
-					<img src="images/slider_hauge.png" class="slideImage" width="1280" height="600">
+					<img src="images/main/slider_hauge.png" class="slideImage" width="1280" height="600">
 					<div class="slideText">
 					    <h2 class="upperSlideText">
 					    	Hauge scored his first ever goal for AC Milan
@@ -353,7 +87,7 @@
 
 				<div class="slide">
 					<div class="sildeBackground"></div>
-					<img src="images/slider_romagnoli.png" class="slideImage" width="1280" height="600">
+					<img src="images/main/slider_romagnoli.png" class="slideImage" width="1280" height="600">
 					<div class="slideText">
 					    <h2 class="upperSlideText">
 					    	Captain is coming back
@@ -374,7 +108,7 @@
 
 				<div class="slide">
 					<div class="sildeBackground"></div>
-					<img src="images/slider_ante.png" class="slideImage" width="1280" height="600">
+					<img src="images/main/slider_ante.png" class="slideImage" width="1280" height="600">
 					<div class="slideText">
 					    <h2 class="upperSlideText">
 					    	Milan ace shows class once again
@@ -421,12 +155,12 @@
 
 							<div class="matchesFirstTeam">
 								<span class="matchesTeamText">PRA</span>
-								<img src="images/matchesSparta.png" class="matchesTeamLogo">
+								<img src="images/main/matchesSparta.png" class="matchesTeamLogo">
 							</div>
 							<div class="matchesScore">0-1</div>
 							<div class="matchesSecodTeam">
 								<span class="matchesTeamText">MIL</span>
-								<img src="images/matchesMilan.png" class="matchesTeamLogo">
+								<img src="images/main/matchesMilan.png" class="matchesTeamLogo">
 							</div>
 
 							
@@ -459,7 +193,7 @@
 							  <tr>
 							    <td class="standingsNum">1</td>
 							    <td class="standingsLogo">
-							    	<img src="images/standingsMilan.png">
+							    	<img src="images/main/standingsMilan.png">
 							    </td>
 							    <td class="standingsTeam">Milan</td>
 							    <td>10</td>
@@ -469,7 +203,7 @@
 							  <tr>
 							    <td class="standingsNum">2</td>
 							    <td class="standingsLogo">
-							    	<img src="images/standingsSassuolo.png">
+							    	<img src="images/main/standingsSassuolo.png">
 							    </td>
 							    <td class="standingsTeam">Sassuolo</td>
 							    <td>11</td>
@@ -479,7 +213,7 @@
 							  <tr>
 							    <td class="standingsNum">3</td>
 							    <td class="standingsLogo">
-							    	<img src="images/standingsInter.png">
+							    	<img src="images/main/standingsInter.png">
 							    </td>
 							    <td class="standingsTeam">Inter</td>
 							    <td>10</td>
@@ -489,7 +223,7 @@
 							  <tr>
 							    <td class="standingsNum">4</td>
 							    <td class="standingsLogo">
-							    	<img src="images/standingsNapoli.png">
+							    	<img src="images/main/standingsNapoli.png">
 							    </td>
 							    <td class="standingsTeam">napoli</td>
 							    <td>10</td>
@@ -515,7 +249,7 @@
 
 					<div class="newsItem upperNewsItem">
 						<a href="#">
-							<img src="images/HaugeNews.jpg">
+							<img src="images/main/HaugeNews.jpg">
 						</a>
 
 							<div class="newsItemText">
@@ -529,7 +263,7 @@
 
 					<div class="newsItem upperNewsItem">
 						<a href="#">
-							<img src="images/teoGoalNews.jpg">
+							<img src="images/main/teoGoalNews.jpg">
 						</a>
 
 							<div class="newsItemText">
@@ -547,7 +281,7 @@
 					
 					<div class="newsItem">
 						<a href="#">
-							<img src="images/giftNews.jpg">
+							<img src="images/main/giftNews.jpg">
 						</a>
 
 							<div class="newsItemText">
@@ -561,7 +295,7 @@
 
 					<div class="newsItem">
 						<a href="#">
-							<img src="images/DonaNews.jpg">
+							<img src="images/main/DonaNews.jpg">
 						</a>
 
 							<div class="newsItemText">
@@ -575,7 +309,7 @@
 
 					<div class="newsItem">
 						<a href="#">
-							<img src="images/calabriaMVP.jpg">
+							<img src="images/main/calabriaMVP.jpg">
 						</a>
 
 							<div class="newsItemText">
@@ -602,22 +336,22 @@
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/xvdebitXo.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/xvdebitXo.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/pioli.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/pioli.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/romagnoliGoal.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/romagnoliGoal.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 					</div>
@@ -625,22 +359,22 @@
 					<div class="photoGalleryColumn">
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/ibraHug.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/ibraHug.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/celebration.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/celebration.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/womanCaptain.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/womanCaptain.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
@@ -648,15 +382,15 @@
 					<div class="photoGalleryColumn">
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/teo&romana.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/teo&romana.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/TeoAndAnte.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/TeoAndAnte.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
@@ -664,15 +398,15 @@
 					<div class="photoGalleryColumn">
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/tuSei.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/tuSei.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/hug.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/galleryIcon.svg" class="galleryIcon">
+								<img src="images/main/hug.jpg" class="galleryImage">
+								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
 							</a>
 						</div>
 
@@ -689,36 +423,36 @@
 				<div class="videoGallery">
 					<div class="videoGalleryDiv1"> 
 						<a href="#">
-							<img src="images/teo&rebic.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/playVideo.svg" class="videoIcon">
+							<img src="images/main/teo&rebic.jpg" class="videoImage">
+							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv2"> 
 						<a href="#">
-							<img src="images/kjaer.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/playVideo.svg" class="videoIcon">
+							<img src="images/main/kjaer.jpg" class="videoImage">
+							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv3"> 
 						<a href="#">
-							<img src="images/rebicGesture.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/playVideo.svg" class="videoIcon">
+							<img src="images/main/rebicGesture.jpg" class="videoImage">
+							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv4"> 
 						<a href="#">
-							<img src="images/teoSuperman.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/playVideo.svg" class="videoIcon">
+							<img src="images/main/teoSuperman.jpg" class="videoImage">
+							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv5"> 
 						<a href="#">
-							<img src="images/calabriaClap.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/playVideo.svg" class="videoIcon">
+							<img src="images/main/calabriaClap.jpg" class="videoImage">
+							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
 						</a>
 					</div>
 				</div>
@@ -729,17 +463,17 @@
 
 			<!-- App Store Ad -->
 			<div class="appStore">
-				<img src="images/appStore.png" class="appStoreImage">
+				<img src="images/main/appStore.png" class="appStoreImage">
 				<h2 class="downloadAppUpperText">AC MILAN OFFICIAL APP</h2>
 				<p class="downloadAppText">Download the official AC Milan App to enjoy a 360-degree experience of the entire Rossoneri world</p>
 
 				<div class="downlaodApp">
 					<a href="https://apps.apple.com/it/app/ac-milan-official-app/id1473516867" target="_blank">
-						<img src="images/appStoreIcon.png" class="appStoreIcon">
+						<img src="images/main/appStoreIcon.png" class="appStoreIcon">
 					</a>
 
 					<a href="https://play.google.com/store/apps/details?id=com.app.acmilan" target="_blank">
-						<img src="images/googleStoreIcon.png" class="googleStoreIcon">
+						<img src="images/main/googleStoreIcon.png" class="googleStoreIcon">
 					</a>
 					
 				</div>
@@ -750,7 +484,7 @@
 				<div class="shopItems">
 					<div class="shopItem">
 						<a href="https://store.acmilan.com/it/natale.html?___from_store=en&utm_source=Sito_ACM&utm_medium=Banner_1080x1080_ITA&utm_campaign=natale" target="_blank">
-							<img src="images/shopItem1.jpg" class="shopItemImage">
+							<img src="images/main/shopItem1.jpg" class="shopItemImage">
 						
 							<button class="shopItemButton">
 								<h3>BUY NOW</h3>
@@ -760,7 +494,7 @@
 
 					<div class="shopItem">
 						<a href="https://store.acmilan.com/it/natale.html?___from_store=en&utm_source=Sito_ACM&utm_medium=Banner_1080x1080_ITA&utm_campaign=natale" target="_blank">
-							<img src="images/shopItem2.jpg" class="shopItemImage">
+							<img src="images/main/shopItem2.jpg" class="shopItemImage">
 
 							<button class="shopItemButton">
 								<h3>BUY NOW</h3>
@@ -770,7 +504,7 @@
 
 					<div class="shopItem">
 						<a href="https://store.acmilan.com/it/natale.html?___from_store=en&utm_source=Sito_ACM&utm_medium=Banner_1080x1080_ITA&utm_campaign=natale" target="_blank">
-							<img src="images/shopItem3.jpg" class="shopItemImage">
+							<img src="images/main/shopItem3.jpg" class="shopItemImage">
 
 							<button class="shopItemButton">
 								<h3>BUY NOW</h3>
@@ -789,7 +523,7 @@
 
 				<div class="clubInfoItem">
 
-					<img src="images/clubInfo1.png">
+					<img src="images/main/clubInfo1.png">
 					<h3>PALMARÈS</h3>
 					<p>A blast from the past: the great victories and unforgettable successes</p>
 
@@ -803,7 +537,7 @@
 
 				<div class="clubInfoItem">
 
-					<img src="images/clubInfo2.png">
+					<img src="images/main/clubInfo2.png">
 					<h3>HALL OF FAME</h3>
 					<p>All the stars from the Rossonero history</p>
 
@@ -820,7 +554,7 @@
 
 			<div class="academyInfo">
 
-				<img src="images/academy.png">
+				<img src="images/main/academy.png">
 				<h2>MILAN ACADEMY</h2>
 				<p>Milan Academy is the set of projects dedicated to the involvement of an U18 target audience in sporting activities</p>
 
@@ -835,206 +569,7 @@
 
 		</div>
 
-
-
-		<div class="footer" id="footer">
-
-			<div class="whiteFooter">
-				<div>
-					<h2 class="footerPartnerText">Our Partners</h2>
-				</div>
-
-				<div class="footerSponsorsRow">
-					<a href="https://www.puma.com" target="_blank">
-						<img src="images/lower_puma.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.emirates.com/us/english/" target="_blank">
-						<img src="images/lower_emirates.png" class="footerSponsorsRowImage">
-					</a>
-				</div>
-
-				<div class="whiteFooterLine"></div>
-
-				<div class="footerSponsorsRow">
-
-					<a href="https://www.bancobpm.it/" target="_blank">
-						<img src="images/Banco-BPM.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.ea.com/games/fifa/fifa-21 " target="_blank">
-						<img src="images/EA-Sports.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.skrill.com/en/" target="_blank">
-						<img src="images/Skrill_Resize.png" class="footerSponsorsRowImage">
-					</a>
-					
-				</div>
-
-				<div class="whiteFooterLine"></div>
-
-				<div class="footerSponsorsRow">
-
-					<a href="https://starcasino.sport/" target="_blank">
-						<img src="images/StarCasino-1.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.bioscalin.it/" target="_blank">
-						<img src="images/Bioscalin.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.dazn.com/en-IT/l/milan-live-streaming/" target="_blank">
-						<img src="images/DAZN.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.snaipay.it/" target="_blank">
-						<img src="images/Snaipay.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.trenitalia.com/en.html" target="_blank">
-						<img src="images/Frecciarossa.png" class="footerSponsorsRowImage">
-					</a>
-					
-				</div>
-
-				<div class="whiteFooterLine"></div>
-
-				<div class="footerSponsorsRow">
-
-					<a href="https://www.a2aenergia.eu/" target="_blank">
-						<img src="images/A2A.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="http://www.alpenwater.com/" target="_blank">
-						<img src="images/ALPS.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.avisautonoleggio.it/offerte-autonoleggio/partners/concorsi" target="_blank">
-						<img src="images/AVIS.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.fratelliberetta.com/en/home" target="_blank">
-						<img src="images/Beretta.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.harmontblaine.com/IT/en/home" target="_blank">
-						<img src="images/H&amp;B-Ok.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.lamolisana.it/en/" target="_blank">
-						<img src="images/La-Molisana.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.105.net/" target="_blank">
-						<img src="images/Radio105.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.risparmiocasa.com/ " target="_blank">
-						<img src="images/RisparmioCasa.png" class="footerSponsorsRowImage">
-					</a>
-
-					<a href="https://www.roinvesting.com/" target="_blank">
-						<img src="images/Roinvesting.png" class="footerSponsorsRowImage">
-					</a>
-					
-				</div>
-
-			</div>
-
-			<div class="blackFooter">
-				
-				<div class="footer-center-container">
-
-					<span class="alwaysMilan">#ALWAYSMILAN</span>
-
-					<img src="images/logo.png" alt="AC Milan Official Logo" class="footer-logo">
-
-					<span class="alwaysMilan">#SEMPREMILAN</span>
-					
-				</div>
-
-				<div class="footerSponsors">
-					<h2> AC Milan Social Media</h2>
-				</div>
-
-				<div>
-					
-					<ul class="footerIcons">
-
-						<li>
-							<a href="https://www.facebook.com/ACMilan" target="_blank">
-								<img src="images/lower_fb.png" alt="Facebook"/>
-							</a>
-						</li>
-
-						<li>
-							<a href="https://www.instagram.com/acmilan/?hl=it" target="_blank">
-								<img src="images/lower_instagram.png" alt="Instagram"/>
-							</a>
-						</li>
-
-						<li>
-	  						<a href="https://it.linkedin.com/company/ac-milan" target="_blank">
-	  							<img src="images/lower_linkedin.png" alt="LinkedIn"/>
-	  						</a>
-	  					</li>
-
-	  					<li>
-	  						<a href="https://www.tiktok.com/@acmilan?language=it" target="_blank">
-	  							<img src="images/lower_tiktok.png" alt="TikTok"/>
-							</a>
-						</li>
-
-					</ul>
-
-				</div>
-
-				<div>
-
-					<ul class="footerIcons">
-
-						<li>
-							<a href="https://www.youtube.com/acmilan" target="_blank">
-								<img src="images/lower_youtube.png" alt="Youtube"/>
-							</a>
-						</li>
-
-						<li>
-							<a href="https://twitter.com/acmilan" target="_blank">
-								<img src="images/lower_twitter.png" alt="Twitter"/>
-							</a>
-						</li>
-
-						<li>
-							<a href="https://www.weibo.com/acmilanofficial" target="_blank">
-								<img src="images/lower_weibo.png" alt="Weibo"/>
-							</a>
-						</li>
-
-						<li>
-							<a href="https://www.acmilan.com/it/fan/ac-milan-music" target="_blank">
-								<img src="images/lower_music.png" alt="AC Milan Music"/>
-							</a>
-						</li>
-
-					</ul>
-
-				</div>
-
-				<div class="FooterLine"></div>
-
-				<div class="copyright">
-					<p>
-						Copyright © 2020
-						<br>
-						All rights reserved
-					</p>
-				</div>
-				
-			</div>
-
-		</div>
+		<div id="footerSpace"></div>
 		
 	</div>
 </body>

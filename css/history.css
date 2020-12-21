@@ -1,0 +1,58 @@
+.upperImage {
+	margin: auto;
+	text-align: center;
+	max-width: 1280px;
+}
+
+.upperImage > h1 {
+	margin-top: 20px;
+    font-family: MilanTypeRev, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.19;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.upperImage > h2 {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+    line-height: 1.29;
+    letter-spacing: 0.08px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.upperImage > img {
+	width: 100%;
+}
+
+.KilpinPhrase {
+	color: red;
+    line-height: 28px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.share {
+	display: flex;
+	margin: 20px;
+	align-content: center;
+}
+
+.share > span {
+	margin: 20px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.shareImg {
+	margin: 20px 20px 20px 0px;
+}
+
+.shareImg > a > img {
+	height: 20px;
+}
