@@ -28,3 +28,18 @@ body {
     text-align: justify;
     font-size: 16px;
 }
+
+#footerSpace {
+	margin-top: 40px;
+}
+
+.titleH1 {
+	margin-top: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.19;
+    color: rgb(0, 0, 0); 
+    margin-bottom: 10px;
+	text-align: center;
+}

@@ -1,0 +1,53 @@
+.locations {
+	width: 90%;
+	margin: auto;
+	position: relative;
+	max-width: 960px;
+}
+
+.location {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.discoverInfo > a {
+	width: 100%;
+	text-decoration: none;
+}
+
+.location > img {
+	width: 100%;
+	max-width: 960px;
+}
+
+.discoverInfo {
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.discoverInfo > h2 {
+	margin-bottom: 5px;
+}
+
+.discoverInfo > p {
+	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 2px;
+	width: 250px;
+	text-align: center;
+	font-size: 15px;
+}
+
+@media (max-width: 834px) {
+	.discoverInfo > p {
+		margin-bottom: 5px;
+	}
+}
