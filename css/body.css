@@ -33,6 +33,16 @@ body {
 	margin-top: 40px;
 }
 
+.pageMainImage {
+	margin: auto;
+	text-align: center;
+	max-width: 1280px;
+}
+
+.pageMainImage > img {
+	width: 100%;
+}
+
 .titleH1 {
 	margin-top: 20px;
     font-family: 'Courier New', monospace;
@@ -42,4 +52,15 @@ body {
     color: rgb(0, 0, 0); 
     margin-bottom: 10px;
 	text-align: center;
+}
+
+.titleH2 {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+    line-height: 1.29;
+    letter-spacing: 0.08px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-style: italic;
 }

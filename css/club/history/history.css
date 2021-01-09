@@ -1,0 +1,27 @@
+.KilpinPhrase {
+	color: red;
+    line-height: 28px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.share {
+	display: flex;
+	margin: 20px;
+	align-content: center;
+}
+
+.share > span {
+	margin: 20px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.shareImg {
+	margin: 20px 20px 20px 0px;
+}
+
+.shareImg > a > img {
+	height: 20px;
+}
