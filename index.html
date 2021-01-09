@@ -13,20 +13,31 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 	<script>
-        // $(function() {
-        //     $('#menuItem a').on('click', function(e) {
-        //         e.preventDefault();
-        //         var page = $(this).attr('href');
-        //         // window.history.pushState("", "", '/newpage');
-        //         $('#main').load(page);
-        //         window.location.reload();
-        //     });
-        // });
 
         $(function(){
 		  $("#headerSpace").load("html/header.html"); 
 		  $("#footerSpace").load("html/footer.html"); 
+
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/topNews", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+				var arr = obj.topNews;
+				for (i = 0; i < arr.length; i++) {
+					var slide = document.getElementById("slide" + (i + 1));
+					slide.querySelector("img").src = arr[i].img;
+					var slideText = document.getElementById("slide" + (i + 1) + "Text");
+					slideText.querySelector("h2").innerHTML = arr[i].text;
+					slideText.querySelector("div").querySelector("p").innerHTML = arr[i].desc;
+				}
+		    }
+		  };
+
 		});
+
     </script>
 
 </head>
@@ -42,87 +53,71 @@
 			<!-- Slider -->
 			<div class="slideshow-container" id="slideshow-container">
 
-				<div class="slide">
+				<div class="slide" id="slide1">
 					<div class="sildeBackground"></div>
-					<img src="images/main/slider_zlatan.png" class="slideImage" width="1280" height="600">
-					<div class="slideText">
-					    <h2 class="upperSlideText">
-					    	AC Milan "never had a king, they have a GOD"
-					    </h2>
+					<img class="slideImage" width="1280" height="600" id="bla">
+					<div class="slideText" id="slide1Text">
+					    <h2 class="upperSlideText"></h2>
 
-					    <dir class="lowerSlidePart">
-						    <p class="lowerSlideText">
-						    	Ibrahimovic responds to Lukaku
-							</p>
+					    <div class="lowerSlidePart">
+						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
 								<a href="#">Discover more</a>
 							</div>
-						</dir>
+						</div>
 
 					</div>
 
 				</div>
 
-				<div class="slide">
+				<div class="slide" id="slide2">
 					<div class="sildeBackground"></div>
-					<img src="images/main/slider_hauge.png" class="slideImage" width="1280" height="600">
-					<div class="slideText">
-					    <h2 class="upperSlideText">
-					    	Hauge scored his first ever goal for AC Milan
-					    </h2>
+					<img class="slideImage" width="1280" height="600">
+					<div class="slideText" id="slide2Text">
+					    <h2 class="upperSlideText"></h2>
 
-					    <dir class="lowerSlidePart">
-						    <p class="lowerSlideText">
-						    	win over Celtic in Thursday night’s Europa League clash
-							</p>
+					    <div class="lowerSlidePart">
+						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
 								<a href="#">Discover more</a>
 							</div>
-						</dir>
+						</div>
 
 					</div>
 				</div>
 
-				<div class="slide">
+				<div class="slide" id="slide3">
 					<div class="sildeBackground"></div>
-					<img src="images/main/slider_romagnoli.png" class="slideImage" width="1280" height="600">
-					<div class="slideText">
-					    <h2 class="upperSlideText">
-					    	Captain is coming back
-					    </h2>
+					<img class="slideImage" width="1280" height="600">
+					<div class="slideText" id="slide3Text">
+					    <h2 class="upperSlideText"></h2>
 
-					    <dir class="lowerSlidePart">
-						    <p class="lowerSlideText">
-						    	Alessio Romagnoli started training with the team
-							</p>
+					    <div class="lowerSlidePart">
+						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
 								<a href="#">Discover more</a>
 							</div>
-						</dir>
+						</div>
 
 					</div>
 				</div>
 
-				<div class="slide">
+				<div class="slide" id="slide4">
 					<div class="sildeBackground"></div>
-					<img src="images/main/slider_ante.png" class="slideImage" width="1280" height="600">
-					<div class="slideText">
-					    <h2 class="upperSlideText">
-					    	Milan ace shows class once again
-					    </h2>
+					<img class="slideImage" width="1280" height="600">
+					<div class="slideText" id="slide4Text">
+					    <h2 class="upperSlideText"></h2>
 
-					    <dir class="lowerSlidePart">
-						    <p class="lowerSlideText">
-						    	Rebic continues to establish himself as key figure
-							</p>
+					    <div class="lowerSlidePart">
+						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
 								<a href="#">Discover more</a>
 							</div>
-						</dir>
+						</div>
 
 					</div>
 				</div>
@@ -138,7 +133,10 @@
 				</div>
 			</div>
 
-			<script src="js/slider.js"></script>
+			<script>
+			var url = "/js/slider.js";
+			$.getScript(url);
+			</script>
 
 
 			<!-- Standings table -->
@@ -337,21 +335,21 @@
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/xvdebitXo.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/pioli.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/romagnoliGoal.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 					</div>
@@ -360,21 +358,21 @@
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/ibraHug.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/celebration.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/womanCaptain.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
@@ -383,14 +381,14 @@
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/teo&romana.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/TeoAndAnte.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
@@ -399,14 +397,14 @@
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/tuSei.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
 								<img src="images/main/hug.jpg" class="galleryImage">
-								<img src="https://www.acmilan.com/images/main/galleryIcon.svg" class="galleryIcon">
+								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
@@ -424,35 +422,35 @@
 					<div class="videoGalleryDiv1"> 
 						<a href="#">
 							<img src="images/main/teo&rebic.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
+							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv2"> 
 						<a href="#">
 							<img src="images/main/kjaer.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
+							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv3"> 
 						<a href="#">
 							<img src="images/main/rebicGesture.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
+							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv4"> 
 						<a href="#">
 							<img src="images/main/teoSuperman.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
+							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv5"> 
 						<a href="#">
 							<img src="images/main/calabriaClap.jpg" class="videoImage">
-							<img src="https://www.acmilan.com/images/main/playVideo.svg" class="videoIcon">
+							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 				</div>

@@ -1,8 +1,6 @@
 .main {
-	/*height: 5000px; */
 	margin: 0 auto; 
 	width: 70%;
-	/*background-color: blue;*/
 
 }
 
@@ -118,7 +116,7 @@
 	width: 50%;
 	margin: 0 auto;
 	margin-left: 20%;
-	margin-bottom: 2%;
+	margin-bottom: 3%;
 	font-size: 18px;
 	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -675,6 +673,7 @@
 
     .lowerSlideText {
         font-size: 10px;
+        margin-bottom: 5%;
     }
 
     .slideButton > a {
@@ -716,6 +715,7 @@
 
     .clubInfoItem {
         width: 100%;
+        margin-bottom: 15px;
     }
 
 }

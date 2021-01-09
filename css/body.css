@@ -16,11 +16,11 @@ body {
 	font-family: system-ui;
 }
 
-.center-main > img {
+.center-main > img, .center-main > div > img {
 	width: 100%;
 }
 
-.center-main > p {
+.center-main > p, .center-main > div > p {
 	padding: 5px 10px;
 	margin-bottom: 10px;
 	letter-spacing: 0.23px;

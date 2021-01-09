@@ -4,3 +4,23 @@
 	width: 50%;
 	margin: auto;
 }
+
+.awardInfo {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+
+@media (max-width: 813px) {
+
+	.titles {
+		width: 90%;
+	}
+
+	.awardInfo {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+}

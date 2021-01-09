@@ -83,7 +83,35 @@
 			<div class="hamburgerButtonSpan3"></div>
 		</div>
 
-		<script src="../js/hamburgerMenu.js"></script>
+		<script type="text/javascript">
+			function hamburgerMenuClicked(x) {
+				x.classList.toggle("change");
+
+				var header = document.getElementById("header");
+				var sticky = header.offsetTop;
+				var x = document.getElementById("navMenu");
+
+				if (x.style.display === "block") {
+					x.style.display = "none";
+					header.classList.remove("sticky");
+				} else {
+					x.style.display = "block";
+					header.classList.add("sticky");
+				}
+			}
+
+
+			function openSubmenu(y) {
+				var x = y.parentElement.children[1];
+				if (x.style.display === "block") {
+					x.style.display = "none";
+					y.parentElement.children[0].children[1].style.transform = "none";
+				} else {
+					x.style.display = "block";
+					y.parentElement.children[0].children[1].style.transform = "rotate(180deg)";
+				}	
+			}
+		</script>
 
 		<div>
 			<a href="/index.html">
@@ -146,7 +174,7 @@
 
 			<li class="navMenuItem">
 				<div class="navMenuTitle" onclick="openSubmenu(this)">
-					<a href="/html/club/history/history.html"><div>CLUB</div></a>
+					<div>CLUB</div>
 					<div class="navSubMenuButton"></div>
 				</div>
 
@@ -162,7 +190,7 @@
 
 			<li class="navMenuItem">
 				<div class="navMenuTitle" onclick="openSubmenu(this)">
-					<a href="https://store.acmilan.com/en/" target="_blank"><div>SHOP</div></a>
+					<div>SHOP</div>
 					<div class="navSubMenuButton"></div>
 				</div>
 

@@ -16,7 +16,31 @@
 
         $(function() {
 		  $("#headerSpace").load("/html/header.html"); 
-		  $("#footerSpace").load("/html/footer.html");  
+		  $("#footerSpace").load("/html/footer.html"); 
+
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/venues", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+				var arr = obj.venues;
+				var text = "";
+				for (i = 0; i < arr.length; i++) {
+					text += "<div class=\"location\">";
+					text += "<img src=\"" + arr[i].img + "\">";
+					text += "<div class=\"discoverInfo\">";
+					text += "<h2>" + arr[i].name + "</h2>";
+					text += "<p>" + arr[i].desc + "</p>";
+					text += "<a href=\"#\"><button class=\"shopItemButton\"><h3>DISCOVER MORE</h3></button></a>";
+					text += "</div>";
+					text += "</div>";			
+				}
+				document.getElementById("locations").innerHTML = text;
+		    }
+		  };
+
 		});
 
     </script>
@@ -31,70 +55,7 @@
 
  		<h1 class="titleH1">AC MILAN VENUES</h1>
 
- 		<div class="locations">
-
- 			<div class="location">
- 				<img src="/images/club/venues/CasaMilan.png">
-
- 				<div class="discoverInfo">
- 					<h2>CASA MILAN</h2>
- 					<p>Experience the emotions of years of success</p>
-
- 					<a href="#">
-						<button class="shopItemButton">
-							<h3>DISCOVER MORE</h3>
-						</button>
-					</a>
- 				</div>
- 			</div>
-
- 			<div class="location">
- 				<img src="/images/club/venues/SanSiro.png">
-
- 				<div class="discoverInfo">
- 					<h2>SAN SIRO</h2>
- 					<p>Discover the history, how to arrive and all the regulations</p>
-
- 					<a href="#">
-						<button class="shopItemButton">
-							<h3>DISCOVER MORE</h3>
-						</button>
-					</a>
- 				</div>
- 			</div>
-
- 			<div class="location">
- 				<img src="/images/club/venues/Milanello.png">
-
- 				<div class="discoverInfo">
- 					<h2>MILANELLO</h2>
- 					<p>Most important state-of-the-art sporting complexes in Europe.</p>
-
- 					<a href="#">
-						<button class="shopItemButton">
-							<h3>DISCOVER MORE</h3>
-						</button>
-					</a>
- 				</div>
- 			</div>
-
- 			<div class="location">
- 				<img src="/images/club/venues/Vismara.png">
-
- 				<div class="discoverInfo">
- 					<h2>VISMARA</h2>
- 					<p>All you need to know about our youth team sports center</p>
-
- 					<a href="#">
-						<button class="shopItemButton">
-							<h3>DISCOVER MORE</h3>
-						</button>
-					</a>
- 				</div>
- 			</div>
- 			
- 		</div>
-
+ 		<div class="locations" id="locations"></div>
 
  		<div id="footerSpace"></div>
  	</div>
