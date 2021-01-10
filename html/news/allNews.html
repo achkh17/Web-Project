@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="/css/body.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
+
+	<title>AC Milan History</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<script>
+
+        $(function() {
+		  $("#headerSpace").load("/html/header.html"); 
+		  $("#footerSpace").load("/html/footer.html"); 
+
+		  // latestNews
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/allNews", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+		    	var arr = obj.news;
+		    	var news = document.getElementById("allNews");
+
+				for (i = 0; i < arr.length; i++) {
+					if(i % 5 == 0) {
+						news.innerHTML += `
+						<div class=\"upperNews\">
+							<div class="newsItem upperNewsItem">
+								<a href="#">
+									<img src=\"` + arr[i].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i].date + `</div>
+
+									<a href="#">
+										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
+									</a>
+								</div>
+							</div>
+							
+
+							<div class="newsItem upperNewsItem">
+								<a href="#">
+									<img src=\"` + arr[i + 1].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
+
+									<a href="#">
+										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
+									</a>
+								</div>
+							</div>
+						</div>`
+					}
+
+					if(i % 5 == 2) {
+						news.innerHTML += `
+						<div class=\"lowerNews\">
+							<div class="newsItem lowerNewsItem">
+								<a href="#">
+									<img src=\"` + arr[i].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i].date + `</div>
+
+									<a href="#">
+										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="newsItem lowerNewsItem">
+								<a href="#">
+									<img src=\"` + arr[i + 1].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
+
+									<a href="#">
+										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="newsItem lowerNewsItem">
+								<a href="#">
+									<img src=\"` + arr[i + 2].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i + 2].date + `</div>
+
+									<a href="#">
+										<h3 class="newsItemLowerText">` + arr[i + 2].text + `</h3>
+									</a>
+								</div>
+							</div>
+						</div>`
+					}
+
+				}
+				
+		    }
+		  };
+
+		  
+		});
+
+    </script>
+	
+</head>
+
+<body>
+
+	<div class="main-container">
+
+ 		<div id="headerSpace"></div>
+
+ 		<div class="pageMainImage">
+ 			<h1 class="titleH1">NEWS</h1>
+		</div>
+
+ 		<!-- Latest News -->
+ 		<div class="centerPage">
+			<div class="lastestNews" id="allNews"></div>
+		</div>
+
+ 		<div id="footerSpace"></div>
+ 	</div>
+
+</body>
+</html>

@@ -460,12 +460,20 @@
     text-decoration: none;
 }
 
+.newsItem > a > img:hover {
+    transform: scale(1.08);
+}
+
 .newsItemText > a {
     text-decoration: none;
 }
 
 .upperNewsItem {
     width: 50%;
+}
+
+.lowerNewsItem {
+    width: 33%;
 }
 
 .lastNewsSeeMore {
@@ -702,6 +710,10 @@
     }
 
     .upperNewsItem {
+        width: 100%;
+    }
+
+    .lowerNewsItem {
         width: 100%;
     }
 

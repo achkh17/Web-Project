@@ -75,6 +75,18 @@
 					row.cells[3].innerHTML = arr[i].p;
 					row.cells[4].innerHTML = arr[i].GD;
 					row.cells[5].innerHTML = arr[i].Pts;
+
+					if(arr[i].team == "Milan") {
+						row.cells[2].style.color = "red";
+						row.cells[3].style.color = "red";
+						row.cells[4].style.color = "red";
+						row.cells[5].style.color = "red";
+
+						row.cells[2].style.fontWeight = "bold";
+						row.cells[3].style.fontWeight = "bold";
+						row.cells[4].style.fontWeight = "bold";
+						row.cells[5].style.fontWeight = "bold";
+					}
 				}
 				
 		    }
@@ -414,7 +426,7 @@
 
 				<div class="lowerNews">
 					
-					<div class="newsItem" id="news3">
+					<div class="newsItem lowerNewsItem" id="news3">
 						<a href="#">
 							<img>
 						</a>
@@ -428,7 +440,7 @@
 							</div>
 					</div>
 
-					<div class="newsItem" id="news4">
+					<div class="newsItem lowerNewsItem" id="news4">
 						<a href="#">
 							<img>
 						</a>
@@ -442,7 +454,7 @@
 							</div>
 					</div>
 
-					<div class="newsItem" id="news5">
+					<div class="newsItem lowerNewsItem" id="news5">
 						<a href="#">
 							<img>
 						</a>
