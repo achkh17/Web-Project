@@ -18,6 +18,7 @@
 		  $("#headerSpace").load("html/header.html"); 
 		  $("#footerSpace").load("html/footer.html"); 
 
+		  // topNews
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.open("GET", "http://localhost:3001/topNews", true);
 		  xhttp.send();
@@ -32,6 +33,142 @@
 					var slideText = document.getElementById("slide" + (i + 1) + "Text");
 					slideText.querySelector("h2").innerHTML = arr[i].text;
 					slideText.querySelector("div").querySelector("p").innerHTML = arr[i].desc;
+				}
+		    }
+		  };
+
+		  // lastMatch
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/lastMatch", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+		    	document.getElementById("matchDayNum").innerHTML = obj.matchDayNum;
+		    	document.getElementById("matchDayDate").innerHTML = obj.matchDayDate;
+		    	document.getElementById("team1").innerHTML = obj.team1;
+		    	document.getElementById("teamImg1").src = obj.img1;
+		    	document.getElementById("team2").innerHTML = obj.team2;
+		    	document.getElementById("teamImg2").src = obj.img2;
+		    	document.getElementById("score").innerHTML = obj.score;
+				
+		    }
+		  };
+
+		  // standings
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/standings", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+		    	var arr = obj.standings;
+				var table = document.getElementById("standingsTable");
+
+				for (i = 0; i < arr.length; i++) {
+					var row = table.rows[i];
+					row.cells[0].innerHTML = arr[i].num;
+					row.cells[1].innerHTML = "<img src=\"" + arr[i].logo + "\">";
+					row.cells[2].innerHTML = arr[i].team;
+					row.cells[3].innerHTML = arr[i].p;
+					row.cells[4].innerHTML = arr[i].GD;
+					row.cells[5].innerHTML = arr[i].Pts;
+				}
+				
+		    }
+		  };
+
+		  // latestNews
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/lastestNews", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+		    	var arr = obj.news;
+				for (i = 0; i < arr.length; i++) {
+					var news = document.getElementById("news" + (i + 1));
+					news.querySelector("a").querySelector("img").src = arr[i].img;
+					news.querySelector("div").querySelector("div").innerHTML = arr[i].date;
+					news.querySelector("div").querySelector("a").querySelector("h3").innerHTML = arr[i].text;
+				}
+				
+		    }
+		  };
+
+		  // gallery
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/gallery", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+		    	var arr = obj.gallery;
+				for (i = 0; i < arr.length; i++) {
+					document.getElementById("galleryImage" + (i + 1)).src = arr[i];
+				}
+				
+		    }
+		  };
+
+		  // videos
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/videoImages", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+		    	var arr = obj.videoImages;
+				for (i = 0; i < arr.length; i++) {
+					document.getElementById("videoImage" + (i + 1)).src = arr[i];
+				}
+				
+		    }
+		  };
+
+		  // christmasCollection
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/christmasCollection", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+		    	document.getElementById("appStoreImage").src = obj.appStoreImage;
+		    	document.getElementById("appStoreText").innerHTML = obj.appStoreText;
+
+		    	var arr = obj.christmasCollection;
+				for (i = 0; i < arr.length; i++) {
+					document.getElementById("christmasImage" + (i + 1)).src = arr[i];
+				}
+		    }
+		  };
+
+		  // clubInfo
+		  xhttp = new XMLHttpRequest();
+		  xhttp.open("GET", "http://localhost:3001/clubInfo", true);
+		  xhttp.send();
+
+		  xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		    	var obj = JSON.parse(this.responseText);
+
+		    	var academyInfo = document.getElementById("academyInfo");
+				academyInfo.querySelector("img").src = obj.academyImg;
+				academyInfo.querySelector("h2").innerHTML = obj.academyName;
+				academyInfo.querySelector("p").innerHTML = obj.academyText;
+
+				arr = obj.clubInfo;
+				for (i = 0; i < arr.length; i++) {
+					var clubInfoItem = document.getElementById("clubInfoItem" + (i + 1));
+					clubInfoItem.querySelector("img").src = arr[i].img;
+					clubInfoItem.querySelector("h3").innerHTML = arr[i].name;
+					clubInfoItem.querySelector("p").innerHTML = arr[i].text;
 				}
 		    }
 		  };
@@ -147,18 +284,18 @@
 						<div class="matchScore">
 
 							<div class="matchDay">
-								<span class="matchDayNum">MatchDay 6</span>
-								<div class="matchDayDate">11 December 2020 00:00</div>	
+								<span class="matchDayNum" id="matchDayNum"></span>
+								<div class="matchDayDate" id="matchDayDate"></div>	
 							</div>
 
 							<div class="matchesFirstTeam">
-								<span class="matchesTeamText">PRA</span>
-								<img src="images/main/matchesSparta.png" class="matchesTeamLogo">
+								<span class="matchesTeamText" id="team1"></span>
+								<img class="matchesTeamLogo" id="teamImg1">
 							</div>
-							<div class="matchesScore">0-1</div>
+							<div class="matchesScore" id="score"></div>
 							<div class="matchesSecodTeam">
-								<span class="matchesTeamText">MIL</span>
-								<img src="images/main/matchesMilan.png" class="matchesTeamLogo">
+								<span class="matchesTeamText" id="team2"></span>
+								<img class="matchesTeamLogo" id="teamImg2">
 							</div>
 
 							
@@ -187,46 +324,46 @@
 							  </tr>
 							</thead>
 
-							<tbody class="standingsTbody">
+							<tbody class="standingsTbody" id="standingsTable">
 							  <tr>
-							    <td class="standingsNum">1</td>
+							    <td class="standingsNum"></td>
 							    <td class="standingsLogo">
-							    	<img src="images/main/standingsMilan.png">
+							    	<img>
 							    </td>
-							    <td class="standingsTeam">Milan</td>
-							    <td>10</td>
-							    <td>14</td>
-							    <td>26</td>
+							    <td class="standingsTeam"></td>
+							    <td></td>
+							    <td></td>
+							    <td></td>
 							  </tr>
 							  <tr>
-							    <td class="standingsNum">2</td>
+							    <td class="standingsNum"></td>
 							    <td class="standingsLogo">
-							    	<img src="images/main/standingsSassuolo.png">
+							    	<img>
 							    </td>
-							    <td class="standingsTeam">Sassuolo</td>
-							    <td>11</td>
-							    <td>9</td>
-							    <td>22</td>
+							    <td class="standingsTeam"></td>
+							    <td></td>
+							    <td></td>
+							    <td></td>
 							  </tr>
 							  <tr>
-							    <td class="standingsNum">3</td>
+							    <td class="standingsNum"></td>
 							    <td class="standingsLogo">
-							    	<img src="images/main/standingsInter.png">
+							    	<img>
 							    </td>
-							    <td class="standingsTeam">Inter</td>
-							    <td>10</td>
-							    <td>12</td>
-							    <td>21</td>
+							    <td class="standingsTeam"></td>
+							    <td></td>
+							    <td></td>
+							    <td></td>
 							  </tr>
 							  <tr>
-							    <td class="standingsNum">4</td>
+							    <td class="standingsNum"></td>
 							    <td class="standingsLogo">
-							    	<img src="images/main/standingsNapoli.png">
+							    	<img>
 							    </td>
-							    <td class="standingsTeam">napoli</td>
-							    <td>10</td>
-							    <td>14</td>
-							    <td>20</td>
+							    <td class="standingsTeam"></td>
+							    <td></td>
+							    <td></td>
+							    <td></td>
 							  </tr>
 							</tbody>							
 						</table>
@@ -245,30 +382,30 @@
 
 				<div class="upperNews">
 
-					<div class="newsItem upperNewsItem">
+					<div class="newsItem upperNewsItem" id="news1">
 						<a href="#">
-							<img src="images/main/HaugeNews.jpg">
+							<img>
 						</a>
 
 							<div class="newsItemText">
-								<div class="newsItemUpperText">16 December 2020</div>
+								<div class="newsItemUpperText"></div>
 
 								<a href="#">
-									<h3 class="newsItemLowerText">Haugemonia continues. The golden boy scored again on Europa Lague</h3>
+									<h3 class="newsItemLowerText"></h3>
 								</a>
 							</div>
 					</div>
 
-					<div class="newsItem upperNewsItem">
+					<div class="newsItem upperNewsItem" id="news2">
 						<a href="#">
-							<img src="images/main/teoGoalNews.jpg">
+							<img>
 						</a>
 
 							<div class="newsItemText">
-								<div class="newsItemUpperText">16 December 2020</div>
+								<div class="newsItemUpperText"></div>
 								
 								<a href="#">
-									<h3 class="newsItemLowerText">Teo Hernandes amazing performance and Milan wins point on last minute</h3>
+									<h3 class="newsItemLowerText"></h3>
 								</a>
 							</div>
 					</div>
@@ -277,44 +414,44 @@
 
 				<div class="lowerNews">
 					
-					<div class="newsItem">
+					<div class="newsItem" id="news3">
 						<a href="#">
-							<img src="images/main/giftNews.jpg">
+							<img>
 						</a>
 
 							<div class="newsItemText">
-								<div class="newsItemUpperText">5 january 2021</div>
+								<div class="newsItemUpperText"></div>
 
 								<a href="#">
-									<h3 class="newsItemLowerText">AC Milan gifts for christmas</h3>
+									<h3 class="newsItemLowerText"></h3>
 								</a>
 							</div>
 					</div>
 
-					<div class="newsItem">
+					<div class="newsItem" id="news4">
 						<a href="#">
-							<img src="images/main/DonaNews.jpg">
+							<img>
 						</a>
 
 							<div class="newsItemText">
-								<div class="newsItemUpperText">17 January 2021</div>
+								<div class="newsItemUpperText"></div>
 
 								<a href="#">
-									<h3 class="newsItemLowerText"> Gianluigi Donarumma saves the day</h3>
+									<h3 class="newsItemLowerText"></h3>
 								</a>
 							</div>
 					</div>
 
-					<div class="newsItem">
+					<div class="newsItem" id="news5">
 						<a href="#">
-							<img src="images/main/calabriaMVP.jpg">
+							<img>
 						</a>
 
 							<div class="newsItemText">
-								<div class="newsItemUpperText">17 January 2021</div>
+								<div class="newsItemUpperText"></div>
 
 								<a href="#">
-									<h3 class="newsItemLowerText">David Calabria fascinating performance</h3>
+									<h3 class="newsItemLowerText"></h3>
 								</a>
 							</div>
 					</div>
@@ -334,21 +471,21 @@
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/xvdebitXo.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage1">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/pioli.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage2">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/romagnoliGoal.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage3">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
@@ -357,21 +494,21 @@
 					<div class="photoGalleryColumn">
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/ibraHug.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage4">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/celebration.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage5">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/womanCaptain.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage6">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
@@ -380,14 +517,14 @@
 					<div class="photoGalleryColumn">
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/teo&romana.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage7">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/TeoAndAnte.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage8">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
@@ -396,14 +533,14 @@
 					<div class="photoGalleryColumn">
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/tuSei.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage9">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
 
 						<div class="galleryDiv">
 							<a href="#">
-								<img src="images/main/hug.jpg" class="galleryImage">
+								<img class="galleryImage" id="galleryImage10">
 								<img src="/images/main/galleryIcon.png" class="galleryIcon">
 							</a>
 						</div>
@@ -421,35 +558,35 @@
 				<div class="videoGallery">
 					<div class="videoGalleryDiv1"> 
 						<a href="#">
-							<img src="images/main/teo&rebic.jpg" class="videoImage">
+							<img class="videoImage" id="videoImage1">
 							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv2"> 
 						<a href="#">
-							<img src="images/main/kjaer.jpg" class="videoImage">
+							<img class="videoImage" id="videoImage2">
 							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv3"> 
 						<a href="#">
-							<img src="images/main/rebicGesture.jpg" class="videoImage">
+							<img class="videoImage" id="videoImage3">
 							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv4"> 
 						<a href="#">
-							<img src="images/main/teoSuperman.jpg" class="videoImage">
+							<img class="videoImage" id="videoImage4">
 							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
 
 					<div class="videoGalleryDiv5"> 
 						<a href="#">
-							<img src="images/main/calabriaClap.jpg" class="videoImage">
+							<img class="videoImage" id="videoImage5">
 							<img src="/images/main/playVideo.png" class="videoIcon">
 						</a>
 					</div>
@@ -461,9 +598,9 @@
 
 			<!-- App Store Ad -->
 			<div class="appStore">
-				<img src="images/main/appStore.png" class="appStoreImage">
+				<img class="appStoreImage" id="appStoreImage">
 				<h2 class="downloadAppUpperText">AC MILAN OFFICIAL APP</h2>
-				<p class="downloadAppText">Download the official AC Milan App to enjoy a 360-degree experience of the entire Rossoneri world</p>
+				<p class="downloadAppText" id="appStoreText"></p>
 
 				<div class="downlaodApp">
 					<a href="https://apps.apple.com/it/app/ac-milan-official-app/id1473516867" target="_blank">
@@ -482,7 +619,7 @@
 				<div class="shopItems">
 					<div class="shopItem">
 						<a href="https://store.acmilan.com/it/natale.html?___from_store=en&utm_source=Sito_ACM&utm_medium=Banner_1080x1080_ITA&utm_campaign=natale" target="_blank">
-							<img src="images/main/shopItem1.jpg" class="shopItemImage">
+							<img class="shopItemImage" id="christmasImage1">
 						
 							<button class="shopItemButton">
 								<h3>BUY NOW</h3>
@@ -492,7 +629,7 @@
 
 					<div class="shopItem">
 						<a href="https://store.acmilan.com/it/natale.html?___from_store=en&utm_source=Sito_ACM&utm_medium=Banner_1080x1080_ITA&utm_campaign=natale" target="_blank">
-							<img src="images/main/shopItem2.jpg" class="shopItemImage">
+							<img class="shopItemImage" id="christmasImage2">
 
 							<button class="shopItemButton">
 								<h3>BUY NOW</h3>
@@ -502,7 +639,7 @@
 
 					<div class="shopItem">
 						<a href="https://store.acmilan.com/it/natale.html?___from_store=en&utm_source=Sito_ACM&utm_medium=Banner_1080x1080_ITA&utm_campaign=natale" target="_blank">
-							<img src="images/main/shopItem3.jpg" class="shopItemImage">
+							<img class="shopItemImage"  id="christmasImage3">
 
 							<button class="shopItemButton">
 								<h3>BUY NOW</h3>
@@ -519,11 +656,11 @@
 			<!-- Club info -->
 			<div class="clubInfo">
 
-				<div class="clubInfoItem">
+				<div class="clubInfoItem" id="clubInfoItem1">
 
-					<img src="images/main/clubInfo1.png">
-					<h3>AWARDS</h3>
-					<p>A blast from the past: the great victories and unforgettable successes</p>
+					<img>
+					<h3></h3>
+					<p></p>
 
 					<a href="/html/club/history/awards.html">
 						<button class="shopItemButton">
@@ -533,11 +670,11 @@
 					
 				</div>
 
-				<div class="clubInfoItem">
+				<div class="clubInfoItem" id="clubInfoItem2">
 
-					<img src="images/main/clubInfo2.png">
-					<h3>HALL OF FAME</h3>
-					<p>All the stars from the Rossonero history</p>
+					<img>
+					<h3></h3>
+					<p></p>
 
 					<a href="/html/club/history/fame.html">
 						<button class="shopItemButton">
@@ -550,11 +687,11 @@
 			</div>
 
 
-			<div class="academyInfo">
+			<div class="academyInfo" id="academyInfo">
 
-				<img src="images/main/academy.png">
-				<h2>MILAN ACADEMY</h2>
-				<p>Milan Academy is the set of projects dedicated to the involvement of an U18 target audience in sporting activities</p>
+				<img>
+				<h2></h2>
+				<p></p>
 
 				<a href="#">
 					<button class="shopItemButton academyButton">
