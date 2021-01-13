@@ -33,6 +33,7 @@
 					var slideText = document.getElementById("slide" + (i + 1) + "Text");
 					slideText.querySelector("h2").innerHTML = arr[i].text;
 					slideText.querySelector("div").querySelector("p").innerHTML = arr[i].desc;
+					slideText.querySelector("div").querySelector("div").querySelector("a").id = arr[i].id;
 				}
 		    }
 		  };
@@ -101,11 +102,89 @@
 		    if (this.readyState == 4 && this.status == 200) {
 		    	var obj = JSON.parse(this.responseText);
 		    	var arr = obj.news;
+		    	var news = document.getElementById("allLatestNews");
+
 				for (i = 0; i < arr.length; i++) {
-					var news = document.getElementById("news" + (i + 1));
-					news.querySelector("a").querySelector("img").src = arr[i].img;
-					news.querySelector("div").querySelector("div").innerHTML = arr[i].date;
-					news.querySelector("div").querySelector("a").querySelector("h3").innerHTML = arr[i].text;
+					if(i % 5 == 0) {
+						news.innerHTML += `
+						<div class=\"upperNews\">
+							<div class="newsItem upperNewsItem">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
+									<img src=\"` + arr[i].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i].date + `</div>
+
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
+										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
+									</a>
+								</div>
+							</div>
+							
+
+							<div class="newsItem upperNewsItem">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
+									<img src=\"` + arr[i + 1].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
+
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
+										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
+									</a>
+								</div>
+							</div>
+						</div>`
+					}
+
+					if(i % 5 == 2) {
+						news.innerHTML += `
+						<div class=\"lowerNews\">
+							<div class="newsItem lowerNewsItem">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
+									<img src=\"` + arr[i].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i].date + `</div>
+
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
+										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="newsItem lowerNewsItem">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
+									<img src=\"` + arr[i + 1].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
+
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
+										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="newsItem lowerNewsItem">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 2].id + `">
+									<img src=\"` + arr[i + 2].img + `\">
+								</a>
+
+								<div class="newsItemText">
+									<div class="newsItemUpperText">` + arr[i + 2].date + `</div>
+
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 2].id + `">
+										<h3 class="newsItemLowerText">` + arr[i + 2].text + `</h3>
+									</a>
+								</div>
+							</div>
+						</div>`
+					}
 				}
 				
 		    }
@@ -212,7 +291,7 @@
 						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
-								<a href="#">Discover more</a>
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="#">Discover more</a>
 							</div>
 						</div>
 
@@ -230,7 +309,7 @@
 						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
-								<a href="#">Discover more</a>
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="#">Discover more</a>
 							</div>
 						</div>
 
@@ -247,7 +326,7 @@
 						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
-								<a href="#">Discover more</a>
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="#">Discover more</a>
 							</div>
 						</div>
 
@@ -264,7 +343,7 @@
 						    <p class="lowerSlideText"></p>
 
 							<div class="slideButton">
-								<a href="#">Discover more</a>
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="#">Discover more</a>
 							</div>
 						</div>
 
@@ -388,89 +467,13 @@
 
 
 			<!-- Latest News -->
-			<div class="lastestNews">
-				<h2 class="lastNewsText">Latest News</h2>
-				<a href="#" class="lastNewsSeeMore">See More</a>
+			<div class="lastestNews" id="allLatestNews"></div>
 
-				<div class="upperNews">
-
-					<div class="newsItem upperNewsItem" id="news1">
-						<a href="#">
-							<img>
-						</a>
-
-							<div class="newsItemText">
-								<div class="newsItemUpperText"></div>
-
-								<a href="#">
-									<h3 class="newsItemLowerText"></h3>
-								</a>
-							</div>
-					</div>
-
-					<div class="newsItem upperNewsItem" id="news2">
-						<a href="#">
-							<img>
-						</a>
-
-							<div class="newsItemText">
-								<div class="newsItemUpperText"></div>
-								
-								<a href="#">
-									<h3 class="newsItemLowerText"></h3>
-								</a>
-							</div>
-					</div>
-					
-				</div>
-
-				<div class="lowerNews">
-					
-					<div class="newsItem lowerNewsItem" id="news3">
-						<a href="#">
-							<img>
-						</a>
-
-							<div class="newsItemText">
-								<div class="newsItemUpperText"></div>
-
-								<a href="#">
-									<h3 class="newsItemLowerText"></h3>
-								</a>
-							</div>
-					</div>
-
-					<div class="newsItem lowerNewsItem" id="news4">
-						<a href="#">
-							<img>
-						</a>
-
-							<div class="newsItemText">
-								<div class="newsItemUpperText"></div>
-
-								<a href="#">
-									<h3 class="newsItemLowerText"></h3>
-								</a>
-							</div>
-					</div>
-
-					<div class="newsItem lowerNewsItem" id="news5">
-						<a href="#">
-							<img>
-						</a>
-
-							<div class="newsItemText">
-								<div class="newsItemUpperText"></div>
-
-								<a href="#">
-									<h3 class="newsItemLowerText"></h3>
-								</a>
-							</div>
-					</div>
-
-				</div>
-
-			</div>
+			<script type="text/javascript">
+				function newsClicked(e){
+				    localStorage.setItem("newsId", e.id);
+				}
+			</script>
 
 			<!-- Photo Gallery -->
 			<div class="photos">

@@ -35,14 +35,14 @@
 						news.innerHTML += `
 						<div class=\"upperNews\">
 							<div class="newsItem upperNewsItem">
-								<a href="#">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
 									<img src=\"` + arr[i].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i].date + `</div>
 
-									<a href="#">
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
 										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
 									</a>
 								</div>
@@ -50,14 +50,14 @@
 							
 
 							<div class="newsItem upperNewsItem">
-								<a href="#">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
 									<img src=\"` + arr[i + 1].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
 
-									<a href="#">
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
 										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
 									</a>
 								</div>
@@ -69,42 +69,42 @@
 						news.innerHTML += `
 						<div class=\"lowerNews\">
 							<div class="newsItem lowerNewsItem">
-								<a href="#">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
 									<img src=\"` + arr[i].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i].date + `</div>
 
-									<a href="#">
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i].id + `">
 										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
 									</a>
 								</div>
 							</div>
 
 							<div class="newsItem lowerNewsItem">
-								<a href="#">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
 									<img src=\"` + arr[i + 1].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
 
-									<a href="#">
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 1].id + `">
 										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
 									</a>
 								</div>
 							</div>
 
 							<div class="newsItem lowerNewsItem">
-								<a href="#">
+								<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 2].id + `">
 									<img src=\"` + arr[i + 2].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i + 2].date + `</div>
 
-									<a href="#">
+									<a onclick="newsClicked(this)" href="/html/news/newsPage.html" id="` + arr[i + 2].id + `">
 										<h3 class="newsItemLowerText">` + arr[i + 2].text + `</h3>
 									</a>
 								</div>
@@ -138,6 +138,14 @@
  		<div class="centerPage">
 			<div class="lastestNews" id="allNews"></div>
 		</div>
+
+		 <!-- <button onclick="loadMore()" id="loadButton">Read more</button> -->
+
+		<script type="text/javascript">
+			function newsClicked(e){
+			    localStorage.setItem("newsId", e.id);
+			}
+		</script>
 
  		<div id="footerSpace"></div>
  	</div>
