@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="/css/body.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
+
+	<title>AC Milan History</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<script>
+
+        $(function() {
+			$("#headerSpace").load("/html/header.html"); 
+			$("#footerSpace").load("/html/footer.html"); 
+
+			xhttp = new XMLHttpRequest();
+			xhttp.open("GET", "http://localhost:3001/transfers", true);
+			xhttp.send();
+
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var obj = JSON.parse(this.responseText);
+			    	var arr = obj.arrivals;
+					var table = document.getElementById("transfersTable");
+
+					for (i = 0; i < arr.length; i++) {
+						var row = table.insertRow(0);
+						var cell1 = row.insertCell(0);
+						var cell2 = row.insertCell(1);
+						var cell3 = row.insertCell(2);
+						var cell4 = row.insertCell(3);
+						var cell5 = row.insertCell(4);
+						var cell6 = row.insertCell(5);
+						var cell7 = row.insertCell(6);
+
+						cell1.innerHTML = `<img src = "` + arr[i].photo + `">`;
+						cell1.className = "playerImage";
+						cell2.innerHTML = "<a href = \"" + arr[i].link + "\"  target=\"_blank\">" + arr[i].player + "</a>";
+						cell2.className = "playerName standingsTeam";
+						cell3.innerHTML = arr[i].position;
+						cell3.className = "collapsable";
+						cell4.innerHTML = arr[i].age;
+						cell4.className = "collapsable age";
+						cell5.innerHTML = `<img src = "` + arr[i].nationality + `">`;
+						cell5.className = "flag collapsable";
+						cell6.innerHTML = arr[i].club;
+						cell7.innerHTML = arr[i].fee;
+						cell7.className = "fee";
+					}
+				}
+			};
+
+		});
+
+    </script>
+
+    <style type="text/css">
+
+    	.centerText {
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 0%;
+    		margin-bottom: 20px;
+    	}
+
+    	.playerImage > img {
+		    width: 28px;
+		    height: 36px;
+		    margin-right: 10px;
+		    border-radius: 50%;
+		}
+
+		.age {
+			padding-right: 20px;
+		}
+
+		.flag {
+			padding-left: 10px;
+		}
+
+		.flag > img {
+			width: 30px;
+		}
+
+		.centerTable {
+			max-width: 960px;
+    		margin: auto;
+		}
+
+		.playerName > a {
+			text-decoration: none;
+			color: darkblue;
+		}
+
+		.tableFormat {
+			background-color: black;
+			color: white;
+		}
+
+		.tableFormat > tr {
+			text-align: left;
+		}
+
+		.tableFormat > tr > th {
+    		padding: 15px 0px;
+		}
+
+		#transfersTable > tr {
+			height: 60px;
+			text-align: left;
+		}
+
+		@media only screen and (max-width: 800px) {
+			.collapsable {
+				display: none;
+			}
+
+			.fee {
+				padding-left: 5px;
+			}
+		}
+
+    </style>
+
+</head>
+
+<body>
+
+	<div class="main-container">
+
+ 		<div id="headerSpace" class=""></div>
+
+ 		<div class="center-main">
+ 			<div>
+				<h2 class="matchText centerText">Arrivals</h2>
+				<div class="seriaAStandings centerTable">
+
+					<table class="standingsTable">
+						<thead class="standingsThread tableFormat">
+						  <tr>
+						    <th></th>
+						    <th>player</th>
+						    <th class="collapsable">position</th>
+						    <th class="collapsable">age</th>
+						    <th class="collapsable">nationality</th>
+						    <th>club</th>
+						    <th>fee</th>
+						  </tr>
+						</thead>
+
+						<tbody class="standingsTbody transfersTable" id="transfersTable"></tbody>							
+					</table>
+
+				</div>
+			</div>	
+		</div>
+ 		
+	</div>
+
+ 	<div id="footerSpace"></div>
+
+</body>
+</html>
