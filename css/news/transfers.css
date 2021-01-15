@@ -1,0 +1,63 @@
+.centerText {
+	margin-left: auto;
+	margin-right: auto;
+	width: 0%;
+	margin-bottom: 20px;
+}
+
+.playerImage > img {
+    width: 28px;
+    height: 36px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.age {
+	padding-right: 20px;
+}
+
+.flag {
+	padding-left: 10px;
+}
+
+.flag > img {
+	width: 30px;
+}
+
+.centerTable {
+	max-width: 960px;
+	margin: auto;
+}
+
+.playerName > a {
+	text-decoration: none;
+	color: darkblue;
+}
+
+.tableFormat {
+	background-color: black;
+	color: white;
+}
+
+.tableFormat > tr {
+	text-align: left;
+}
+
+.tableFormat > tr > th {
+	padding: 15px 0px;
+}
+
+#transfersTable > tr {
+	height: 60px;
+	text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+	.collapsable {
+		display: none;
+	}
+
+	.fee {
+		padding-left: 5px;
+	}
+}
