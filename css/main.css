@@ -619,6 +619,8 @@
     background-color: black;
     padding: 8px;
     align-items: center;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column; 
 }
 
 .videoGalleryDiv1 { 
