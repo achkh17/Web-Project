@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/3.1.jpg",
+	  	"text" : "Samu Castillejo"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/3.2.jpg",
+	  	"text" : "Rafael Leao"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/3.3.jpg",
+	  	"text" : "Gianluigi Donnarumma"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/3.4.jpg",
+	  	"text" : "Stefano Pioli"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/3.5.jpg",
+	  	"text" : "Alessio Romagnoli"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/3.6.jpg",
+		"text" : "Celebrating goal"
+	  }
+	],
+  "date" : "09 January 2021",
+  "title" : "AC MILAN V TORINO, SERIE A TIM 2020/21"
+}

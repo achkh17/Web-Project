@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/9.7.jpg",
+	  	"text" : "Alessio Romagnoli and Ante Rebic"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/9.2.jpg",
+	  	"text" : "Samu and Theo"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/9.3.jpg",
+	  	"text" : "Captain Romagnoli"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/9.4.jpg",
+	  	"text" : "Zlatan Ibrahimovic"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/9.5.jpg",
+	  	"text" : "The best team"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/9.8.jpg",
+		"text" : "Theo Hernandez last minute goal"
+	  }
+	],
+  "date" : "13 December 2020",
+  "title" : "AC MILAN V PARMA, SERIE A TIM 2020/21"
+}

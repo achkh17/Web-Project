@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="/css/body.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/teams/menTeam.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
+
+  <title>AC Milan Squad</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <script>
+
+    $(function() {
+      $("#headerSpace").load("/html/header.html"); 
+      $("#footerSpace").load("/html/footer.html"); 
+
+      xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "http://localhost:3001/players/" + localStorage.getItem("playerId"), true);
+      xhttp.send();
+
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var obj = JSON.parse(this.responseText);
+          var arr = obj.menTeam;
+
+          if(window.location.search == "?id=2") {
+            arr = obj.womenTeam;
+          }
+
+          for (i = 0; i < arr.length; i++) {
+            document.getElementById("team").innerHTML += `
+              <div class="column ` +  arr[i].position + `">
+                <a onclick="playerClicked(this)" href="/html/teams/player.html" id="` + arr[i].id + `">
+                  <div class="content">
+                    <img src="` + arr[i].img + `" class="column-img">
+                    <div class="back-img"></div>
+                    <div class="text-block">
+                      <h1>` + arr[i].num + `</h1>
+                      <h2>` + arr[i].name + `</h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            `;
+          }
+        }
+        filterSelection("all");
+      };
+
+  });
+
+  </script>
+
+</head>
+
+<body>
+
+<div id="headerSpace"></div>
+
+<!-- <div class="center-main"> -->
+
+  <div class="player-content">
+    <img src="/images/teams/men/dona.png" class="column-img">
+    <div class="back-img"></div>
+    <div class="text-block">
+      <h1>99</h1>
+      <h2>Gianluigi Donnarumma</h2>
+    </div>
+  <!-- </div> -->
+
+</div>
+
+<div id="footerSpace"></div>
+
+</body>
+</html>

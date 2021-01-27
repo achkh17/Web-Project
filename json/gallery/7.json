@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/2.1.jpg",
+	  	"text" : "Captain Romagnoli"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/2.2.jpg",
+	  	"text" : "David Calabria"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/2.3.jpg",
+	  	"text" : "Daniel Maldini"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/2.4.jpg",
+	  	"text" : "Gianluigi Donnarumma (vice-captain)"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/2.5.jpg",
+	  	"text" : "Training coaches"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/2.6.jpg",
+		"text" : "San Siro"
+	  }
+	],
+  "date" : "29 December 2020",
+  "title" : "TRAINING SESSION, 29 DECEMBER 2020"
+}

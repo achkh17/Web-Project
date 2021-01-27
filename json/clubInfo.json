@@ -1,0 +1,20 @@
+{
+  "clubInfo" :
+  [
+    {
+      "name" : "AWARDS",
+      "text" : "A blast from the past: the great victories and unforgettable successes",
+      "img" : "/images/main/clubInfo1.png"
+    },
+    
+    {
+      "name" : "HALL OF FAME",
+      "text" : "All the stars from the Rossonero history, best players, legends and goalscorers",
+      "img" : "/images/main/clubInfo2.png"
+    }
+  ],
+  
+  "academyImg" : "/images/main/academy.png",
+  "academyText" : "Milan Academy is the set of projects dedicated to the involvement of an U18 target audience in sporting activities",
+  "academyName" : "MILAN ACADEMY"
+}

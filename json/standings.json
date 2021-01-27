@@ -1,0 +1,41 @@
+{
+  "standings" : 
+  [
+    {
+      "num" : "1",
+      "logo" : "/images/main/standingsMilan.png",
+      "team" : "Milan",
+      "p" : "10",
+      "GD" : "14",
+      "Pts" : "26"
+    },
+    
+    {
+      "num" : "2",
+      "logo" : "/images/main/standingsSassuolo.png",
+      "team" : "Sassuolo",
+      "p" : "11",
+      "GD" : "9",
+      "Pts" : "22"
+    },
+    
+    {
+      "num" : "3",
+      "logo" : "/images/main/standingsInter.png",
+      "team" : "Inter",
+      "p" : "10",
+      "GD" : "12",
+      "Pts" : "21"
+    },
+    
+    {
+      "num" : "4",
+      "logo" : "/images/main/standingsNapoli.png",
+      "team" : "Napoli",
+      "p" : "10",
+      "GD" : "14",
+      "Pts" : "20"
+    }
+  
+  ]
+}

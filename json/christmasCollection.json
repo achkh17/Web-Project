@@ -1,0 +1,10 @@
+{
+  "appStoreImage" : "/images/main/appStore.png",
+  "appStoreText" : "Download the official AC Milan App to enjoy a 360-degree experience of the entire Rossoneri world",
+  "christmasCollection" : 
+  [
+    "/images/main/shopItem1.jpg",
+    "/images/main/shopItem2.jpg",
+    "/images/main/shopItem3.jpg"
+  ]
+}

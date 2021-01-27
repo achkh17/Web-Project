@@ -1,0 +1,145 @@
+{
+  "news" : 
+  [
+    {
+      "id" : "1",
+      "img" : "/images/main/HaugeNews.jpg",
+      "date" : "16 December 2020",
+      "text" : "Haugemonia continues. The golden boy scored again on Europa Lague"
+    },
+    
+    {
+      "id" : "2",
+      "img" : "/images/news/newsItems/theo2.jpg",
+      "date" : "16 December 2020",
+      "text" : "Last Minute winning goal from Theo Hernandes and ACMilan is winter champion"
+    },
+    
+    {
+      "id" : "3",
+      "img" : "/images/main/giftNews.jpg",
+      "date" : "5 january 2021",
+      "text" : "AC Milan gifts for christmas"
+    },
+    
+    {
+      "id" : "4",
+      "img" : "/images/main/DonaNews.jpg",
+      "date" : "17 January 2021",
+      "text" : "Gianluigi Donarumma saves the day"
+    },
+    
+    {
+      "id" : "5",
+      "img" : "/images/main/calabriaMVP.jpg",
+      "date" : "17 January 2021",
+      "text" : "David Calabria fascinating performance"
+    },
+    
+    {
+      "id" : "6",
+      "img" : "/images/news/allNews/romana.jpg",
+      "date" : "16 December 2020",
+      "text" : "Captain reached his 200 match in AC Milan"
+    },
+    
+    {
+      "id" : "7",
+      "img" : "/images/news/allNews/saele.jpg",
+      "date" : "16 December 2020",
+      "text" : "Alexis Saelemaekers a perfect symbol - the Belgian shows the growth of the team"
+    },
+    
+    {
+      "id" : "8",
+      "img" : "/images/news/allNews/celebration.png",
+      "date" : "5 january 2021",
+      "text" : "Team celebrates spectacular win"
+    },
+    
+    {
+      "id" : "9",
+      "img" : "/images/news/allNews/anteHand.png",
+      "date" : "17 January 2021",
+      "text" : "Ante Rebic has covid-19 and gonna miss match with Juventus"
+    },
+    
+    {
+      "id" : "10",
+      "img" : "/images/news/allNews/charxana.png",
+      "date" : "17 January 2021",
+      "text" : "Hakan Çalhanoğlu became best player of December" 
+    },
+    
+    {
+      "id" : "11",
+      "img" : "/images/news/allNews/samu.jpg",
+      "date" : "16 December 2020",
+      "text" : "Samu is ready to fill place while Alexis has injury"
+    },
+    
+    {
+      "id" : "12",
+      "img" : "/images/news/allNews/romanaLook.jpg",
+      "date" : "16 December 2020",
+      "text" : "Romagnoli proves class once again"
+    },
+    
+    {
+      "id" : "13",
+      "img" : "/images/news/allNews/practise.jpg",
+      "date" : "5 january 2021",
+      "text" : "The team is ready for challanges"
+    },
+    
+    {
+      "id" : "14",
+      "img" : "/images/news/allNews/shutUp.jpg",
+      "date" : "17 January 2021",
+      "text" : "Captain shuts up his haters"
+    },
+    
+    {
+      "id" : "15",
+      "img" : "/images/news/newsItems/pioli.png",
+      "date" : "17 January 2021",
+      "text" : "WE'RE BACK WITH ENTHUSIASM AND CONFIDENCE" 
+    },
+    
+    {
+      "id" : "16",
+      "img" : "/images/main/slider_zlatan.png",
+      "text" : "AC Milan never had a king, they have a GOD",
+      "date" : "15 january 2021"
+    },
+    
+    {
+      "id" : "17",
+      "img" : "/images/main/slider_hauge.png",
+      "text" : "Hauge scored his first ever goal for AC Milan",
+      "date" : "18 january 2021"
+    },
+    
+    {
+      "id" : "18",
+      "img" : "/images/main/slider_romagnoli.png",
+      "text" : "Captain is coming back",
+      "date" : "19 january 2021"
+    },
+    
+    {
+      "id" : "19",
+      "img" : "/images/main/slider_ante.png",
+      "text" : "Milan ace shows class once again",
+      "date" : "5 january 2021"
+    },
+    
+    {
+      "id" : "20",
+      "img" : "/images/news/newsItems/kessie.png",
+      "text" : "From Zero to Hero",
+      "date" : "28 December 2020"
+    }
+  
+  ]
+}

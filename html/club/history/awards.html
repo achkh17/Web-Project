@@ -21,7 +21,8 @@
 		  $("#footerSpace").load("/html/footer.html"); 
 
 		  var xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/awards", true);
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/awards.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {

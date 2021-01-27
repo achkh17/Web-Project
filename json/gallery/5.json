@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/6.1.jpg",
+	  	"text" : "Vice-Captain Gianluigi Donnarumma"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/6.2.jpg",
+	  	"text" : "Sandro Tonali"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/6.3.jpg",
+	  	"text" : "Franck Kessie"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/6.4.jpg",
+	  	"text" : "Hakan Calhanoglu and Stefano Pioli"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/6.5.jpg",
+	  	"text" : "Ante Rebic"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/6.6.jpg",
+		"text" : "Paolo Maldini and Stefano Pioli"
+	  }
+	],
+  "date" : "31 December 2020",
+  "title" : "END-OF-YEAR TRAINING AND TOAST AT MILANELLO"
+}

@@ -20,7 +20,8 @@
 
 		  // topNews
 		  var xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/topNews", true);
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/topNews.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {
@@ -39,8 +40,9 @@
 		  };
 
 		  // lastMatch
-		  xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/lastMatch", true);
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/lastMatch.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {
@@ -58,9 +60,12 @@
 		  };
 
 		  // standings
-		  xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/standings", true);
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/standings.json", true);
 		  xhttp.send();
+
+
 
 		  xhttp.onreadystatechange = function() {
 		    if (this.readyState == 4 && this.status == 200) {
@@ -94,8 +99,9 @@
 		  };
 
 		  // latestNews
-		  xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/lastestNews", true);
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/lastestNews.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {
@@ -191,8 +197,9 @@
 		  };
 
 		  // gallery
-		  xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/gallery", true);
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/gallery.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {
@@ -207,8 +214,9 @@
 		  };
 
 		  // videos
-		  xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/videoImages", true);
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/videoImages.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {
@@ -223,8 +231,9 @@
 		  };
 
 		  // christmasCollection
-		  xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/christmasCollection", true);
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/christmasCollection.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {
@@ -241,8 +250,9 @@
 		  };
 
 		  // clubInfo
-		  xhttp = new XMLHttpRequest();
-		  xhttp.open("GET", "http://localhost:3001/clubInfo", true);
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.overrideMimeType("application/json");
+		  xhttp.open("GET", "/json/clubInfo.json", true);
 		  xhttp.send();
 
 		  xhttp.onreadystatechange = function() {
@@ -475,8 +485,9 @@
 				}
 
 				function videoClicked(e){
-					xhttp = new XMLHttpRequest();
-					xhttp.open("GET", "http://localhost:3001/video/" + e.id, true);
+					var xhttp = new XMLHttpRequest();
+					xhttp.overrideMimeType("application/json");
+					xhttp.open("GET", "/json/video/" + e.id + ".json", true);
 					xhttp.send();
 
 					xhttp.onreadystatechange = function() {

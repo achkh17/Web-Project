@@ -1,0 +1,32 @@
+{
+  "topNews" :
+  [
+    {
+      "id" : "16",
+      "img" : "/images/main/slider_zlatan.png",
+      "text" : "AC Milan never had a king, they have a GOD",
+      "desc" : "Ibrahimovic responds to Lukaku"
+    },
+    
+    {
+      "id" : "17",
+      "img" : "/images/main/slider_hauge.png",
+      "text" : "Hauge scored his first ever goal for AC Milan",
+      "desc" : "win over Celtic in Thursday night’s Europa League clash"
+    },
+    
+    {
+      "id" : "18",
+      "img" : "/images/main/slider_romagnoli.png",
+      "text" : "Captain is coming back",
+      "desc" : "Alessio Romagnoli started training with the team"
+    },
+    
+    {
+      "id" : "19",
+      "img" : "/images/main/slider_ante.png",
+      "text" : "Milan ace shows class once again",
+      "desc" : "Rebic continues to establish himself as key figure"
+    }
+  ]
+}

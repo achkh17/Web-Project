@@ -1,0 +1,9 @@
+{
+  "matchDayNum" : "MatchDay 6", 
+  "matchDayDate" : "11 December 2020 00:00",
+  "team1" : "PRA",
+  "img1" : "/images/main/matchesSparta.png",
+  "team2" : "MIL",
+  "img2" : "/images/main/matchesMilan.png",
+  "score" : "0-1"
+}

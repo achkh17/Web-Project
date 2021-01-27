@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/8.1.jpg",
+	  	"text" : "Women team Practice" 
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/8.2.jpg",
+	  	"text" : "Women team Practice" 
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/8.3.jpg",
+	  	"text" : "Women team Practice" 
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/8.4.jpg",
+	  	"text" : "Women team Practice" 
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/8.5.jpg",
+	  	"text" : "Women team Practice" 
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/8.6.jpg",
+		"text" : "Women team Practice" 
+	  }
+	],
+  "date" : "15 January 2021",
+  "title" : "VISMARA: THE ROSSONERE PUSH ON"
+}

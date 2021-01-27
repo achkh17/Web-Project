@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/5.1.jpg",
+	  	"text" : "Rafael Leao"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/5.2.jpg",
+	  	"text" : "Hakan Calhanoglu"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/5.3.jpg",
+	  	"text" : "Franck Kessie"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/5.4.jpg",
+	  	"text" : "Practice"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/5.5.jpg",
+	  	"text" : "Captain Romagnoli"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/5.6.jpg",
+		"text" : "Practice"
+	  }
+	],
+  "date" : "04 January 2021",
+  "title" : "TRAINING SESSION, 4 JANUARY 2021"
+}

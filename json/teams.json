@@ -1,0 +1,418 @@
+{
+  "menTeam" : [
+    
+    {
+      "id" : 1,
+      "num" : 1,
+      "name" : "Ciprian Tătărușanu",
+      "img" : "/images/teams/men/tata.png",
+      "position" : "goalkeeper"
+    },
+    
+    {
+      "id" : 2,
+      "num" : 90,
+      "name" : "Antonio Donnarumma",
+      "img" : "/images/teams/men/dona2.png",
+      "position" : "goalkeeper"
+    },
+    
+    {
+      "id" : 3,
+      "num" : 99,
+      "name" : "Gianluigi Donnarumma",
+      "img" : "/images/teams/men/dona.png",
+      "position" : "goalkeeper"
+    },
+    
+    {
+      "id" : 4,
+      "num" : 2,
+      "name" : "Davide Calabria",
+      "img" : "/images/teams/men/dato.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 5,
+      "num" : 5,
+      "name" : "Diego Dalot",
+      "img" : "/images/teams/men/dalot.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 6,
+      "num" : 46,
+      "name" : "Matteo Gabbia",
+      "img" : "/images/teams/men/gabbia.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 7,
+      "num" : 19,
+      "name" : "Theo Hernandez",
+      "img" : "/images/teams/men/theo.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 8,
+      "num" : 20,
+      "name" : "Pierre Kalulu",
+      "img" : "/images/teams/men/kalulu.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 9,
+      "num" : 24,
+      "name" : "Simon Kjaer",
+      "img" : "/images/teams/men/kjaer.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 10,
+      "num" : 22,
+      "name" : "Mateo Musacchio",
+      "img" : "/images/teams/men/mussachio.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 11,
+      "num" : 13,
+      "name" : "Alessio Romagnoli",
+      "img" : "/images/teams/men/romana.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 12,
+      "num" : 7,
+      "name" : "Samuel Castillejo",
+      "img" : "/images/teams/men/castila.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 13,
+      "num" : 4,
+      "name" : "Ismael Bennacer",
+      "img" : "/images/teams/men/bena.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 14,
+      "num" : 21,
+      "name" : "Brahim Diaz",
+      "img" : "/images/teams/men/diaz.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 15,
+      "num" : 15,
+      "name" : "Jens Petter Hauge",
+      "img" : "/images/teams/men/hauge.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 16,
+      "num" : 79,
+      "name" : "Franck Kessie",
+      "img" : "/images/teams/men/kessie.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 17,
+      "num" : 33,
+      "name" : "Rade Krunic",
+      "img" : "/images/teams/men/krunic.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 18,
+      "num" : 18,
+      "name" : "Soualiho Meite",
+      "img" : "/images/teams/men/meite.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 19,
+      "num" : 56,
+      "name" : "Alexis Saelemaekers",
+      "img" : "/images/teams/men/saele.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 20,
+      "num" : 8,
+      "name" : "Sandro Tonali",
+      "img" : "/images/teams/men/sandro.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 21,
+      "num" : 10,
+      "name" : "Hakan Calhanoglu",
+      "img" : "/images/teams/men/charxana.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 22,
+      "num" : 29,
+      "name" : "Lorenzo Colombo",
+      "img" : "/images/teams/men/colombo.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 23,
+      "num" : 11,
+      "name" : "Zlatan Ibrahimovic",
+      "img" : "/images/teams/men/zlatana.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 24,
+      "num" : 17,
+      "name" : "Rafael Leao",
+      "img" : "/images/teams/men/leao.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 25,
+      "num" : 27,
+      "name" : "Daniel Maldini",
+      "img" : "/images/teams/men/maldini.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 26,
+      "num" : 9,
+      "name" : "Mario Mandzukic",
+      "img" : "/images/teams/men/manju.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 27,
+      "num" : 12,
+      "name" : "Ante Rebic",
+      "img" : "/images/teams/men/ante.png",
+      "position" : "forward"
+    }
+    
+  ],
+  
+  "womenTeam" : [
+    
+    {
+      "id" : 28,
+      "num" : 20,
+      "name" : "Selena Delia Babb",
+      "img" : "/images/teams/women/babb.png",
+      "position" : "goalkeeper"
+    },
+    
+    {
+      "id" : 29,
+      "num" : 12,
+      "name" : "Maria Korenciova",
+      "img" : "/images/teams/women/2.png",
+      "position" : "goalkeeper"
+    },
+    
+    {
+      "id" : 30,
+      "num" : 1,
+      "name" : "Alessia Piazza",
+      "img" : "/images/teams/women/3.png",
+      "position" : "goalkeeper"
+    },
+    
+    {
+      "id" : 31,
+      "num" : 36,
+      "name" : "Laura Agard",
+      "img" : "/images/teams/women/4.png",
+      "position" : "defender"
+    },
+
+    
+    {
+      "id" : 32,
+      "num" : 6,
+      "name" : "Laura Fusetti",
+      "img" : "/images/teams/women/5.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 34,
+      "num" : 13,
+      "name" : "Federica Rizza",
+      "img" : "/images/teams/women/7.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 35,
+      "num" : 21,
+      "name" : "Giorgia Spinelli",
+      "img" : "/images/teams/women/8.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 36,
+      "num" : 27,
+      "name" : "Linda Tucceri Cimini",
+      "img" : "/images/teams/women/9.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 37,
+      "num" : 33,
+      "name" : "Francesca Vitale",
+      "img" : "/images/teams/women/10.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 38,
+      "num" : 17,
+      "name" : "Dominika Conic",
+      "img" : "/images/teams/women/18.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 39,
+      "num" : 11,
+      "name" : "Christy Grimshaw",
+      "img" : "/images/teams/women/11.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 40,
+      "num" : 15,
+      "name" : "Refiloe Jane",
+      "img" : "/images/teams/women/12.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 41,
+      "num" : 14,
+      "name" : "Lidija Kulis",
+      "img" : "/images/teams/women/13.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 45,
+      "num" : 91,
+      "name" : "julia Simic",
+      "img" : "/images/teams/women/17.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 46,
+      "num" : 7,
+      "name" : "Valentina Bergamaschi",
+      "img" : "/images/teams/women/24.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 47,
+      "num" : 10,
+      "name" : "Natasha Khalila Dowie",
+      "img" : "/images/teams/women/19.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 48,
+      "num" : 9,
+      "name" : "Valentina Giacinti",
+      "img" : "/images/teams/women/21.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 49,
+      "num" : 23,
+      "name" : "Mariam Longo",
+      "img" : "/images/teams/women/20.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 50,
+      "num" : 22,
+      "name" : "Deborah Salvatori Rinaldi",
+      "img" : "/images/teams/women/22.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 51,
+      "num" : 28,
+      "name" : "Sara Tamborini",
+      "img" : "/images/teams/women/23.png",
+      "position" : "forward"
+    },
+    
+    {
+      "id" : 42,
+      "num" : 88,
+      "name" : "Claudia Mauri",
+      "img" : "/images/teams/women/14.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 43,
+      "num" : 19,
+      "name" : "Carolina Morleo",
+      "img" : "/images/teams/women/15.png",
+      "position" : "midfielder"
+    },
+    
+    {
+      "id" : 33,
+      "num" : 24,
+      "name" : "Maria Vittoria Nano",
+      "img" : "/images/teams/women/6.png",
+      "position" : "defender"
+    },
+    
+    {
+      "id" : 44,
+      "num" : 8,
+      "name" : "Caroline Rask",
+      "img" : "/images/teams/women/16.png",
+      "position" : "midfielder"
+    }
+  
+  ]
+}

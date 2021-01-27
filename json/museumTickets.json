@@ -1,0 +1,66 @@
+{
+  "phrase" : [
+    "A unique experience every true Rossonero fan deserves to try",
+    "The museum is temporarily closed. We are working hard towards reopening in total safety as soon as the current regulations permit it. You will still be able to use the ticket purchased in the next 12 months."
+  ],
+  "mainImg" : "/images/tickets/museumTickets/mainImg.png",
+  
+  "gallery" : [
+    "/images/tickets/museumTickets/info1.jpg",
+    "/images/tickets/museumTickets/info2.jpg",
+    "/images/tickets/museumTickets/info3.jpg",
+    "/images/tickets/museumTickets/info4.jpg",
+    "/images/tickets/museumTickets/info5.jpg",
+    "/images/tickets/museumTickets/info6.jpg",
+    "/images/tickets/museumTickets/info7.jpg",
+    "/images/tickets/museumTickets/info8.jpg",
+    "/images/tickets/museumTickets/map.jpg"
+  ],
+  
+  "infos" : [
+  
+    {
+      "paragraphs" : [
+        "<h1>YOUR JOURNEY THROUGH ROSSONERI HISTORY</h1><p>From our origins as Milan Foot-Ball and Cricket Club to the pinnacle of world football: relive 120 years of Rossoneri history told through our spectacular collection of memorabilia, victories and exclusive interviews to guide you through the Rossoneri's glorious history. Memories and testimonies are interspersed with the artefacts that made history, in a true emotional crescendo.</p>",
+        
+        "<h1>A TROPHY ROOM LIKE NO OTHER</h1><p>A place that you won't find anywhere else in the world, a unique, record-breaking collection of trophies. A unique room to get a close look at 42 trophies, including seven European Cup/Champions League trophies, three Intercontinental Cups, five European Super Cups and a Club World Cup.</p>",
+        
+        "<h1>MILAN KIDS: FUN FOR ALL THE FAMILY</h1><p>History, culture, football and more: Casa Milan even has plenty to do for youngsters. The Mondo Milan Museum gives young Rossoneri the chance to experience our glorious history with a tour tailored specifically to them</p><p>We look forward to welcoming you at Casa Milan for a full-access, interactive Rossoneri experience. Your visit to Mondo Milan will include an entertaining and educational tour, which will be available on 14 large touch screens integrated into the exhibition itinerary.</p>",
+        
+        "<h1>MAKING YOUR VISIT AS SAFE AS POSSIBLE</h1><p>The Museum is ready to welcome visitors in compliance with all the necessary safety measures that the Club has committed to implement. There are a few simple rules to follow to ensure that your visit is as safe as possible and that it complies with the regulations in place to slow the spread of COVID-19.</p><p>Sanitary measures at the Museum entrance:</p><ul><li>It is mandatory to wear a face mask at all times.</li><li>Our staff will measure the body temperature of every visitor upon entry. Visitors with a temperature of 37.5°C or higher will not be permitted to enter the museum.</li><li>It is mandatory to disinfect your hands with the hand sanitiser available at the entrance.</li></ul><p>Measures in place for your visit:</p><ul><li>A one-way system will be in place the museum, with the tour finishing in the AC Milan Store.</li><li>Inside the museum it will be mandatory for visitors to maintain a distance of at least one meter.</li><li>Before and after using the touch screens in the exhibition, it is compulsory to disinfect your hands with the hand sanitiser available throughout the museum.</li></ul><p>Cloakroom:</p><ul><li>The cloakroom will remain closed indefinitely</li></ul>",
+        
+        "<h1>THE MONDO MILAN MUSEUM IN NUMBERS</h1><ul><li>120 years of history told in over 1000 square meters of exhibition space.</li><li>More than 40 display cases with rare historical artefacts and memorabilia that best represent the Club's history</li><li>20 monitors displaying the most important moments, interviews and anecdotes from the players that made Rossoneri history: Cesare Maldini, José Altafini, Giovanni Lodetti, Arrigo Sacchi, Mauro Tassotti, Kaká and many more.</li><li>14 large touch screens integrated throughout the exhibition with plenty of fun facts and more information on the Club's 120-year history, and providing you with the chance to look back at the Rossoneri careers of 100 club legends.</li><li>42 trophies to see up close – all in one room!</li><li>3 meters tall and weighing in at 800kg, and the product 680 hours of construction work: the world's largest replica of the Champions League trophy, the centrepiece of the trophy room.</li><li>6 Ballon D'Or trophies.</li></ul>"
+      
+      ],
+      
+      "images" : [
+        "/images/tickets/museumTickets/info1.jpg",
+        "/images/tickets/museumTickets/info2.jpg",
+        "/images/tickets/museumTickets/info3.jpg",
+        "/images/tickets/museumTickets/info4.jpg"
+      ]
+    },
+    
+    {
+      "paragraphs" : [
+        "<p>Casa Milan is located in the north-west of Milan, in the Fiera Milano City/Portello district, and is easily accessible by public transport or car.</p><h1>MILAN MUSEUM AND CASA MILAN ADDRESS</h1><p>Via Aldo Rossi 8, Milano. Entrance off Piazza Gino Valle</p>",
+        
+        "<h1>HOW TO GET MILAN MUSEUM</h1><p><strong>Metro:</strong>Red line, Lotto stop. Purple line, Portello stop.</p><p><strong>Bus:</strong><ul><li>Number 48, stop at Viale Serra/Viale Scarampo;</li><li>Number 68, stop at Via Albani/Piazza Stuparich;</li><li>Number 69, stop at Viale Certosa/Viale Serra; Number 90, stop at Viale Serra/Via Traiano.</li></ul></p><p><strong>Car: </strong>5-minute drive after taking the Viale Certosa exit off the A4.</p><p><strong>From the airport:</strong></p><ul><li>Linate Airport: Take the number 73 bus to the final stop at San Babila, then take the red metro line to Lotto-FieraMilanoCity.</li><li>Malpensa Airport:</li></ul><p>1.Take the Malpensa Express train towards Milano Centrale and get off at Milano Bovisa; then take any regional or S3/S4 suburban train towards Milano Cadorna and get off at Domodossola Station.</p><p>2.Take the Malpensa Express train to Milano Cadorna; then take any regional or suburban train to Domodossola Station, or take the red metro line (M1) towards Rho Fiera and get off at Lotto-FieraMilanoCity.</p>"
+      ],
+      
+      "images" : [
+        "/images/tickets/museumTickets/map.jpg"
+      ]
+    },
+    
+    {
+      "paragraphs" : [
+        "<h1>TICKET OFFICE: AC MILAN MUSEUM PRICES</h1>Full: €15<br/>Cuore Rossonero cardholders: €12<br/>Under 14: €12<br/>Over 65: €12<br/>Under 7: free<br/>The ticket is open and can be used any day in the six months following its purchase.</br/><br/><h1>MILAN MUSEUM OPENING HOURS</h1>Monday to Sunday, from 10.00 to 19.00 (last admission allowed: 30 minutes before closing).<br/><h1>#STAYSAFE</h1>All safety measures have been taken to ensure our visitors can experience the museum while keeping the required social distancing. Wearing a mask is mandatory."
+      ],
+      
+      "images" : []
+    }
+    
+  ]
+
+}

@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/4.1.jpg",
+	  	"text" : "Antonio Donnarumma"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/4.2.jpg",
+	  	"text" : "Sandro Tonali"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/4.3.jpg",
+	  	"text" : "Training"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/4.4.jpg",
+	  	"text" : "Brahim Diaz"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/4.5.jpg",
+	  	"text" : "Pierre Kalulu"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/4.6.jpg",
+		"text" : "Training"
+	  }
+	],
+  "date" : "17 January 2021",
+  "title" : "AC MILAN V TORINO, COPPA ITALIA"
+}

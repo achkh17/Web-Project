@@ -1,0 +1,29 @@
+{
+  "venues" :
+  [
+    {
+      "name" : "CASA MILAN",
+      "desc" : "Experience the emotions of years of success",
+      "img" : "/images/club/venues/CasaMilan.png"
+    },
+    
+    {
+      "name" : "SAN SIRO",
+      "desc" : "Discover the history, how to arrive and all the regulations",
+      "img" : "/images/club/venues/SanSiro.png"
+    },
+    
+    {
+      "name" : "MILANELLO",
+      "desc" : "Most important state-of-the-art sporting complexes in Europe",
+      "img" : "/images/club/venues/Milanello.png"
+    },
+    
+    {
+      "name" : "VISMARA",
+      "desc" : "All you need to know about our youth team sports center",
+      "img" : "/images/club/venues/Vismara.png"
+    }
+  
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "news" : 
+  [
+    {
+      "id" : "6",
+      "img" : "/images/news/allNews/romana.jpg",
+      "date" : "16 December 2020",
+      "text" : "Captain reached his 200 match in AC Milan"
+    },
+    
+    {
+      "id" : "7",
+      "img" : "/images/news/allNews/saele.jpg",
+      "date" : "16 December 2020",
+      "text" : "Alexis Saelemaekers a perfect symbol - the Belgian shows the growth of the team"
+    },
+    
+    {
+      "id" : "3",
+      "img" : "/images/main/giftNews.jpg",
+      "date" : "5 january 2021",
+      "text" : "AC Milan gifts for christmas"
+    },
+    
+    {
+      "id" : "9",
+      "img" : "/images/news/allNews/anteHand.png",
+      "date" : "17 January 2021",
+      "text" : "Ante Rebic has covid-19 and gonna miss match with Juventus"
+    },
+    
+    {
+      "id" : "5",
+      "img" : "/images/main/calabriaMVP.jpg",
+      "date" : "17 January 2021",
+      "text" : "David Calabria fascinating performance"
+    }
+  
+  ]
+}

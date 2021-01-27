@@ -20,8 +20,9 @@
       $("#headerSpace").load("/html/header.html"); 
       $("#footerSpace").load("/html/footer.html"); 
 
-      xhttp = new XMLHttpRequest();
-      xhttp.open("GET", "http://localhost:3001/gallery/" + localStorage.getItem("photoId"), true);
+      var xhttp = new XMLHttpRequest();
+      xhttp.overrideMimeType("application/json");
+      xhttp.open("GET", "/json/gallery/" + localStorage.getItem("photoId") + ".json", true);
       xhttp.send();
 
       xhttp.onreadystatechange = function() {

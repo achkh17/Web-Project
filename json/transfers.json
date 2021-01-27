@@ -1,0 +1,104 @@
+{
+  "arrivals" : [
+    
+   {
+      "player" : "Diogo Dalot",
+      "photo" : "/images/news/transfers/dalot.webp",
+      "position" : "Right-Back",
+      "age" : 21,
+      "nationality": "/images/news/transfers/flags/9.png",
+      "club" : "Man Utd",
+      "fee" : "loan transfer",
+      "link" : "https://www.transfermarkt.com/diogo-dalot/profil/spieler/357147"
+    },
+    
+    {
+      "player" : "Brahim Diaz",
+      "photo" : "/images/news/transfers/brahim.webp",
+      "position" : "Attacking Midfield",
+      "age" : 21,
+      "nationality": "/images/news/transfers/flags/8.png",
+      "club" : "Real Madrid",
+      "fee" : "loan transfer",
+      "link" : "https://www.transfermarkt.com/brahim-diaz/profil/spieler/314678"
+    },
+    
+    {
+      "player" : "Pierre Kalulu",
+      "photo" : "/images/news/transfers/kalulu.webp",
+      "position" : "Right-Back",
+      "age" : 20,
+      "nationality": "/images/news/transfers/flags/7.png",
+      "club" : "Olymp. Lyon B",
+      "fee" : "€480Th.",
+      "link" : "https://www.transfermarkt.com/pierre-kalulu/profil/spieler/585949"
+    },
+    
+    {
+      "player" : "Ciprian Tatarusanu",
+      "photo" : "/images/news/transfers/tata.webp",
+      "position" : "Goalkeeper",
+      "age" : 34,
+      "nationality": "/images/news/transfers/flags/6.png",
+      "club" : "Olympique Lyon",
+      "fee" : "€500Th.",
+      "link" : "https://www.transfermarkt.com/ciprian-tatarusanu/profil/spieler/55282"
+    },
+    
+    {
+      "player" : "Simon Kjaer",
+      "photo" : "/images/news/transfers/kjaer.webp",
+      "position" : "Centre-Back",
+      "age" : 31,
+      "nationality": "/images/news/transfers/flags/5.png",
+      "club" : "Sevilla FC",
+      "fee" : "€3.50m",
+      "link" : "https://www.transfermarkt.com/simon-kjaer/profil/spieler/48859"
+    },
+    
+    {
+      "player" : "Alexis Saelemaekers",
+      "photo" : "/images/news/transfers/saele.webp",
+      "position" : "Right Winger",
+      "age" : 21,
+      "nationality": "/images/news/transfers/flags/4.png",
+      "club" : "RSC Anderlecht",
+      "fee" : "€3.50m",
+      "link" : "https://www.transfermarkt.com/alexis-saelemaekers/profil/spieler/381950"
+    },
+    
+    {
+      "player" : "Jens Petter Hauge",
+      "photo" : "/images/news/transfers/hauge.webp",
+      "position" : "Left Winger",
+      "age" : 20,
+      "nationality": "/images/news/transfers/flags/3.png",
+      "club" : "Bodø/Glimt",
+      "fee" : "€5.00m",
+      "link" : "https://www.transfermarkt.com/jens-petter-hauge/profil/spieler/422355"
+    },
+  
+    {
+      "player" : "Ante Rebic",
+      "photo" : "/images/news/transfers/ante.webp",
+      "position" : "Left Winger",
+      "age" : 26,
+      "nationality": "/images/news/transfers/flags/2.png",
+      "club" : "E. Frankfurt",
+      "fee" : "€5.00m",
+      "link" : "https://www.transfermarkt.com/ante-rebic/profil/spieler/187587"
+    },
+    
+    {
+      "player" : "Sandro Tonali",
+      "photo" : "/images/news/transfers/sandro.jpg",
+      "position" : "Defensive Midfield",
+      "age" : 20,
+      "nationality": "/images/news/transfers/flags/1.png",
+      "club" : "Brescia",
+      "fee" : "Loan fee: €10.00m",
+      "link" : "https://www.transfermarkt.com/sandro-tonali/profil/spieler/397033"
+    }
+    
+  ]
+}

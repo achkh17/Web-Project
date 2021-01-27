@@ -1,0 +1,35 @@
+{
+	"photos" : [
+	  { 
+	  	"img" : "/images/news/photoGallery/7.1.jpg",
+	  	"text" : "Ante Rebic"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/7.2.jpg",
+	  	"text" : "Franck Kessie"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/7.3.jpg",
+	  	"text" : "Alessio Romagnoli"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/7.4.jpg",
+	  	"text" : "Gianluigi Donnarumma"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/7.5.jpg",
+	  	"text" : "Practice"
+	  },
+
+	  { 
+	  	"img" : "/images/news/photoGallery/7.6.jpg",
+		"text" : "Practice"
+	  }
+	],
+  "date" : "6 January 2021",
+  "title" : "TRAINING SESSION 6 JANUARY 2021"
+}

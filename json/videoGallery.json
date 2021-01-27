@@ -1,0 +1,61 @@
+{
+  "videos" : [
+  
+    {
+      "id" : 5,
+      "img" : "/images/news/videos/groupPhoto.jpg",
+      "video" : "https://www.youtube.com/embed/GQe9u16lwaA",
+      "text" : "HAVING FUN AT MILANELLO"
+    },
+    
+    {
+      "id" : 6,
+      "img" : "/images/news/videos/christmas.png",
+      "video" : "https://www.youtube.com/embed/JvGTGP2muiE",
+      "text" : "CHRISTAMS GREETINGS FROM AC MILAN"
+    },
+    
+    {
+      "id" : 8,
+      "img" : "/images/news/videos/romana200.jpg",
+      "video" : "https://www.youtube.com/embed/AKFiQ60ofmc",
+      "text" : "CAPTAIN REACHED 200 MATCH!"
+    },
+  
+    {
+      "id" : 1,
+      "img" : "/images/main/teo&rebic.jpg",
+      "video" : "https://www.youtube.com/embed/JrAeYMzxSI8",
+      "text" : "RETURN FROM HELL"
+    },
+  
+    {
+      "id" : 7,
+      "img" : "/images/main/kjaer.jpg",
+      "video" : "https://www.youtube.com/embed/fiiaHlOZO6E",
+      "text" : "MINON KIJAER DEFENSIVE SKILLS"
+    },
+    
+    {
+      "id" : 2,
+      "img" : "/images/main/rebicGesture.jpg",
+      "video" : "https://www.youtube.com/embed/qjYrLvHw-3k",
+      "text" : "ANTE REBIC INTERVIEW: AC MILAN IS A GREAT RESPONSIBILITY"
+    },
+    
+    {
+      "id" : 3,
+      "img" : "/images/main/teoSuperman.jpg",
+      "video" : "https://www.youtube.com/embed/JaJBoNcK-pM",
+      "text" : "THEO HERNANDEZ'S SENSATIONAL VOLLEY PUTS MILAN AHEAD!"
+    },
+    
+    {
+      "id" : 4,
+      "img" : "/images/main/calabriaClap.jpg",
+      "video" : "https://www.youtube.com/embed/88GpUmjrC6Y",
+      "text" : "DAVIDE CALABRIA SKILLS"
+    }
+    
+  ]
+}
