@@ -39,32 +39,8 @@ h1 {
   background-image: url(/images/teams/men/background.png);
   background-size: cover;
   cursor: pointer;
-}
-
-.player-content {
-  background-color: rgb(29, 32, 34);
-  background-image: url(/images/team/player-profile-background.png);
-  background-size: auto;
-  background-position: 50% 0%;
-  width: 100%;
-  height: 498px;
-  position: relative;
-  margin: 0px;
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.21px;
-  overflow: hidden;
-}
-
-.player-content > img {
-  position: absolute;
-  z-index: 5;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0px;
-  bottom: 0px;
-  height: 100%;
-  overflow: hidden;
-}   
+  height: 306px;
+}  
 
 .show {
   display: block;
@@ -91,17 +67,29 @@ h1 {
   .column {
     width: 33.33%;
   }
+
+  .content {
+    height: 340px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
   }
+
+  .content {
+    height: 420px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+
+  .content {
+    height: 100%;
   }
 }
 
@@ -123,6 +111,7 @@ h1 {
 
 .column-img {
   width: 100%;
+  height: 100%;
 }
 
 .back-img {
