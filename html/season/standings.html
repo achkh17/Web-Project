@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="/css/body.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/season/standings.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+
+  <title>AC Milan Standings</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <script>
+
+    $(function() {
+      $("#headerSpace").load("/html/header.html"); 
+      $("#footerSpace").load("/html/footer.html"); 
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.overrideMimeType("application/json");
+      xhttp.open("GET", "/json/seasonStandings.json", true);
+      xhttp.send();
+
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var obj = JSON.parse(this.responseText);
+          var arr = obj.copa;
+
+          if(window.location.search == "?id=2") {
+            arr = obj.seriaA;
+          } else if(window.location.search == "?id=3") {
+            arr = obj.europaLeague;
+          } else {
+
+            for(i = 0; i < 2; i++) {
+
+              var text = "";
+              for(j = 0; j < 3; j++) {
+                var cur = arr.last32;
+                if(j == 1) cur = arr.last16;
+                else if(j == 2) cur = arr.last8;
+                if(i == 1 && j == 0) cur = arr.last8;
+                else if(i == 1 && j == 2) cur = arr.last32;
+
+                var round = j + 1;
+                if(i == 1) round = 3 - j;
+                
+                text += `
+                  <div class="round round-` + round;
+                  if(round == 3) text += ` current">`;
+                  else text += ` ">`;
+                  text += `<div class="round-details">` + cur[0].game + `<br/><span class="date">` + cur[0].date + `</span></div>`;
+
+                  for(k = 0; k < cur.length / 2; k++) {
+                    var ind = k;
+                    if(i == 1) ind += cur.length / 2;
+                    text += 
+                    `<ul class="matchup">
+                      <li class="team team-top">` + cur[ind].team1 + `<span class="score">` + cur[ind].score1 + `</span></li>
+                      <li class="team team-bottom">` + cur[ind].team2 + `<span class="score">` + cur[ind].score2 + `</span></li>
+                    </ul>`;
+                  }
+                  text += `</div>`;
+              }
+              document.getElementById("split" + (i + 1)).innerHTML = text;
+            }
+
+            text = "";
+            for(i = 0; i < 3; i++) {
+              var cur = arr.last4[0];
+              if(i == 1) cur = arr.final[0];
+              else if(i == 2) cur = arr.last4[1];
+
+              text += `<div`;
+                  if(i == 1) text += ` class="final"><i class="fa fa-trophy"></i>`;
+                  else text += `>`;
+                  text += `
+                  <div class="round-details">` + cur.game + `<br/><span class="date">` + cur.date + `</span></div>
+                  <ul class="matchup">
+                      <li class="team team-top">` + cur.team1 + `<span class="score">` + cur.score1 + `</span></li>
+                      <li class="team team-bottom">` + cur.team2 + `<span class="score">` + cur.score2 + `</span></li>
+                    </ul></div>`;
+            }
+            document.getElementById("champion").innerHTML = text;        
+          }
+        }
+      };
+
+  });
+
+  </script>
+
+</head>
+
+<body>
+
+<div id="headerSpace"></div>
+
+<section id="bracket">
+  <div class="container">
+    <div class="split split-one" id="split1"></div> 
+    <div class="champion" id="champion"></div>
+    <div class="split split-two" id="split2"></div>
+  </div>
+</section>
+
+<div id="footerSpace"></div>
+  
+</body>
+
+</html>

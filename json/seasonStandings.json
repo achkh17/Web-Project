@@ -1,0 +1,645 @@
+{
+	"seriaA" : [
+
+		{
+			"num" : 1,
+			"logo" : "",
+			"name" : "Milan",
+			"pts" : 43,
+			"p" : 19,
+			"w" : 13,
+			"d" : 4,
+			"l" : 2,
+			"gf" : 39,
+			"ga" : 22,
+			"gd" : 17
+		},
+
+		{
+			"num" : 2,
+			"logo" : "",
+			"name" : "Internazionale",
+			"pts" : 41,
+			"p" : 19,
+			"w" : 12,
+			"d" : 5,
+			"l" : 2,
+			"gf" : 45,
+			"ga" : 23,
+			"gd" : 22
+		},
+
+		{
+			"num" : 3,
+			"logo" : "",
+			"name" : "Roma",
+			"pts" : 37,
+			"p" : 19,
+			"w" : 11,
+			"d" : 4,
+			"l" : 4,
+			"gf" : 41,
+			"ga" : 32,
+			"gd" : 9
+		},
+
+		{
+			"num" : 4,
+			"logo" : "",
+			"name" : "Juventus",
+			"pts" : 36,
+			"p" : 18,
+			"w" : 10,
+			"d" : 6,
+			"l" : 2,
+			"gf" : 37,
+			"ga" : 18,
+			"gd" : 19
+		},
+
+		{
+			"num" : 5,
+			"logo" : "",
+			"name" : "Atalanta",
+			"pts" : 36,
+			"p" : 19,
+			"w" : 10,
+			"d" : 6,
+			"l" : 3,
+			"gf" : 44,
+			"ga" : 23,
+			"gd" : 21
+		},
+
+		{
+			"num" : 6,
+			"logo" : "",
+			"name" : "Napoli",
+			"pts" : 34,
+			"p" : 18,
+			"w" : 11,
+			"d" : 1,
+			"l" : 6,
+			"gf" : 41,
+			"ga" : 19,
+			"gd" : 22
+		},
+
+		{
+			"num" : 7,
+			"logo" : "",
+			"name" : "Lazio",
+			"pts" : 34,
+			"p" : 19,
+			"w" : 10,
+			"d" : 4,
+			"l" : 5,
+			"gf" : 32,
+			"ga" : 26,
+			"gd" : 6
+		},
+
+		{
+			"num" : 8,
+			"logo" : "",
+			"name" : "Verona",
+			"pts" : 30,
+			"p" : 19,
+			"w" : 8,
+			"d" : 6,
+			"l" : 5,
+			"gf" : 25,
+			"ga" : 18,
+			"gd" : 7
+		},
+
+		{
+			"num" : 9,
+			"logo" : "",
+			"name" : "Sassuolo",
+			"pts" : 30,
+			"p" : 19,
+			"w" : 8,
+			"d" : 6,
+			"l" : 5,
+			"gf" : 32,
+			"ga" : 29,
+			"gd" : 3
+		},
+
+		{
+			"num" : 10,
+			"logo" : "",
+			"name" : "Sampdoria",
+			"pts" : 26,
+			"p" : 19,
+			"w" : 8,
+			"d" : 2,
+			"l" : 9,
+			"gf" : 30,
+			"ga" : 29,
+			"gd" : 1
+		},
+
+		{
+			"num" : 11,
+			"logo" : "",
+			"name" : "Benevento",
+			"pts" : 22,
+			"p" : 19,
+			"w" : 6,
+			"d" : 4,
+			"l" : 9,
+			"gf" : 23,
+			"ga" : 36,
+			"gd" : -13
+		},
+
+		{
+			"num" : 12,
+			"logo" : "",
+			"name" : "Fiorentina",
+			"pts" : 22,
+			"p" : 20,
+			"w" : 5,
+			"d" : 7,
+			"l" : 8,
+			"gf" : 21,
+			"ga" : 31,
+			"gd" : -10
+		},
+
+		{
+			"num" : 13,
+			"logo" : "",
+			"name" : "Bologna",
+			"pts" : 20,
+			"p" : 19,
+			"w" : 5,
+			"d" : 5,
+			"l" : 9,
+			"gf" : 24,
+			"ga" : 33,
+			"gd" : -9
+		},
+
+		{
+			"num" : 14,
+			"logo" : "",
+			"name" : "Udinese",
+			"pts" : 18,
+			"p" : 19,
+			"w" : 4,
+			"d" : 6,
+			"l" : 9,
+			"gf" : 20,
+			"ga" : 28,
+			"gd" : -8
+		},
+
+		{
+			"num" : 15,
+			"logo" : "",
+			"name" : "Spezia",
+			"pts" : 18,
+			"p" : 19,
+			"w" : 4,
+			"d" : 6,
+			"l" : 9,
+			"gf" : 26,
+			"ga" : 36,
+			"gd" : -10
+		},
+
+		{
+			"num" : 16,
+			"logo" : "",
+			"name" : "Genoa",
+			"pts" : 18,
+			"p" : 19,
+			"w" : 4,
+			"d" : 6,
+			"l" : 9,
+			"gf" : 19,
+			"ga" : 30,
+			"gd" : -11
+		},
+
+		{
+			"num" : 17,
+			"logo" : "",
+			"name" : "Torino",
+			"pts" : 15,
+			"p" : 20,
+			"w" : 2,
+			"d" : 9,
+			"l" : 9,
+			"gf" : 29,
+			"ga" : 38,
+			"gd" : -9
+		},
+
+		{
+			"num" : 18,
+			"logo" : "",
+			"name" : "Cagliari",
+			"pts" : 14,
+			"p" : 19,
+			"w" : 3,
+			"d" : 5,
+			"l" : 1,
+			"gf" : 	23,
+			"ga" : 37,
+			"gd" : -14
+		},
+
+		{
+			"num" : 19,
+			"logo" : "",
+			"name" : "Parma",
+			"pts" : 13,
+			"p" : 19,
+			"w" : 2,
+			"d" : 7,
+			"l" : 1,
+			"gf" : 	14,
+			"ga" : 36,
+			"gd" : -22
+		},
+
+		{
+			"num" : 20,
+			"logo" : "",
+			"name" : "Crotone",
+			"pts" : 12,
+			"p" : 19,
+			"w" : 3,
+			"d" : 3,
+			"l" : 1,
+			"gf" : 	22,
+			"ga" : 43,
+			"gd" : -21
+		}
+	],
+
+	"europaLeague" : [
+
+		{
+			"num" : 1,
+			"logo" : "",
+			"name" : "Milan",
+			"pts" : 13,
+			"p" : 6,
+			"w" : 4,
+			"d" : 1,
+			"l" : 1,
+			"gf" : 12,
+			"ga" : 7,
+			"gd" : 5
+		},
+			
+		{
+			"num" : 2,
+			"logo" : "",
+			"name" : "Lille",
+			"pts" : 11,
+			"p" : 6,
+			"w" : 3,
+			"d" : 2,
+			"l" : 1,
+			"gf" : 14,
+			"ga" : 8,
+			"gd" : 6
+		},
+			
+		{
+			"num" : 3,
+			"logo" : "",
+			"name" : "Sparta",
+			"pts" : 6,
+			"p" : 6,
+			"w" : 2,
+			"d" : 0,
+			"l" : 4,
+			"gf" : 10,
+			"ga" : 12,
+			"gd" : -2
+		},
+
+		{
+			"num" : 4,
+			"logo" : "",
+			"name" : "Celtic",
+			"pts" : 4,
+			"p" : 6,
+			"w" : 1,
+			"d" : 1,
+			"l" : 4,
+			"gf" : 10,
+			"ga" : 19,
+			"gd" : -9
+		}
+
+	],
+
+	"copa" : {
+
+		"last32" : [
+
+			{
+				"team1" : "Atalanta",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Cagliari",
+				"score1" : "2",
+				"team2" : "Verona",
+				"score2" : "1",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Lazio",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Parma",
+				"score1" : "2",
+				"team2" : "Cosenza",
+				"score2" : "1",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Napoli",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Empoli",
+				"score1" : "3",
+				"team2" : "Brescia",
+				"score2" : "0"
+			},
+
+			{
+				"team1" : "AS Roma",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Spezia",
+				"score1" : "4",
+				"team2" : "Bologna",
+				"score2" : "2",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Udinese",
+				"score1" : "0",
+				"team2" : "Fiorentina",
+				"score2" : "1",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Inter",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "AC Milan",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Torino",
+				"score1" : "2",
+				"team2" : "Entella",
+				"score2" : "0",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Juventus",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Sampdoria",
+				"score1" : "1",
+				"team2" : "Genoa",
+				"score2" : "3",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Sassuolo",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			},
+
+			{
+				"team1" : "Spal",
+				"score1" : "2",
+				"team2" : "Monza",
+				"score2" : "0",
+				"game" : "1/16 FINALS",
+				"date" : "NOVEMBER 16"
+			}
+		],
+
+		"last16" : [
+
+			{
+				"team1" : "Atalanta",
+				"score1" : "3",
+				"team2" : "Cagliari",
+				"score2" : "1",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			},
+
+			{
+				"team1" : "Lazio",
+				"score1" : "2",
+				"team2" : "Parma",
+				"score2" : "1",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			},
+
+			{
+				"team1" : "Napoli",
+				"score1" : "3",
+				"team2" : "Empoli",
+				"score2" : "2",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			},
+
+			{
+				"team1" : "AS Roma",
+				"score1" : "0",
+				"team2" : "Spezia",
+				"score2" : "3",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			},
+
+			{
+				"team1" : "Fiorentina",
+				"score1" : "1",
+				"team2" : "Inter",
+				"score2" : "2",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			},
+
+			{
+				"team1" : "AC Milan",
+				"score1" : "1",
+				"team2" : "Torino",
+				"score2" : "0",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			},
+
+			{
+				"team1" : "Juventus",
+				"score1" : "3",
+				"team2" : "Genoa",
+				"score2" : "2",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			},
+
+			{
+				"team1" : "Sassuolo",
+				"score1" : "0",
+				"team2" : "Spal",
+				"score2" : "2",
+				"game" : "1/8 FINALS",
+				"date" : "DECEMBER 15"
+			}
+
+		],
+
+		"last8" : [
+
+			{
+				"team1" : "Atalanta",
+				"score1" : "3",
+				"team2" : "Lazio",
+				"score2" : "2",
+				"game" : "1/4 FINALS",
+				"date" : "JANUARY 10"
+			},
+
+			{
+				"team1" : "Napoli",
+				"score1" : "4",
+				"team2" : "Spezia",
+				"score2" : "2",
+				"game" : "1/4 FINALS",
+				"date" : "JANUARY 10"
+			},
+
+			{
+				"team1" : "Inter",
+				"score1" : "2",
+				"team2" : "AC Milan",
+				"score2" : "1",
+				"game" : "1/4 FINALS",
+				"date" : "JANUARY 10"
+			},
+
+			{
+				"team1" : "Juventus",
+				"score1" : "4",
+				"team2" : "Spal",
+				"score2" : "0",
+				"game" : "1/4 FINALS",
+				"date" : "JANUARY 10"
+			}
+
+		],
+
+		"last4" : [
+
+			{
+				"team1" : "Atalanta",
+				"score1" : "",
+				"team2" : "Napoli",
+				"score2" : "",
+				"game" : "Semifals",
+				"date" : "February 3"
+			},
+
+			{
+				"team1" : "Inter",
+				"score1" : "",
+				"team2" : "Juventus",
+				"score2" : "",
+				"game" : "Semifals",
+				"date" : "February 4"
+			}
+
+		],
+
+		"final" : [
+
+			{
+				"team1" : "",
+				"score1" : "",
+				"team2" : "",
+				"score2" : "",
+				"game" : "Final",
+				"date" : "Match 18"
+			}
+
+		]
+
+	}
+
+}
