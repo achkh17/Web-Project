@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/body.css">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link rel="stylesheet" type="text/css" href="/css/season/standings.css">
+  <link rel="stylesheet" type="text/css" href="/css/news/transfers.css">
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,13 +36,17 @@
         if (this.readyState == 4 && this.status == 200) {
           var obj = JSON.parse(this.responseText);
           var arr = obj.copa;
+          document.getElementById("tournamentName").innerHTML = 'COPA ITALIA';
 
           if(window.location.search == "?id=2") {
             arr = obj.seriaA;
+            document.getElementById("tournamentName").innerHTML = 'SERIA A';
           } else if(window.location.search == "?id=3") {
+            document.getElementById("tournamentName").innerHTML = 'EUROPA LEAGUE';
             arr = obj.europaLeague;
-          } else {
+          }
 
+          if(window.location.search != "?id=2" && window.location.search != "?id=3") {
             for(i = 0; i < 2; i++) {
 
               var text = "";
@@ -91,7 +96,58 @@
                       <li class="team team-bottom">` + cur.team2 + `<span class="score">` + cur.score2 + `</span></li>
                     </ul></div>`;
             }
-            document.getElementById("champion").innerHTML = text;        
+            document.getElementById("champion").innerHTML = text; 
+
+          } else {
+            document.getElementById("standingsTable").style = "display:block;";
+            document.getElementById("bracket").style = "display:none;";
+            var table = document.getElementById("seasonTable");
+
+            for (i = arr.length - 1; i >= 0; i--) {
+              var row = table.insertRow(0);
+              var cell1 = row.insertCell(0);
+              var cell2 = row.insertCell(1);
+              var cell3 = row.insertCell(2);
+              var cell4 = row.insertCell(3);
+              var cell5 = row.insertCell(4);
+              var cell6 = row.insertCell(5);
+              var cell7 = row.insertCell(6);
+              var cell8 = row.insertCell(7);
+              var cell9 = row.insertCell(8);
+              var cell10 = row.insertCell(9);
+              var cell11 = row.insertCell(10);
+
+              cell1.className = "standingsNumber";
+              cell1.innerHTML = arr[i].num;
+
+              cell2.className = "standingsLogo";
+              cell2.innerHTML = `<img src = "` + arr[i].logo + `">`;
+
+              cell3.className = "standingsTeam";
+              cell3.innerHTML = arr[i].name;
+
+              cell4.innerHTML = arr[i].pts;
+              cell5.innerHTML = arr[i].p;
+              cell6.innerHTML = arr[i].w;
+              cell7.innerHTML = arr[i].d;
+              cell8.innerHTML = arr[i].l;
+              cell9.innerHTML = arr[i].gf;
+              cell10.innerHTML = arr[i].ga;
+              cell11.innerHTML = arr[i].gd;
+
+              cell5.className = "collapsable";
+              cell6.className = "collapsable";
+              cell7.className = "collapsable";
+              cell8.className = "collapsable";
+              cell9.className = "collapsable";
+              cell10.className = "collapsable";
+
+              if(arr[i].name == "Milan") {
+                row.style = "color: red!important; font-weight: bold;";
+              }
+
+            }
+
           }
         }
       };
@@ -106,13 +162,60 @@
 
 <div id="headerSpace"></div>
 
-<section id="bracket">
+<div class="floatTiTle">
+  <h1 class="titleH1" id="tournamentName"></h1>
+</div>
+
+<div class="dropdown tournamentDrop">
+  <button onclick="dropdownLicked()" class="dropbtn" id="tournament">Tournament</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/html/season/standings.html?id=1">Copa Italia</a>
+    <a href="/html/season/standings.html?id=2">Seria A</a>
+    <a href="/html/season/standings.html?id=3">Europa League</a>
+  </div>
+</div>
+
+<script>
+  function dropdownLicked() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+</script>
+
+<section id="bracket" class="clearfix">
   <div class="container">
     <div class="split split-one" id="split1"></div> 
     <div class="champion" id="champion"></div>
     <div class="split split-two" id="split2"></div>
   </div>
 </section>
+
+<div class="center-main standTable clearfix" id="standingsTable">
+  <div>
+   <div class="seriaAStandings centerTable">
+
+     <table class="standingsTable">
+       <thead class="standingsThread tableFormat">
+         <tr>
+           <th>#</th>
+           <th></th>
+           <th class="clubText">club</th>
+           <th>PTS</th>
+           <th class="collapsable">P</th>
+           <th class="collapsable">W</th>
+           <th class="collapsable">D</th>
+           <th class="collapsable">L</th>
+           <th class="collapsable">GF</th>
+           <th class="collapsable">GA</th>
+           <th>GD</th>
+         </tr>
+       </thead>
+
+       <tbody class="standingsTbody transfersTable" id="seasonTable"></tbody>							
+     </table>
+
+   </div>
+ </div>	
+</div>
 
 <div id="footerSpace"></div>
   
