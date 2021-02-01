@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="/css/body.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/season/standings.css">
+  <link rel="stylesheet" type="text/css" href="/css/season/schedules.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
+
+  <title>AC Milan Schedule</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+
+    $(function() {
+      $("#headerSpace").load("/html/header.html"); 
+      $("#footerSpace").load("/html/footer.html"); 
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.overrideMimeType("application/json");
+      xhttp.open("GET", "/json/schedules.json", true);
+      xhttp.send();
+
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var obj = JSON.parse(this.responseText);
+          var arr = obj.copa;
+          document.getElementById("scheduleTournamentName").innerHTML = 'COPA ITALIA';
+
+          if(window.location.search == "?id=2") {
+            arr = obj.seriaA;
+            document.getElementById("scheduleTournamentName").innerHTML = 'SERIA A';
+          } else if(window.location.search == "?id=3") {
+            document.getElementById("scheduleTournamentName").innerHTML = 'EUROPA LEAGUE';
+            arr = obj.europaLeague;
+          }
+
+          var monthText = "";
+          var text = "";
+          for(i = 0; i < arr.length; i++) {
+            monthText += `<div class="monthTitle"><a href = "#` + arr[i].month.toLowerCase().substring(0, 3) + `">` + arr[i].month.substring(0, 3) + `</a></div>`;
+
+            text += `
+              <div class="monthSchedule" id="` + arr[i].month.substring(0, 3).toLowerCase() + `">
+                <div class="monthName">` + arr[i].month + `</div>`;                
+
+              var games = arr[i].games;
+
+              for(j = 0; j < games.length; j++) {
+
+                text += `<div class="matchInfo">
+                    <div class="matchDay">
+                      <span class="matchDayNum">MATCHDAY ` + games[j].matchNum + `</span>
+                      <span class="matchDayDate">` + games[j].date + `</span>
+                      <span class="matchDayTime">` + games[j].time + `</span>
+                    </div>
+
+                    <div class="teamInfo1">
+                      <span class="teamName">` + games[j].team1 + `</span>
+                      <img src="` + games[j].logo1 + `" class="teamImg">
+                    </div>
+
+                    <div class="matchRes">` + games[j].score + `</div>
+
+                    <div class="teamInfo2">
+                      <img src="` + games[j].logo2 + `" class="teamImg">
+                      <span class="teamName">` + games[j].team2 + `</span>
+                    </div>
+
+                    <div class="flashscore">
+                      <a href="` + games[j].link + `" target="_blanck">MATCHCENTER</a>
+                    </div>
+
+                  </div>
+                  </div>`;
+              }
+          }
+
+          document.getElementById("monthList").innerHTML = monthText;
+          document.getElementById("schedule").innerHTML = text;
+
+        }
+        
+      };
+
+  });
+
+  </script>
+
+</head>
+
+<body>
+
+<div id="headerSpace"></div>
+
+<div class="floatTiTle">
+  <h1 class="titleH1" id="scheduleTournamentName"></h1>
+</div>
+
+<div class="dropdown tournamentDrop">
+  <button onclick="dropdownLicked()" class="dropbtn" id="tournament">Tournament
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/html/season/schedules.html?id=1">Copa Italia</a>
+    <a href="/html/season/schedules.html?id=2">Seria A</a>
+    <a href="/html/season/schedules.html?id=3">Europa League</a>
+  </div>
+</div>
+
+<script>
+  function dropdownLicked() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+</script>
+
+
+<div class="monthList" id="monthList"></div>
+
+<div class="center-main">
+  <div id="schedule"></div>
+</div>
+
+<div id="footerSpace"></div>
+
+</body>
+</html>

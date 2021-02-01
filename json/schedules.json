@@ -1,0 +1,657 @@
+{
+    "seriaA" : [
+
+        {
+            "month" : "September",
+            "games" : [
+                {
+                    "matchNum" : 1,
+                    "date" : "21 September 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Bologna",
+                    "logo2" : "/images/season/bologna.png",
+                    "score" : "2-0",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 2,
+                    "date" : "27 September 2020",
+                    "time" : "20:00",
+                    "team1" : "Crotone",
+                    "logo1" : "/images/season/crotone.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "0-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "October",
+            "games" : [
+                {
+                    "matchNum" : 3,
+                    "date" : "2 October 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Spezia",
+                    "logo2" : "/images/season/spezia.png",
+                    "score" : "3-0",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 4,
+                    "date" : "10 October 2020",
+                    "time" : "20:00",
+                    "team1" : "Inter",
+                    "logo1" : "/images/season/inter.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 5,
+                    "date" : "15 October 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Roma",
+                    "logo2" : "/images/season/roma.png",
+                    "score" : "3-3",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "November",
+            "games" : [
+
+                {
+                    "matchNum" : 6,
+                    "date" : "10 November 2020",
+                    "time" : "20:00",
+                    "team1" : "Udinese",
+                    "logo1" : "/images/season/udinese.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 7,
+                    "date" : "12 November 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Verona",
+                    "logo2" : "/images/season/verona.png",
+                    "score" : "2-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 8,
+                    "date" : "19 November 2020",
+                    "time" : "20:00",
+                    "team1" : "Napoli",
+                    "logo1" : "/images/season/napoli.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-3",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 9,
+                    "date" : "23 November 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Fiorentina",
+                    "logo2" : "/images/season/fiorentina.png",
+                    "score" : "2-0",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "December",
+            "games" : [
+
+                {
+                    "matchNum" : 10,
+                    "date" : "10 December 2020",
+                    "time" : "20:00",
+                    "team1" : "Sampdoria",
+                    "logo1" : "/images/season/sampdoria.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 11,
+                    "date" : "12 December 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Parma",
+                    "logo2" : "/images/season/parma.png",
+                    "score" : "2-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 12,
+                    "date" : "19 December 2020",
+                    "time" : "20:00",
+                    "team1" : "Genoa",
+                    "logo1" : "/images/season/genoa.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "2-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 13,
+                    "date" : "23 December 2020",
+                    "time" : "20:00",
+                    "team1" : "Sassuolo",
+                    "logo1" : "/images/season/sassuolo.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 14,
+                    "date" : "23 December 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Lazio",
+                    "logo2" : "/images/season/lazio.png",
+                    "score" : "3-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "January",
+            "games" : [
+
+                {
+                    "matchNum" : 15,
+                    "date" : "10 January 2020",
+                    "time" : "20:00",
+                    "team1" : "Benevento",
+                    "logo1" : "/images/season/benevento.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "0-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 16,
+                    "date" : "12 January 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Juventus",
+                    "logo2" : "/images/season/juventus.png",
+                    "score" : "1-3",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 17,
+                    "date" : "19 January 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Torino",
+                    "logo2" : "/images/season/torino.png",
+                    "score" : "2-0",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 18,
+                    "date" : "23 January 2020",
+                    "time" : "20:00",
+                    "team1" : "Cagliari",
+                    "logo1" : "/images/season/cagliari.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "0-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 19,
+                    "date" : "23 January 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Atalanta",
+                    "logo2" : "/images/season/atalanta.png",
+                    "score" : "0-3",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 20,
+                    "date" : "23 January 2020",
+                    "time" : "20:00",
+                    "team1" : "Bologna",
+                    "logo1" : "/images/season/bologna.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "February",
+            "games" : [
+
+                {
+                    "matchNum" : 21,
+                    "date" : "10 February 2020",
+                    "time" : "20:00",
+                    "team1" : "Spezia",
+                    "logo1" : "/images/season/spezia.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 22,
+                    "date" : "12 February 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Verona",
+                    "logo2" : "/images/season/verona.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 23,
+                    "date" : "19 February 2020",
+                    "time" : "20:00",
+                    "team1" : "Crotone",
+                    "logo1" : "/images/season/crotone.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 24,
+                    "date" : "23 February 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Inter",
+                    "logo2" : "/images/season/inter.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "March",
+            "games" : [
+
+                {
+                    "matchNum" : 25,
+                    "date" : "10 March 2020",
+                    "time" : "20:00",
+                    "team1" : "Udinese",
+                    "logo1" : "/images/season/udinese.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 26,
+                    "date" : "12 March 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Verona",
+                    "logo2" : "/images/season/verona.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 27,
+                    "date" : "19 March 2020",
+                    "time" : "20:00",
+                    "team1" : "Napoli",
+                    "logo1" : "/images/season/napoli.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 28,
+                    "date" : "23 March 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Fiorentina",
+                    "logo2" : "/images/season/fiorentina.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "April",
+            "games" : [
+
+                {
+                    "matchNum" : 29,
+                    "date" : "21 April 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Bologna",
+                    "logo2" : "/images/season/bologna.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 30,
+                    "date" : "27 April 2020",
+                    "time" : "20:00",
+                    "team1" : "Crotone",
+                    "logo1" : "/images/season/crotone.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 31,
+                    "date" : "2 April 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Spezia",
+                    "logo2" : "/images/season/spezia.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 32,
+                    "date" : "10 April 2020",
+                    "time" : "20:00",
+                    "team1" : "Inter",
+                    "logo1" : "/images/season/inter.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        },
+
+        {
+            "month" : "May",
+            "games" : [
+
+                {
+                    "matchNum" : 10,
+                    "date" : "10 May 2020",
+                    "time" : "20:00",
+                    "team1" : "Sampdoria",
+                    "logo1" : "/images/season/sampdoria.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 11,
+                    "date" : "12 May 2020",
+                    "time" : "21:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Parma",
+                    "logo2" : "/images/season/parma.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 12,
+                    "date" : "19 May 2020",
+                    "time" : "20:00",
+                    "team1" : "Genoa",
+                    "logo1" : "/images/season/genoa.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 13,
+                    "date" : "23 May 2020",
+                    "time" : "20:00",
+                    "team1" : "Sassuolo",
+                    "logo1" : "/images/season/sassuolo.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                },
+
+                {
+                    "matchNum" : 14,
+                    "date" : "29 May 2020",
+                    "time" : "20:00",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Lazio",
+                    "logo2" : "/images/season/lazio.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/fixtures/"
+                }
+            ]
+        }
+    ],
+
+    "copa" : [
+
+        {
+            "month" : "January",
+            "games" : [
+                {
+                    "matchNum" : 1,
+                    "date" : "21 January 2021",
+                    "time" : "23:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Torino",
+                    "logo2" : "/images/season/torino.png",
+                    "score" : "0-0",
+                    "link" : "https://www.flashscore.com/match/MmA1KIUB/#match-summary"
+                },
+
+                {
+                    "matchNum" : 2,
+                    "date" : "27 January 2021",
+                    "time" : "23:00",
+                    "team1" : "Inter",
+                    "logo1" : "/images/season/inter.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "2-1",
+                    "link" : "https://www.flashscore.com/match/d6YrRkk4/#match-summary"
+                }
+            ]
+        }
+    ],
+
+    "europaLeague" : [
+
+        {
+            "month" : "October",
+            "games" : [
+                {
+                    "matchNum" : 1,
+                    "date" : "27 October 2021",
+                    "time" : "23:00",
+                    "team1" : "Celtic",
+                    "logo1" : "/images/season/celtic.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-3",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                },
+
+                {
+                    "matchNum" : 2,
+                    "date" : "21 October 2021",
+                    "time" : "23:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Sparta Praga",
+                    "logo2" : "/images/season/sparta.png",
+                    "score" : "3-0",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                }
+            ]
+        },
+
+        {
+            "month" : "November",
+            "games" : [
+
+                {
+                    "matchNum" : 3,
+                    "date" : "21 November 2021",
+                    "time" : "23:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "Lille",
+                    "logo2" : "/images/season/lille.png",
+                    "score" : "0-3",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                },
+
+                {
+                    "matchNum" : 4,
+                    "date" : "27 November 2021",
+                    "time" : "23:00",
+                    "team1" : "lille",
+                    "logo1" : "/images/season/lille.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "1-1",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                }
+ 
+            ]
+        },
+
+        {
+            "month" : "December",
+            "games" : [
+
+                {
+                    "matchNum" : 5,
+                    "date" : "21 December 2021",
+                    "time" : "23:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "celtic",
+                    "logo2" : "/images/season/celtic.png",
+                    "score" : "4-2",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                },
+
+                {
+                    "matchNum" : 6,
+                    "date" : "27 December 2021",
+                    "time" : "23:00",
+                    "team1" : "sparta praga",
+                    "logo1" : "/images/season/sparta.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "0-1",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                }
+ 
+            ]
+        },
+
+        {
+            "month" : "February",
+            "games" : [
+
+                {
+                    "matchNum" : 7,
+                    "date" : "27 February 2021",
+                    "time" : "23:00",
+                    "team1" : "stella rossa",
+                    "logo1" : "/images/season/stella.png",
+                    "team2" : "Milan",
+                    "logo2" : "/images/season/milan.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                },
+
+                {
+                    "matchNum" : 8,
+                    "date" : "21 February 2021",
+                    "time" : "23:45",
+                    "team1" : "Milan",
+                    "logo1" : "/images/season/milan.png",
+                    "team2" : "stella rossa",
+                    "logo2" : "/images/season/stella.png",
+                    "score" : "VS",
+                    "link" : "https://www.flashscore.com/team/ac-milan/8Sa8HInO/"
+                }
+ 
+            ]
+        }
+    ]
+}
