@@ -1,0 +1,117 @@
+{
+    "management" : [
+
+        {
+            "name" : "Paolo Scaroni",
+            "position" : "CHAIRMAN",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/1.jpg"
+        },
+        
+        {
+            "name" : "Ivan Gazidis",
+            "position" : "CHIEF EXECUTIVE OFFICER",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/2.jpg"
+        },
+        
+        {
+            "name" : "Paolo Maldini",
+            "position" : "TECHNICAL AREA DIRECTOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/3.jpg"
+        },
+        
+        {
+            "name" : "Franco Baresi",
+            "position" : "HONORARY VICE PRESIDENT",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/4.jpg"
+        },
+        
+        {
+            "name" : "Daniele Massaro",
+            "position" : "BRAND AMBASSADOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/5.jpg"
+        },
+        
+        {
+            "name" : "Roberto Masi",
+            "position" : "CHIEF BUSINESS OFFICER",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/6.jpg"
+        },
+        
+        {
+            "name" : "James Murray",
+            "position" : "CHIEF OF STAFF FOR CEO",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/7.jpg"
+        },
+        
+        {
+            "name" : "Casper Stylsvig",
+            "position" : "CHIEF REVENUE OFFICER",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/8.jpg"
+        },
+        
+        {
+            "name" : "Pier Donato", 	
+            "position" : "CHIEF OFFICER",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/9.jpg"
+        },
+        
+        {
+            "name" : "Angelo Carbone",
+            "position" : "YOUTH SECTOR DIRECTOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/1.jpg"
+        },
+        
+        {
+            "name" : "Agata Frigerio",
+            "position" : "HUMAN RESOURCES DIRECTOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/10.jpg"
+        },
+        
+        {
+            "name" : "Marco Lomazzi",
+            "position" : "STADIUM OPERATIONS DIRECTOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/11.jpg"
+        },
+        
+        {
+            "name" : "Frederic Massara",
+            "position" : "SPORT DIRECTOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/12.jpg"
+        },
+        
+        {
+            "name" : "Maikel Oettle",
+            "position" : "SALES DIRECTOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/13.jpg"
+        },
+        
+        {
+            "name" : "Valerio Rocchetti",
+            "position" : "RETAIL, LICENSING",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/14.jpg"
+        },
+        
+        {
+            "name" : "Aldo Savi",
+            "position" : "ADMINISTRATIVE DIRECTOR",
+            "resume" : "https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eb0353d2-faa7-4057-98c6-a14d122823d5/CV%20Paolo%20Scaroni.pdf",
+            "img" : "/images/club/management/15.jpg"
+        }
+
+    ]
+}

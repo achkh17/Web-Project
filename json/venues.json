@@ -4,25 +4,29 @@
     {
       "name" : "CASA MILAN",
       "desc" : "Experience the emotions of years of success",
-      "img" : "/images/club/venues/CasaMilan.png"
+      "img" : "/images/club/venues/CasaMilan.png",
+      "link" : "https://www.getyourguide.com/milan-l139/casa-milan-ticket-t64610/"
     },
     
     {
       "name" : "SAN SIRO",
       "desc" : "Discover the history, how to arrive and all the regulations",
-      "img" : "/images/club/venues/SanSiro.png"
+      "img" : "/images/club/venues/SanSiro.png",
+      "link" : "https://www.stubhub.com/stadio-san-siro-tickets/venue/213807/"
     },
     
     {
       "name" : "MILANELLO",
       "desc" : "Most important state-of-the-art sporting complexes in Europe",
-      "img" : "/images/club/venues/Milanello.png"
+      "img" : "/images/club/venues/Milanello.png",
+      "link" : "https://www.tripadvisor.com/ShowTopic-g187849-i143-k1428463-Ac_Milan_training_session_Milanello-Milan_Lombardy.html"
     },
     
     {
       "name" : "VISMARA",
       "desc" : "All you need to know about our youth team sports center",
-      "img" : "/images/club/venues/Vismara.png"
+      "img" : "/images/club/venues/Vismara.png",
+      "link" : "https://www.footballgroundmap.com/ground/centro-sportivo-vismara/ac-milan-women"
     }
   
   ]
