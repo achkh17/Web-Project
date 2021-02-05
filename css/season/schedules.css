@@ -202,6 +202,23 @@ html {
 
 }
 
+@media (max-width: 900px) {
+    .monthTitle {
+        color: white;
+        padding: 10px 0px!important;
+        cursor: pointer;
+        width: 8%;
+    }
+
+    .monthTitle > a {
+        color: white;
+        padding: 10px 0px!important;
+        cursor: pointer;
+        text-decoration: none;
+        width: 8%;
+    }
+}
+
 .monthList {
     background-color: black;
     width: 100%;

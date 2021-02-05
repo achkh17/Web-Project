@@ -16,16 +16,30 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+  <script src="/js/hamburgerMenu.js"></script>
 
   <title>AC Milan Standings</title>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
   <script>
 
-    $(function() {
-      $("#headerSpace").load("/html/header.html"); 
-      $("#footerSpace").load("/html/footer.html"); 
+    function loadPage() {
+			fetch("/html/header.html" /*, options */)
+			.then((response) => response.text())
+			.then((html) => {
+				document.getElementById("headerSpace").innerHTML = html;
+			})
+			.catch((error) => {
+				console.warn(error);
+			});
+
+			fetch("/html/footer.html" /*, options */)
+			.then((response) => response.text())
+			.then((html) => {
+				document.getElementById("footerSpace").innerHTML = html;
+			})
+			.catch((error) => {
+				console.warn(error);
+			});
 
       var xhttp = new XMLHttpRequest();
       xhttp.overrideMimeType("application/json");
@@ -152,13 +166,13 @@
         }
       };
 
-  });
+  }
 
   </script>
 
 </head>
 
-<body>
+<body onload="loadPage()">
 
 <div id="headerSpace"></div>
 

@@ -10,16 +10,30 @@
     <link rel="stylesheet" type="text/css" href="/css/tickets/museumTickets.css">
     <link rel="stylesheet" type="text/css" href="/css/club/academy.css">
 	<link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
+	<script src="/js/hamburgerMenu.js"></script>
 
 	<title>AC Milan Academy</title>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
 	<script>
 
-        $(function() {
-		  $("#headerSpace").load("/html/header.html"); 
-		  $("#footerSpace").load("/html/footer.html"); 
+		function loadPage() {
+			fetch("/html/header.html" /*, options */)
+			.then((response) => response.text())
+			.then((html) => {
+				document.getElementById("headerSpace").innerHTML = html;
+			})
+			.catch((error) => {
+				console.warn(error);
+			});
+
+			fetch("/html/footer.html" /*, options */)
+			.then((response) => response.text())
+			.then((html) => {
+				document.getElementById("footerSpace").innerHTML = html;
+			})
+			.catch((error) => {
+				console.warn(error);
+			});
 
 		  var xhttp = new XMLHttpRequest();
 		  xhttp.overrideMimeType("application/json");
@@ -66,13 +80,13 @@
 
 		  };
 
-		});
+		}
 
 	</script>
 	
 </head>
 
-<body>
+<body onload="loadPage()">
 
 	<div class="main-container">
 

@@ -8,15 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- logo -->
 
-	<title>AC Milan</title>
+	<script src="/js/hamburgerMenu.js"></script>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<title>AC Milan</title>
 
 	<script>
 
-        $(function(){
-		  $("#headerSpace").load("html/header.html"); 
-		  $("#footerSpace").load("html/footer.html"); 
+		function loadPage() {
+			fetch("/html/header.html" /*, options */)
+			.then((response) => response.text())
+			.then((html) => {
+				document.getElementById("headerSpace").innerHTML = html;
+			})
+			.catch((error) => {
+				console.warn(error);
+			});
+
+			fetch("/html/footer.html" /*, options */)
+			.then((response) => response.text())
+			.then((html) => {
+				document.getElementById("footerSpace").innerHTML = html;
+			})
+			.catch((error) => {
+				console.warn(error);
+			});
 
 		  // topNews
 		  var xhttp = new XMLHttpRequest();
@@ -274,13 +289,13 @@
 		    }
 		  };
 
-		});
+		}
 
     </script>
 
 </head>
 
-<body>
+<body onload="loadPage()">
 
 	<div class="main-container">
 
@@ -371,11 +386,7 @@
 				</div>
 			</div>
 
-			<script>
-			var url = "/js/slider.js";
-			$.getScript(url);
-			</script>
-
+			<script src="/js/slider.js"></script>
 
 			<!-- Standings table -->
 			<div class="standings">
