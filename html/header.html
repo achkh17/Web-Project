@@ -1,10 +1,11 @@
 <link rel="stylesheet" type="text/css" href="/css/header.css">
 <script src="/js/hamburgerMenu.js"></script>
+<script src="/js/router.js"></script>
 
 <div class="header" id="header">
 
 	<div class="main-logo-container">
-		<a href="/index.html">
+		<a href="/">
 			<img src="/images/header/logo.png" alt="AC Milan Official Logo" class="main-logo">
 		</a>
 	</div>
@@ -84,38 +85,8 @@
 			<div class="hamburgerButtonSpan3"></div>
 		</div>
 
-		<!-- <script type="text/javascript">
-			function hamburgerMenuClicked(x) {
-				x.classList.toggle("change");
-
-				var header = document.getElementById("header");
-				var sticky = header.offsetTop;
-				var x = document.getElementById("navMenu");
-
-				if (x.style.display === "block") {
-					x.style.display = "none";
-					header.classList.remove("sticky");
-				} else {
-					x.style.display = "block";
-					header.classList.add("sticky");
-				}
-			}
-
-
-			function openSubmenu(y) {
-				var x = y.parentElement.children[1];
-				if (x.style.display === "block") {
-					x.style.display = "none";
-					y.parentElement.children[0].children[1].style.transform = "none";
-				} else {
-					x.style.display = "block";
-					y.parentElement.children[0].children[1].style.transform = "rotate(180deg)";
-				}	
-			}
-		</script> -->
-
 		<div>
-			<a href="/index.html">
+			<a href="/">
 				<img src="/images/header/logo.png" alt="AC Milan - Official Site" class="nav-main-logo">
 			</a>
 		</div>
@@ -130,7 +101,7 @@
 				</div>
 
 				<ul class="navMenuSubMenu">
-					<li><a href="/html/news/allNews.html">All the News</a></li>
+					<li><a href="#/news/allNews" onclick="onNavItemClick('/news/allNews')">All the News</a></li>
 					<li><a href="/html/news/transfers.html">Transfer Window</a></li>
 					<li><a href="/html/news/photoGallery.html">Photo Gallery</a></li>
 					<li><a href="/html/news/videoGallery.html">Video Gallery</a></li>
@@ -217,9 +188,9 @@
 		<ul>
 
 			<li class="menuItem">
-				<a href="#" class="menuItemName">News</a>
+				<a class="menuItemName">News</a>
 				<ul class="subMenu">
-					<li><a href="/html/news/allNews.html">All the News</a></li>
+					<li><a href="#/news/allNews" onclick="onNavItemClick('/news/allNews')">All the News</a></li>
 					<li><a href="/html/news/transfers.html">Transfer Window</a></li>
 					<li><a href="/html/news/photoGallery.html">Photo Gallery</a></li>
 					<li><a href="/html/news/videoGallery.html">Video Gallery</a></li>
@@ -228,7 +199,7 @@
 
 
 			<li class="menuItem">
-				<a href="#" class="menuItemName">Tickets</a>
+				<a class="menuItemName">Tickets</a>
 				<ul class="subMenu">
 					<li><a href="/html/tickets/museumTickets.html">Museum Tickets</a></li>
 					<li><a href="https://hospitality.acmilan.com/" target="_blank">Premium & Hospitality</a></li>
@@ -238,7 +209,7 @@
 			</li>
 
 			<li class="menuItem">
-				<a href="#" class="menuItemName">Teams</a>
+				<a class="menuItemName">Teams</a>
 				<ul class="subMenu">
 					<li><a href="/html/teams/menTeam.html?id=1">Men's Team</a></li>
 					<li><a href="/html/teams/menTeam.html?id=2">Women's team</a></li>
@@ -246,7 +217,7 @@
 			</li>
 
 			<li class="menuItem">
-				<a href="#" class="menuItemName">Season</a>
+				<a class="menuItemName">Season</a>
 				<ul class="subMenu">
 					<li><a href="/html/season/schedules.html?id=2">Schedules</a></li>
 					<li><a href="/html/season/standings.html?id=1">Standings</a></li>
@@ -266,7 +237,7 @@
 			</li>
 
 			<li class="menuItem">
-				<a href="#" class="menuItemName">Shop</a>
+				<a class="menuItemName">Shop</a>
 				<ul class="subMenu">
 
 					<li>

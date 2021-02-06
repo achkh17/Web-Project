@@ -850,3 +850,15 @@
     }
 
 }
+
+
+#mainImg {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.newsTitle {
+    color: red;
+    text-transform: uppercase;
+}
