@@ -1,41 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
+function getPlayer() {
+    return `
+    <div class="center-player" id="playerInfo"></div>
+    <div class="biography" id="bio"></div>
+    <div id="transferButton"></div>
+    `;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-
-  <link rel="stylesheet" type="text/css" href="/css/body.css">
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/css/teams/menTeam.css">
-  <link rel="stylesheet" type="text/css" href="/css/teams/player.css">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- logo -->
-  <script src="/js/hamburgerMenu.js"></script>
-
-  <title>AC Milan Squad</title>
-
-  <script>
-
-    function loadPage() {
-			fetch("/html/header.html" /*, options */)
-			.then((response) => response.text())
-			.then((html) => {
-				document.getElementById("headerSpace").innerHTML = html;
-			})
-			.catch((error) => {
-				console.warn(error);
-			});
-
-			fetch("/html/footer.html" /*, options */)
-			.then((response) => response.text())
-			.then((html) => {
-				document.getElementById("footerSpace").innerHTML = html;
-			})
-			.catch((error) => {
-				console.warn(error);
-			}); 
-
-      var xhttp = new XMLHttpRequest();
+function loadPlayer() {
+    var xhttp = new XMLHttpRequest();
       xhttp.overrideMimeType("application/json");
       xhttp.open("GET", "/json/players/" + localStorage.getItem("playerId") + ".json", true);
       xhttp.send();
@@ -83,22 +55,4 @@
           
         }
       };
-
-  }
-
-  </script>
-
-</head>
-
-<body onload="loadPage()">
-
-<div id="headerSpace"></div>
-
-<div class="center-player" id="playerInfo"></div>
-<div class="biography" id="bio"></div>
-<div id="transferButton"></div>
-
-<div id="footerSpace"></div>
-
-</body>
-</html>
+}

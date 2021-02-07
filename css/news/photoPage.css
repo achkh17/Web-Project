@@ -68,13 +68,13 @@ img {
   color: white;
 }
 
-.row:after {
+.photoRow:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.column {
+.photoColumn {
   float: left;
   width: 16.66%;
 }
@@ -92,6 +92,6 @@ img {
   width: 100%;
 }
 
-.center-main > div > p {
-  text-align: center;
+.caption-container > p {
+  text-align: center!important;
 }

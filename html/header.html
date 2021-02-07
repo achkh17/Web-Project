@@ -101,10 +101,10 @@
 				</div>
 
 				<ul class="navMenuSubMenu">
-					<li><a href="#/news/allNews" onclick="onNavItemClick('/news/allNews')">All the News</a></li>
-					<li><a href="/html/news/transfers.html">Transfer Window</a></li>
-					<li><a href="/html/news/photoGallery.html">Photo Gallery</a></li>
-					<li><a href="/html/news/videoGallery.html">Video Gallery</a></li>
+					<li><a href="#/news/allNews">All the News</a></li>
+					<li><a href="#/news/transfers">Transfer Window</a></li>
+					<li><a href="#/news/photoGallery">Photo Gallery</a></li>
+					<li><a href="#/news/videoGallery">Video Gallery</a></li>
 				</ul>
 			</li>
 
@@ -115,10 +115,10 @@
 				</div>
 
 				<ul class="navMenuSubMenu">
-					<li><a href="/html/tickets/museumTickets.html">Museum Tickets</a></li>
+					<li><a href="#/museumTickets">Museum Tickets</a></li>
 					<li><a href="https://hospitality.acmilan.com/" target="_blank">Premium & Hospitality</a></li>
-					<li><a href="/html/tickets/accreditations.html">Accreditations</a></li>
-					<li><a href="/html/tickets/banners.html">Banners</a></li>
+					<li><a href="#/accreditations">Accreditations</a></li>
+					<li><a href="#/banners">Banners</a></li>
 				</ul>
 			</li>
 
@@ -128,8 +128,8 @@
 					<div class="navSubMenuButton"></div>
 				</div>
 				<ul class="navMenuSubMenu">
-					<li><a href="/html/teams/menTeam.html?id=1">Men's Team</a></li>
-					<li><a href="/html/teams/menTeam.html?id=2">Women's team</a></li>
+					<li><a href="#/team" onclick="teamClicked(this)" id="1">Men's Team</a></li>
+					<li><a href="#/team" onclick="teamClicked(this)" id="2">Women's team</a></li>
 				</ul>
 			</li>
 
@@ -139,8 +139,8 @@
 					<div class="navSubMenuButton"></div>
 				</div>
 				<ul class="navMenuSubMenu">
-					<li><a href="/html/season/schedules.html?id=2">Schedules</a></li>
-					<li><a href="/html/season/standings.html?id=1">Standings</a></li>
+					<li><a href="#/season/schedules"  onclick="scheduleClicked(this)" id="2">Schedules</a></li>
+					<li><a href="#/season/standings"  onclick="standingsClicked(this)" id="1">Standings</a></li>
 				</ul>
 			</li>
 
@@ -151,11 +151,11 @@
 				</div>
 
 				<ul class="navMenuSubMenu">
-					<li><a href="/html/club/history/history.html">History</a></li>
-					<li><a href="/html/club/venues/venues.html">Venues</a></li>
-					<li><a href="/html/club/history/awards.html">Awards</a></li>
-					<li><a href="/html/club/management.html">Managment</a></li>
-					<li><a href="/html/club/academy.html">Academy</a></li>
+					<li><a href="#/club/history">History</a></li>
+					<li><a href="#/club/venues">Venues</a></li>
+					<li><a href="#/club/awards">Awards</a></li>
+					<li><a href="#/club/management">Managment</a></li>
+					<li><a href="#/club/academy">Academy</a></li>
 					<li><a href="https://www.nuovostadiomilano.com/en" target="_blank">New Stadium</a></li>
 				</ul>
 			</li>
@@ -190,10 +190,10 @@
 			<li class="menuItem">
 				<a class="menuItemName">News</a>
 				<ul class="subMenu">
-					<li><a href="#/news/allNews" onclick="onNavItemClick('/news/allNews')">All the News</a></li>
-					<li><a href="/html/news/transfers.html">Transfer Window</a></li>
-					<li><a href="/html/news/photoGallery.html">Photo Gallery</a></li>
-					<li><a href="/html/news/videoGallery.html">Video Gallery</a></li>
+					<li><a href="#/news/allNews">All the News</a></li>
+					<li><a href="#/news/transfers">Transfer Window</a></li>
+					<li><a href="#/news/photoGallery">Photo Gallery</a></li>
+					<li><a href="#/news/videoGallery">Video Gallery</a></li>
 				</ul>	
 			</li>
 
@@ -201,37 +201,37 @@
 			<li class="menuItem">
 				<a class="menuItemName">Tickets</a>
 				<ul class="subMenu">
-					<li><a href="/html/tickets/museumTickets.html">Museum Tickets</a></li>
+					<li><a href="#/museumTickets">Museum Tickets</a></li>
 					<li><a href="https://hospitality.acmilan.com/" target="_blank">Premium & Hospitality</a></li>
-					<li><a href="/html/tickets/accreditations.html">Accreditations</a></li>
-					<li><a href="/html/tickets/banners.html">Banners</a></li>
+					<li><a href="#/accreditations">Accreditations</a></li>
+					<li><a href="#/banners">Banners</a></li>
 				</ul>	
 			</li>
 
 			<li class="menuItem">
 				<a class="menuItemName">Teams</a>
 				<ul class="subMenu">
-					<li><a href="/html/teams/menTeam.html?id=1">Men's Team</a></li>
-					<li><a href="/html/teams/menTeam.html?id=2">Women's team</a></li>
+					<li><a href="#/team" onclick="teamClicked(this)" id="1">Men's Team</a></li>
+					<li><a href="#/team" onclick="teamClicked(this)" id="2">Women's team</a></li>
 				</ul>	
 			</li>
 
 			<li class="menuItem">
 				<a class="menuItemName">Season</a>
 				<ul class="subMenu">
-					<li><a href="/html/season/schedules.html?id=2">Schedules</a></li>
-					<li><a href="/html/season/standings.html?id=1">Standings</a></li>
+					<li><a href="#/season/schedules" onclick="scheduleClicked(this)" id="2">Schedules</a></li>
+					<li><a href="#/season/standings" onclick="standingsClicked(this)" id="1">Standings</a></li>
 				</ul>	
 			</li>
 
 			<li class="menuItem">
-				<a href="/html/club/history/history.html" class="menuItemName">Club</a>
+				<a class="menuItemName">Club</a>
 				<ul class="subMenu">
-					<li><a href="/html/club/history/history.html">History</a></li>
-					<li><a href="/html/club/venues/venues.html">Venues</a></li>
-					<li><a href="/html/club/history/awards.html">Awards</a></li>
-					<li><a href="/html/club/management.html">Managment</a></li>
-					<li><a href="/html/club/academy.html">Academy</a></li>
+					<li><a href="#/club/history">History</a></li>
+					<li><a href="#/club/venues">Venues</a></li>
+					<li><a href="#/club/awards">Awards</a></li>
+					<li><a href="#/club/management">Managment</a></li>
+					<li><a href="#/club/academy">Academy</a></li>
 					<li><a href="https://www.nuovostadiomilano.com/en" target="_blank">New Stadium</a></li>
 				</ul>	
 			</li>
@@ -258,3 +258,17 @@
 	</div>
 	
 </div>
+
+<script>
+	function scheduleClicked(e) {
+		localStorage.setItem("scheduleId", e.id);
+	}
+
+	function standingsClicked(e) {
+		localStorage.setItem("standingsId", e.id);
+	}
+
+	function teamClicked(e) {
+		localStorage.setItem("teamId", e.id);
+	}
+</script>

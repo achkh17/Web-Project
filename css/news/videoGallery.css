@@ -20,7 +20,7 @@ div.desc {
   box-sizing: border-box;
 }
 
-.responsive {
+.responsiveVideo {
   padding: 0 6px;
   float: left;
   width: 50%;
@@ -28,7 +28,7 @@ div.desc {
 
 
 @media only screen and (max-width: 500px) {
-  .responsive {
+  .responsiveVideo {
     width: 100%;
   }
 }

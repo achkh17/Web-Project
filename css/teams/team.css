@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.main {
+.teamMain {
   max-width: 960px;
   margin: auto;
   margin-top: 25px;
@@ -12,28 +12,23 @@
   margin-left: 10px;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row, .row > .column {
+.teamRow, .teamRow > .teamColumn {
   padding: 5px;
 }
 
-.column {
+.teamColumn {
   float: left;
   width: 25%;
   display: none;
 }
 
-.row:after {
+.teamRow:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.content {
+.teamContent {
   position: relative;
   background-color: rgb(29, 32, 34);
   background-image: url(/images/teams/men/background.png);
@@ -64,31 +59,31 @@ h1 {
 }
 
 @media screen and (max-width: 1200px) {
-  .column {
+  .teamColumn {
     width: 33.33%;
   }
 
-  .content {
+  .teamContent {
     height: 340px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .column {
+  .teamColumn {
     width: 50%;
   }
 
-  .content {
+  .teamContent {
     height: 420px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .teamColumn {
     width: 100%;
   }
 
-  .content {
+  .teamContent {
     height: 100%;
   }
 }
@@ -109,7 +104,7 @@ h1 {
   margin: 20px 0px;
 }
 
-.column-img {
+.teamColumn-img {
   width: 100%;
   height: 100%;
 }

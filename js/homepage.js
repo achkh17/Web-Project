@@ -15,7 +15,7 @@ function getHomePage() {
                         <p class="lowerSlideText"></p>
 
                         <div class="slideButton">
-                            <a onclick="newsClicked(this)" id="#">Discover more</a>
+                            <a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="#">Discover more</a>
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@ function getHomePage() {
                         <p class="lowerSlideText"></p>
 
                         <div class="slideButton">
-                            <a onclick="newsClicked(this)" id="#">Discover more</a>
+                            <a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="#">Discover more</a>
                         </div>
                     </div>
 
@@ -50,7 +50,7 @@ function getHomePage() {
                         <p class="lowerSlideText"></p>
 
                         <div class="slideButton">
-                            <a onclick="newsClicked(this)" id="#">Discover more</a>
+                            <a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="#">Discover more</a>
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@ function getHomePage() {
                         <p class="lowerSlideText"></p>
 
                         <div class="slideButton">
-                            <a onclick="newsClicked(this)" id="#">Discover more</a>
+                            <a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="#">Discover more</a>
                         </div>
                     </div>
 
@@ -93,7 +93,7 @@ function getHomePage() {
                     <div class="matchScore">
 
                         <div class="matchDay">
-                            <span class="matchDayNum" id="matchDayNum"></span>
+                            <span class="centerMatchDayNum" id="matchDayNum"></span>
                             <div class="matchDayDate" id="matchDayDate"></div>	
                         </div>
 
@@ -109,7 +109,7 @@ function getHomePage() {
 
                         
                     </div>
-                    <a class="moreMatchesLink" href="/html/season/schedules.html?id=2">See all matches</a>
+                    <a class="moreMatchesLink" href="#/season/schedules"  onclick="scheduleClicked(this)" id="2">See all matches</a>
 
                 </div>
             </div>
@@ -177,7 +177,7 @@ function getHomePage() {
                         </tbody>							
                     </table>
 
-                    <a class="moreMatchesLink" href="/html/season/standings.html?id=2">See the standings</a>
+                    <a class="moreMatchesLink" href="#/season/standings"  onclick="standingsClicked(this)" id="2">See the standings</a>
                 </div>
             </div>
             
@@ -190,14 +190,14 @@ function getHomePage() {
         <!-- Photo Gallery -->
         <div class="photos">
             <h2 class="lastNewsText">Photo Gallery</h2>
-            <a href="/html/news/photoGallery.html" class="lastNewsSeeMore">See More</a>
+            <a href="#/news/photoGallery" class="lastNewsSeeMore">See More</a>
             
 
             <div class="photoGallery"> 
                 <div class="photoGalleryColumn">
 
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "9">
                             <img class="galleryImage" id="galleryImage1">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -205,7 +205,7 @@ function getHomePage() {
                     </div>
 
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "2">
                             <img class="galleryImage" id="galleryImage2">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -213,7 +213,7 @@ function getHomePage() {
                     </div>
 
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "7">
                             <img class="galleryImage" id="galleryImage3">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -223,7 +223,7 @@ function getHomePage() {
 
                 <div class="photoGalleryColumn">
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "2">
                             <img class="galleryImage" id="galleryImage4">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -231,7 +231,7 @@ function getHomePage() {
                     </div>
 
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "3">
                             <img class="galleryImage" id="galleryImage5">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -239,7 +239,7 @@ function getHomePage() {
                     </div>
 
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "8">
                             <img class="galleryImage" id="galleryImage6">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -249,7 +249,7 @@ function getHomePage() {
                 </div>  
                 <div class="photoGalleryColumn">
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "4">
                             <img class="galleryImage" id="galleryImage7">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -257,7 +257,7 @@ function getHomePage() {
                     </div>
 
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "9">
                             <img class="galleryImage" id="galleryImage8">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -267,7 +267,7 @@ function getHomePage() {
                 </div>
                 <div class="photoGalleryColumn">
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "1">
                             <img class="galleryImage" id="galleryImage9">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -275,7 +275,7 @@ function getHomePage() {
                     </div>
 
                     <div class="galleryDiv">
-                        <a onclick="photoClicked(this)" href="/html/news/photoPage.html" id=
+                        <a onclick="photoClicked(this)" href="#/news/photoPage" id=
                         "4">
                             <img class="galleryImage" id="galleryImage10">
                             <img src="/images/main/galleryIcon.png" class="galleryIcon">
@@ -290,7 +290,7 @@ function getHomePage() {
         <!-- Video Gallery -->
         <div class="videos">
             <h2 class="lastNewsText">Video Gallery</h2>
-            <a href="/html/news/videoGallery.html" class="lastNewsSeeMore">See More</a>
+            <a href="#/news/videoGallery" class="lastNewsSeeMore">See More</a>
 
             <div class="videoGallery">
                 <div class="videoGalleryDiv1" id="video1"> 
@@ -399,7 +399,7 @@ function getHomePage() {
                 <h3></h3>
                 <p></p>
 
-                <a href="/html/club/history/awards.html">
+                <a href="#/club/awards">
                     <button class="shopItemButton">
                         <h3>DISCOVER MORE</h3>
                     </button>
@@ -413,7 +413,7 @@ function getHomePage() {
                 <h3></h3>
                 <p></p>
 
-                <a href="/html/club/management.html">
+                <a href="#/club/management">
                     <button class="shopItemButton">
                         <h3>DISCOVER MORE</h3>
                     </button>
@@ -430,7 +430,7 @@ function getHomePage() {
             <h2></h2>
             <p></p>
 
-            <a href="/html/club/academy.html">
+            <a href="#/club/academy">
                 <button class="shopItemButton academyButton">
                     <h3>FIND OUT MORE</h3>
                 </button>
@@ -548,14 +548,14 @@ function loadHomePage() {
 						news.innerHTML += `
 						<div class=\"upperNews\">
 							<div class="newsItem upperNewsItem">
-								<a onclick="newsClicked(this)" id="` + arr[i].id + `">
+								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
 									<img src=\"` + arr[i].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i].date + `</div>
 
-									<a onclick="newsClicked(this)" id="` + arr[i].id + `">
+									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
 										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
 									</a>
 								</div>
@@ -563,14 +563,14 @@ function loadHomePage() {
 							
 
 							<div class="newsItem upperNewsItem">
-								<a onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
+								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
 									<img src=\"` + arr[i + 1].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
 
-									<a onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
+									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
 										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
 									</a>
 								</div>
@@ -582,42 +582,42 @@ function loadHomePage() {
 						news.innerHTML += `
 						<div class=\"lowerNews\">
 							<div class="newsItem lowerNewsItem">
-								<a onclick="newsClicked(this)" id="` + arr[i].id + `">
+								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
 									<img src=\"` + arr[i].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i].date + `</div>
 
-									<a onclick="newsClicked(this)" id="` + arr[i].id + `">
+									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
 										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
 									</a>
 								</div>
 							</div>
 
 							<div class="newsItem lowerNewsItem">
-								<a onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
+								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
 									<img src=\"` + arr[i + 1].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
 
-									<a onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
+									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
 										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
 									</a>
 								</div>
 							</div>
 
 							<div class="newsItem lowerNewsItem">
-								<a onclick="newsClicked(this)" id="` + arr[i + 2].id + `">
+								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 2].id + `">
 									<img src=\"` + arr[i + 2].img + `\">
 								</a>
 
 								<div class="newsItemText">
 									<div class="newsItemUpperText">` + arr[i + 2].date + `</div>
 
-									<a onclick="newsClicked(this)" id="` + arr[i + 2].id + `">
+									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 2].id + `">
 										<h3 class="newsItemLowerText">` + arr[i + 2].text + `</h3>
 									</a>
 								</div>
@@ -711,6 +711,14 @@ function loadHomePage() {
 
 function newsClicked(e){
     localStorage.setItem("newsId", e.id);
+}
+
+function scheduleClicked(e) {
+    localStorage.setItem("scheduleId", e.id);
+}
+
+function standingsClicked(e) {
+    localStorage.setItem("standingsId", e.id);
 }
 
 function videoClicked(e){

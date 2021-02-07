@@ -43,7 +43,6 @@
 body {
   font-family: 'Istok Web', sans-serif;
   margin: 0;
-  background-color: lightgray;
 }
 
 .hero {
@@ -104,7 +103,7 @@ body {
   margin-top: 20px;
 }
 
-.container {
+.standingsContainer {
   max-width: 1100px;
   margin: 0 auto;
   display:block;
@@ -226,7 +225,7 @@ body {
   height: 52px;
 }
 
-.share .container {
+.share .standingsContainer {
   margin: 0 auto;
    text-align: center;
 }
@@ -270,7 +269,7 @@ body {
 
 @media screen and (min-width: 981px) and (max-width: 1099px) {
 
-  .container {
+  .standingsContainer {
     margin: 0 1%;
 
   }
@@ -304,7 +303,7 @@ body {
 
 @media screen and (max-width: 980px) {
 
-  .container {
+  .standingsContainer {
     flex-direction:column;
   }
 

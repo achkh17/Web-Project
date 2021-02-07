@@ -50,7 +50,7 @@
 }
 
 .dot:hover {
-	background-color: white!important
+	background-color: white!important;
 	z-index: 101;
 }
 
@@ -216,12 +216,13 @@
     text-transform: capitalize;
 }
 
-.matchDayNum {
+.centerMatchDayNum {
     font-size: 12px;
     font-weight: bold;
     font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 0.35px;
     text-transform: uppercase;
+    justify-self: center;
 }
 
 .matchDayDate {

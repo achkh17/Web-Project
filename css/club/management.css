@@ -1,14 +1,14 @@
-div.gallery {
+.managementGallery {
     border: 1px solid #ccc;
     padding-bottom: 10px;
     min-height: 450px;
   }
   
-  div.gallery:hover {
+  .managementGallery:hover {
     border: 1px solid #777;
   }
   
-  div.gallery img {
+  .managementGallery img {
     width: 100%;
     height: auto;
   }
@@ -38,11 +38,10 @@ div.gallery {
   }
 
   .clearfix {
-    overflow: auto;
     clear: both;
   }
 
-  .name {
+  .managementName {
     margin: 10px;
     padding-left: 15px;
     font-weight: bold;
@@ -50,7 +49,7 @@ div.gallery {
     font-family: sans-serif;
   }
 
-  .position {
+  .managementPosition {
     padding-left: 15px;
     margin: 10px;
   }

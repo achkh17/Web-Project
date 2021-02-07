@@ -1,63 +1,114 @@
 let routes = {
     '/': function() {
-        console.log("0")
         var template = getHomePage();
         loadHomePage();
         document.getElementById('content').innerHTML = template;
     },
     '': function() {
-        console.log("1: ", window.location.hash)
         var template = getHomePage();
         loadHomePage();
         document.getElementById('content').innerHTML = template;
     },
-    '/index.html': function() {
-        console.log("2")
-        var template = getHomePage();
-        loadHomePage();
-        document.getElementById('content').innerHTML = template;
-    },
-
     '/news/allNews': function() {
-        console.log("3")
         var template = getAllNews();
         loadAllNews();
         document.getElementById('content').innerHTML = template;
     },
-    '#/news/allNews': function() {
-        console.log("4")
-        var template = getAllNews();
-        loadAllNews();
-        document.getElementById('content').innerHTML = template;
-    },
-
     '/news/allNews/newsPage': function() {
-        console.log("5")
         var template = getNewsPage();
         loadNewsPage();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/news/transfers': function() {
+        var template = getTransfers();
+        loadTransfers();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/news/photoGallery': function() {
+        var template = getPhotoGallery();
+        loadPhotoGallery();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/news/photoPage': function() {
+        var template = getPhotoPage();
+        loadPhotoPage();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/news/videoGallery': function() {
+        var template = getVideoGallery();
+        loadVideoGallery();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/club/awards': function() {
+        var template = getAwards();
+        loadAwards();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/club/history': function() {
+        var template = getHistory();
+        loadHistory();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/club/venues': function() {
+        var template = getVenues();
+        loadVenues();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/club/academy': function() {
+        var template = getAcademy();
+        loadAcademy();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/club/management': function() {
+        var template = getManagement();
+        loadManagement();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/season/schedules': function() {
+        var template = getSchedules();
+        loadSchedules();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/season/standings': function() {
+        var template = getStandings();
+        loadStandings();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/team': function() {
+        var template = getTeam();
+        loadTeam();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/player': function() {
+        var template = getPlayer();
+        loadPlayer();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/accreditations': function() {
+        var template = getAccreditations();
+        loadAccreditations();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/museumTickets': function() {
+        var template = getMuseumTickets();
+        loadMuseumTickets();
+        document.getElementById('content').innerHTML = template;
+    },
+    '/banners': function() {
+        var template = getBanners();
+        loadBanners();
         document.getElementById('content').innerHTML = template;
     }
 };
 
+function changeRoute() {
+    routes[window.location.hash.replace("#", "")]();
+    window.scrollTo({top: 0});
+
+}
+
 window.onpopstate = () => {
-    routes[window.location.hash]();
+    changeRoute();
 }
 
-function onNavItemClick(bla) {
-//     console.log("nav hash: ", window.location.hash);
-//     var pathName = window.location.hash;
-    // window.history.pushState({}, pathName, window.location.origin + pathName);
-//     // var subMenu = document.getElementsByClassName("subMenu");
-//     // var i;
-//     // for(i = 0; i < subMenu.length; i++) {
-//     //     subMenu[i].style.display = "none";
-//     // }
-//     routes[pathName]();
-//     console.log("after")
-}
-
-// routes[window.location.pathname]();
-
-console.log("hash: ", window.location.hash);
-window.addEventListener('hashchange', routes[window.location.hash]());
-// window.addEventListener('load', routes[window.location.pathname]());
+window.addEventListener('hashchange', changeRoute());
