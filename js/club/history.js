@@ -51,6 +51,7 @@ function getHistory() {
 }
 
 function loadHistory() {
+    document.title = "AC Milan History";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/history.json", true);

@@ -1,7 +1,3 @@
-<link rel="stylesheet" type="text/css" href="/css/header.css">
-<script src="/js/hamburgerMenu.js"></script>
-<script src="/js/router.js"></script>
-
 <div class="header" id="header">
 
 	<div class="main-logo-container">
@@ -79,7 +75,7 @@
 
 
 	<div class="navMenuButton">
-		<div class="hamburgerButton" onclick="hamburgerMenuClicked(this)">
+		<div id="hamburgerButton" class="hamburgerButton" onclick="hamburgerMenuClicked(this)">
 			<div class="hamburgerButtonSpan1"></div>
 			<div class="hamburgerButtonSpan2"></div>
 			<div class="hamburgerButtonSpan3"></div>
@@ -187,7 +183,7 @@
 	<div class="menu" id="menu">
 		<ul>
 
-			<li class="menuItem">
+			<li class="menuItem" onmouseover="subMenuClicked(this)" onmouseout="closeMenu()">
 				<a class="menuItemName">News</a>
 				<ul class="subMenu">
 					<li><a href="#/news/allNews">All the News</a></li>
@@ -198,7 +194,7 @@
 			</li>
 
 
-			<li class="menuItem">
+			<li class="menuItem" onmouseover="subMenuClicked(this)" onmouseout="closeMenu()">
 				<a class="menuItemName">Tickets</a>
 				<ul class="subMenu">
 					<li><a href="#/museumTickets">Museum Tickets</a></li>
@@ -208,7 +204,7 @@
 				</ul>	
 			</li>
 
-			<li class="menuItem">
+			<li class="menuItem" onmouseover="subMenuClicked(this)" onmouseout="closeMenu()">
 				<a class="menuItemName">Teams</a>
 				<ul class="subMenu">
 					<li><a href="#/team" onclick="teamClicked(this)" id="1">Men's Team</a></li>
@@ -216,7 +212,7 @@
 				</ul>	
 			</li>
 
-			<li class="menuItem">
+			<li class="menuItem" onmouseover="subMenuClicked(this)" onmouseout="closeMenu()">
 				<a class="menuItemName">Season</a>
 				<ul class="subMenu">
 					<li><a href="#/season/schedules" onclick="scheduleClicked(this)" id="2">Schedules</a></li>
@@ -224,7 +220,7 @@
 				</ul>	
 			</li>
 
-			<li class="menuItem">
+			<li class="menuItem" onmouseover="subMenuClicked(this)" onmouseout="closeMenu()">
 				<a class="menuItemName">Club</a>
 				<ul class="subMenu">
 					<li><a href="#/club/history">History</a></li>
@@ -236,7 +232,7 @@
 				</ul>	
 			</li>
 
-			<li class="menuItem">
+			<li class="menuItem" onmouseover="subMenuClicked(this)" onmouseout="closeMenu()">
 				<a class="menuItemName">Shop</a>
 				<ul class="subMenu">
 
@@ -271,4 +267,5 @@
 	function teamClicked(e) {
 		localStorage.setItem("teamId", e.id);
 	}
+	
 </script>

@@ -2,23 +2,21 @@ function getPhotoGallery() {
     return `
     <div class="main-container">
 
-    <div id="headerSpace"></div>
+      <div class="pageMainImage">
+        <h1 class="titleH1">PHOTO GALLERY</h1>
+      </div>
 
-    <div class="pageMainImage">
-      <h1 class="titleH1">PHOTO GALLERY</h1>
-    </div>
+      <div class="center-main">
+        <div id="photoGall"></div>
+      </div>
 
-    <div class="center-main">
-      <div id="photoGall"></div>
-    </div>
-
-    <div class="clearfix"></div>
-    <div id="footerSpace"></div>
+      <div class="clearfix"></div>
 
   </div>`;
 }
 
 function loadPhotoGallery() {
+  document.title = "AC Milan PhotoGallery";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/photoGallery.json", true);

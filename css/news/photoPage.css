@@ -79,12 +79,12 @@ img {
   width: 16.66%;
 }
 
-.demo {
+.photoDemo {
   opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.photoDemo:hover {
   opacity: 1;
 }
 

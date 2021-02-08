@@ -24,6 +24,7 @@ function getSchedules() {
 }
 
 function loadSchedules() {
+    document.title = "AC Milan Schedules";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/schedules.json", true);

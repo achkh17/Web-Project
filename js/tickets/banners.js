@@ -28,6 +28,7 @@ function getBanners() {
 }
 
 function loadBanners() {
+    document.title = "AC Milan Banners";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/banners.json", true);

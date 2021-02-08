@@ -102,8 +102,14 @@ let routes = {
 };
 
 function changeRoute() {
-    routes[window.location.hash.replace("#", "")]();
+    var path = window.location.hash.replace("#", "");
+    if(path.length == 0 || path.charAt(0) == '/') routes[path]();
     window.scrollTo({top: 0});
+
+    if(document.getElementById("navMenu") != null && document.getElementById("navMenu").style.display === "block")  {
+        hamburgerMenuClicked(document.getElementById("hamburgerButton"));
+    }
+    closeMenu();    
 
 }
 

@@ -23,6 +23,7 @@ function getAcademy() {
 }
 
 function loadAcademy() {
+    document.title = "AC Milan Academy";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/academy.json", true);

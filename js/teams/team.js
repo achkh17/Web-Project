@@ -20,6 +20,7 @@ function getTeam() {
 }
 
 function loadTeam() {
+    document.title = "AC Milan Team";
     var xhttp = new XMLHttpRequest();
       xhttp.overrideMimeType("application/json");
       xhttp.open("GET", "/json/teams.json", true);

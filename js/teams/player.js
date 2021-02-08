@@ -7,6 +7,7 @@ function getPlayer() {
 }
 
 function loadPlayer() {
+    document.title = "AC Milan Team";
     var xhttp = new XMLHttpRequest();
       xhttp.overrideMimeType("application/json");
       xhttp.open("GET", "/json/players/" + localStorage.getItem("playerId") + ".json", true);

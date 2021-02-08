@@ -28,6 +28,7 @@ function getAccreditations() {
 }
 
 function loadAccreditations() {
+    document.title = "AC Milan Accreditations";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/accreditations.json", true);

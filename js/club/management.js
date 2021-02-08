@@ -10,6 +10,7 @@ function getManagement() {
 }
 
 function loadManagement() {
+    document.title = "AC Milan Management";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/management.json", true);

@@ -54,6 +54,7 @@ function getStandings() {
 }
 
 function loadStandings() {
+    document.title = "AC Milan Standings";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/seasonStandings.json", true);

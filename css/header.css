@@ -81,9 +81,9 @@
 	z-index: 102;
 }
 
-.menuItem:hover > .subMenu {
+/* .menuItem:hover > .subMenu {
 	display: block;
-}
+} */
 
 .menuItemName {
 	display: block;
@@ -163,7 +163,6 @@
 }
 
 .change .hamburgerButtonSpan1 {
-	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
 	transform: rotate(-45deg) translate(-9px, 6px);
 }
 
@@ -172,7 +171,6 @@
 }
 
 .change .hamburgerButtonSpan3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
 }
 

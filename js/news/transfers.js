@@ -32,7 +32,7 @@ function getTransfers() {
 }
 
 function loadTransfers() {
-
+  document.title = "AC Milan Transfers";
   var xhttp = new XMLHttpRequest();
 			xhttp.overrideMimeType("application/json");
 			xhttp.open("GET", "/json/transfers.json", true);

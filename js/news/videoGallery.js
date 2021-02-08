@@ -14,6 +14,7 @@ function getVideoGallery() {
 }
 
 function loadVideoGallery() {
+    document.title = "AC Milan VideoGallery";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/videoGallery.json", true);

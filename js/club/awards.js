@@ -14,6 +14,7 @@ function getAwards() {
 
 
 function loadAwards() {
+    document.title = "AC Milan Awards";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/awards.json", true);

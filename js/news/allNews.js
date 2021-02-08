@@ -13,6 +13,7 @@ function getAllNews() {
 
 
 function loadAllNews() {
+  document.title = "AC Milan News";
   var xhttp = new XMLHttpRequest();
   xhttp.overrideMimeType("application/json");
   xhttp.open("GET", "/json/allNews.json", true);

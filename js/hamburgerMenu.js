@@ -25,3 +25,15 @@ function openSubmenu(y) {
         y.parentElement.children[0].children[1].style.transform = "rotate(180deg)";
     }	
 }
+
+function subMenuClicked(e) {
+    closeMenu();
+    e.children[1].style.display = "block";
+}
+
+function closeMenu() {
+    var arr = document.getElementsByClassName("subMenu");
+    for(i = 0; i < arr.length; i++) {
+        arr[i].style.display = "none";
+    }
+}

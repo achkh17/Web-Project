@@ -42,6 +42,7 @@ function getMuseumTickets() {
 }
 
 function loadMuseumTickets() {
+    document.title = "AC Milan Museum";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/museumTickets.json", true);

@@ -11,6 +11,7 @@ function getNewsPage() {
 }
 
 function loadNewsPage() {
+    document.title = "AC Milan News";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/news/" + localStorage.getItem("newsId") + ".json", true);

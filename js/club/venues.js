@@ -8,6 +8,7 @@ function getVenues() {
 }
 
 function loadVenues() {
+    document.title = "AC Milan Venues";
     var xhttp = new XMLHttpRequest();
     xhttp.overrideMimeType("application/json");
     xhttp.open("GET", "/json/venues.json", true);
