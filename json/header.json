@@ -1,0 +1,67 @@
+{
+    "social" : [
+
+        {
+            "link" : "https://www.facebook.com/ACMilan",
+            "img" : "/images/header/upper_fb.png",
+            "name" : "Facebook"
+        },
+
+        {
+            "link" : "https://www.instagram.com/acmilan/?hl=it",
+            "img" : "/images/header/upper_instagram.png",
+            "name" : "Instagram"
+        },
+
+        {
+            "link" : "https://it.linkedin.com/company/ac-milan",
+            "img" : "/images/header/upper_linkedin.png",
+            "name" : "LinkedIn"
+        },
+
+        {
+            "link" : "https://www.tiktok.com/@acmilan?language=it",
+            "img" : "/images/header/upper_tiktok.png",
+            "name" : "TikTok"
+        },
+
+        {
+            "link" : "https://www.youtube.com/acmilan",
+            "img" : "/images/header/upper_youtube.png",
+            "name" : "Youtube"
+        },
+
+        {
+            "link" : "https://twitter.com/acmilan",
+            "img" : "/images/header/upper_twitter.png",
+            "name" : "Twitter"
+        },
+
+        {
+            "link" : "https://www.weibo.com/acmilanofficial",
+            "img" : "/images/header/upper_weibo.png",
+            "name" : "Weibo"
+        },
+
+        {
+            "link" : "https://www.acmilan.com/it/fan/ac-milan-music",
+            "img" : "/images/header/upper_music.png",
+            "name" : "AC Milan Music"
+        }
+
+    ],
+
+    "sponsors" : [
+
+        {
+            "link" : "https://www.puma.com",
+            "img" : "/images/header/upper_puma.png"
+        },
+
+        {
+            "link" : "https://www.emirates.com/it/italian/",
+            "img" : "/images/header/upper_emirates.png"
+        }
+
+    ]
+}

@@ -8,6 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- logo -->
 	<script src="/js/hamburgerMenu.js"></script>
+	<script src="/js/header.js"></script>
+	<script src="/js/footer.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
@@ -72,6 +74,7 @@
 			.then((response) => response.text())
 			.then((html) => {
 				document.getElementById("headerSpace").innerHTML = html;
+				loadHeader();
 			})
 			.catch((error) => {
 				console.warn(error);
@@ -81,6 +84,7 @@
 			.then((response) => response.text())
 			.then((html) => {
 				document.getElementById("footerSpace").innerHTML = html;
+				loadFooter();
 			})
 			.catch((error) => {
 				console.warn(error);

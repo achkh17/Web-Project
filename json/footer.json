@@ -1,0 +1,153 @@
+{
+    "social" : [
+
+        {
+            "link" : "https://www.facebook.com/ACMilan",
+            "img" : "/images/footer/lower_fb.png",
+            "name" : "Facebook"
+        },
+
+        {
+            "link" : "https://www.instagram.com/acmilan/?hl=it",
+            "img" : "/images/footer/lower_instagram.png",
+            "name" : "Instagram"
+        },
+
+        {
+            "link" : "https://it.linkedin.com/company/ac-milan",
+            "img" : "/images/footer/lower_linkedin.png",
+            "name" : "LinkedIn"
+        },
+        
+        {
+            "link" : "https://www.tiktok.com/@acmilan?language=it",
+            "img" : "/images/footer/lower_tiktok.png",
+            "name" : "TikTok"
+        },
+
+        {
+            "link" : "https://www.youtube.com/acmilan",
+            "img" : "/images/footer/lower_youtube.png",
+            "name" : "Youtube"
+        },
+
+        {
+            "link" : "https://twitter.com/acmilan",
+            "img" : "/images/footer/lower_twitter.png",
+            "name" : "Twitter"
+        },
+
+        {
+            "link" : "https://www.weibo.com/acmilanofficial",
+            "img" : "/images/footer/lower_weibo.png",
+            "name" : "Weibo"
+        },
+
+        {
+            "link" : "https://www.acmilan.com/it/fan/ac-milan-music",
+            "img" : "/images/footer/lower_music.png",
+            "name" : "Music"
+        }
+    ],
+
+
+    "sponsors" : [
+
+        {
+            "link" : "https://www.puma.com",
+            "img" : "/images/footer/lower_puma.png"
+        },
+
+        {
+            "link" : "https://www.emirates.com/us/english/",
+            "img" : "/images/footer/lower_emirates.png"
+        },
+
+        {
+            "link" : "https://www.bancobpm.it/",
+            "img" : "/images/footer/Banco-BPM.png"
+        },
+
+        {
+            "link" : "https://www.ea.com/games/fifa/fifa-21 ",
+            "img" : "/images/footer/EA-Sports.png"
+        },
+
+        {
+            "link" : "https://www.skrill.com/en/",
+            "img" : "/images/footer/Skrill_Resize.png"
+        },
+
+        {
+            "link" : "https://starcasino.sport/",
+            "img" : "/images/footer/StarCasino-1.png"
+        },
+
+        {
+            "link" : "https://www.bioscalin.it/",
+            "img" : "/images/footer/Bioscalin.png"
+        },
+
+        {
+            "link" : "https://www.dazn.com/en-IT/l/milan-live-streaming/",
+            "img" : "/images/footer/DAZN.png"
+        },
+
+        {
+            "link" : "https://www.snaipay.it/",
+            "img" : "/images/footer/Snaipay.png"
+        },
+
+        {
+            "link" : "https://www.trenitalia.com/en.html",
+            "img" : "/images/footer/Frecciarossa.png"
+        },
+        
+        {
+            "link" : "https://www.a2aenergia.eu/",
+            "img" : "/images/footer/A2A.png"
+        },
+
+        {
+            "link" : "http://www.alpenwater.com/",
+            "img" : "/images/footer/ALPS.png"
+        },
+
+        {
+            "link" : "https://www.avisautonoleggio.it/offerte-autonoleggio/partners/concorsi",
+            "img" : "/images/footer/AVIS.png"
+        },
+
+        {
+            "link" : "https://www.fratelliberetta.com/en/home",
+            "img" : "/images/footer/Beretta.png"
+        },
+
+        {
+            "link" : "https://www.harmontblaine.com/IT/en/home",
+            "img" : "/images/footer/H&amp;B-Ok.png"
+        },
+
+        {
+            "link" : "https://www.lamolisana.it/en/",
+            "img" : "/images/footer/La-Molisana.png"
+        },
+
+        {
+            "link" : "https://www.105.net/",
+            "img" : "/images/footer/Radio105.png"
+        },
+
+        {
+            "link" : "https://www.risparmiocasa.com/ ",
+            "img" : "/images/footer/RisparmioCasa.png"
+        },
+
+        {
+            "link" : "https://www.roinvesting.com/",
+            "img" : "/images/footer/Roinvesting.png"
+        }
+
+    ]
+
+}

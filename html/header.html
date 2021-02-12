@@ -7,70 +7,8 @@
 	</div>
 
 	<div class="upperAds">
-
-		<ul class="upperIconsUl">
-			<li>
-				<a href="https://www.facebook.com/ACMilan" target="_blank">
-					<img src="/images/header/upper_fb.png" alt="Facebook"/>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://www.instagram.com/acmilan/?hl=it" target="_blank">
-					<img src="/images/header/upper_instagram.png" alt="Instagram"/>
-				</a>
-			</li>
-
-			<li>
-					<a href="https://it.linkedin.com/company/ac-milan" target="_blank">
-						<img src="/images/header/upper_linkedin.png" alt="LinkedIn"/>
-					</a>
-				</li>
-
-				<li>
-					<a href="https://www.tiktok.com/@acmilan?language=it" target="_blank">
-						<img src="/images/header/upper_tiktok.png" alt="TikTok"/>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://www.youtube.com/acmilan" target="_blank">
-					<img src="/images/header/upper_youtube.png" alt="Youtube"/>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://twitter.com/acmilan" target="_blank">
-					<img src="/images/header/upper_twitter.png" alt="Twitter"/>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://www.weibo.com/acmilanofficial" target="_blank">
-					<img src="/images/header/upper_weibo.png" alt="Weibo"/>
-				</a>
-			</li>
-
-			<li>
-				<a href="https://www.acmilan.com/it/fan/ac-milan-music" target="_blank">
-					<img src="/images/header/upper_music.png" alt="AC Milan Music"/>
-				</a>
-			</li>
-
-		</ul>
-
-		<div class="upperSponsors">
-
-			<a href="https://www.puma.com" target="_blank">
-				<img src="/images/header/upper_puma.png" class="sponsorsLogo" />
-			</a>
-
-			<a href="https://www.emirates.com/it/italian/" target="_blank">
-				<img src="/images/header/upper_emirates.png" class="sponsorsLogo" />
-			</a>
-
-		</div> 
-		
+		<ul class="upperIconsUl" id="upperIcons"></ul>
+		<div class="upperSponsors" id="upperSponsors"></div> 
 	</div>
 
 
@@ -163,15 +101,9 @@
 				</div>
 
 				<ul class="navMenuSubMenu">
-					<li>
-						<a href="https://store.acmilan.com/en/" target="_blank">Store Online</a>
-					</li>
-					<li>
-						<a href="https://store.acmilan.com/it/milan-store"target="_blank">Milan Megastore</a>
-					</li>
-					<li>
-						<a href="https://www.sansirostadium.com/en/store"target="_blank">San Siro Store</a>
-					</li>
+					<li><a href="https://store.acmilan.com/en/" target="_blank">Store Online</a></li>
+					<li><a href="https://store.acmilan.com/it/milan-store"target="_blank">Milan Megastore</a></li>
+					<li><a href="https://www.sansirostadium.com/en/store"target="_blank">San Siro Store</a></li>
 				</ul>
 			</li>
 
@@ -235,17 +167,9 @@
 			<li class="menuItem" onmouseover="subMenuClicked(this)" onmouseout="closeMenu()">
 				<a class="menuItemName">Shop</a>
 				<ul class="subMenu">
-
-					<li>
-						<a href="https://store.acmilan.com/en/" target="_blank">Store Online</a>
-					</li>
-					<li>
-						<a href="https://store.acmilan.com/it/milan-store"target="_blank">Milan Megastore</a>
-					</li>
-					<li>
-						<a href="https://www.sansirostadium.com/en/store"target="_blank">San Siro Store</a>
-					</li>
-
+					<li><a href="https://store.acmilan.com/en/" target="_blank">Store Online</a></li>
+					<li><a href="https://store.acmilan.com/it/milan-store"target="_blank">Milan Megastore</a></li>
+					<li><a href="https://www.sansirostadium.com/en/store"target="_blank">San Siro Store</a></li>
 				</ul>	
 			</li>
 
@@ -256,6 +180,7 @@
 </div>
 
 <script>
+
 	function scheduleClicked(e) {
 		localStorage.setItem("scheduleId", e.id);
 	}
@@ -267,5 +192,5 @@
 	function teamClicked(e) {
 		localStorage.setItem("teamId", e.id);
 	}
-	
+
 </script>
