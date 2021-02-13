@@ -65,9 +65,7 @@
 	display: block;
 	height: 200px;
     display: flex;
-    -webkit-box-align: stretch;
     align-items: stretch;
-    -webkit-box-pack: justify;
     justify-content: space-between;
     color: black;
     z-index: 102;
@@ -80,10 +78,6 @@
 	margin-top: 20px;
 	z-index: 102;
 }
-
-/* .menuItem:hover > .subMenu {
-	display: block;
-} */
 
 .menuItemName {
 	display: block;

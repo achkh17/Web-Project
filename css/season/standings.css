@@ -338,7 +338,7 @@ body {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
   .split {
     width: 95%;
@@ -381,7 +381,7 @@ body {
     float: right!important;
     margin-top: 8px!important;
     width: 50%!important;
-    text-align: center!important;
+    padding-left: 30px;
   }
 
   .floatTiTle {

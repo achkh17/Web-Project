@@ -1,6 +1,7 @@
 
 function getHomePage() {
     return `
+    <!-- Only homepage is made this way, because I made it first, in other pages it's imporoved and almost everything is added from js -->
     <div class="main" id="main">
         <!-- Slider -->
         <div class="slideshow-container" id="slideshow-container">
@@ -544,85 +545,50 @@ function loadHomePage() {
 		    	var news = document.getElementById("allLatestNews");
 
 				for (i = 0; i < arr.length; i++) {
+                    var text = "";
+                    var j;
 					if(i % 5 == 0) {
-						news.innerHTML += `
-						<div class=\"upperNews\">
-							<div class="newsItem upperNewsItem">
-								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
-									<img src=\"` + arr[i].img + `\">
+                        text += "<div class=\"upperNews\">";
+                        for (j = 0; j < 2; j++) {
+                            text += `
+                            <div class="newsItem upperNewsItem">
+								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + j].id + `">
+									<img src=\"` + arr[i + j].img + `\">
 								</a>
 
 								<div class="newsItemText">
-									<div class="newsItemUpperText">` + arr[i].date + `</div>
+									<div class="newsItemUpperText">` + arr[i + j].date + `</div>
 
-									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
-										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
+									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + j].id + `">
+										<h3 class="newsItemLowerText">` + arr[i + j].text + `</h3>
 									</a>
 								</div>
-							</div>
-							
-
-							<div class="newsItem upperNewsItem">
-								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
-									<img src=\"` + arr[i + 1].img + `\">
-								</a>
-
-								<div class="newsItemText">
-									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
-
-									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
-										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
-									</a>
-								</div>
-							</div>
-						</div>`
+							</div>`;
+                        }
+                        text += "</div>";
+                        news.innerHTML += text;
 					}
 
 					if(i % 5 == 2) {
-						news.innerHTML += `
-						<div class=\"lowerNews\">
-							<div class="newsItem lowerNewsItem">
-								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
-									<img src=\"` + arr[i].img + `\">
+                        text += "<div class=\"lowerNews\">";
+                        for (j = 0; j < 3; j++) {
+                            text += `
+                            <div class="newsItem lowerNewsItem">
+								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + j].id + `">
+									<img src=\"` + arr[i + j].img + `\">
 								</a>
 
 								<div class="newsItemText">
-									<div class="newsItemUpperText">` + arr[i].date + `</div>
+									<div class="newsItemUpperText">` + arr[i + j].date + `</div>
 
-									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i].id + `">
-										<h3 class="newsItemLowerText">` + arr[i].text + `</h3>
+									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + j].id + `">
+										<h3 class="newsItemLowerText">` + arr[i + j].text + `</h3>
 									</a>
 								</div>
-							</div>
-
-							<div class="newsItem lowerNewsItem">
-								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
-									<img src=\"` + arr[i + 1].img + `\">
-								</a>
-
-								<div class="newsItemText">
-									<div class="newsItemUpperText">` + arr[i + 1].date + `</div>
-
-									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 1].id + `">
-										<h3 class="newsItemLowerText">` + arr[i + 1].text + `</h3>
-									</a>
-								</div>
-							</div>
-
-							<div class="newsItem lowerNewsItem">
-								<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 2].id + `">
-									<img src=\"` + arr[i + 2].img + `\">
-								</a>
-
-								<div class="newsItemText">
-									<div class="newsItemUpperText">` + arr[i + 2].date + `</div>
-
-									<a href="#/news/allNews/newsPage" onclick="newsClicked(this)" id="` + arr[i + 2].id + `">
-										<h3 class="newsItemLowerText">` + arr[i + 2].text + `</h3>
-									</a>
-								</div>
-							</div>
-						</div>`
+							</div>`;
+                        }
+                        text += "</div>";
+                        news.innerHTML += text;
 					}
 				}
 				

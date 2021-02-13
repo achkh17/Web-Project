@@ -102,6 +102,5 @@ function scheduleClicked(e) {
 
 function monthClicked(e) {
     var element = document.getElementById(e.id);
-    console.log(element);
     element.scrollIntoView(true);
 }
