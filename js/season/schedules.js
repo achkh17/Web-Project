@@ -47,8 +47,7 @@ function loadSchedules() {
             var monthText = "";
             var text = "";
             for(i = 0; i < arr.length; i++) {
-            monthText += `<div class="monthTitle"><a href = "#` + arr[i].month.toLowerCase().substring(0, 3) + `">` + arr[i].month.substring(0, 3) + `</a></div>`;
-
+            monthText += `<div class="monthTitle"><a onclick="monthClicked(` + arr[i].month.toLowerCase().substring(0, 3) + `)">` + arr[i].month.substring(0, 3) + `</a></div>`;
             text += `
                 <div class="monthSchedule" id="` + arr[i].month.substring(0, 3).toLowerCase() + `">
                 <div class="monthName">` + arr[i].month + `</div>`;                
@@ -99,4 +98,10 @@ function dropdownLicked() {
 
 function scheduleClicked(e) {
     localStorage.setItem("scheduleId", e.id);
+}
+
+function monthClicked(e) {
+    var element = document.getElementById(e.id);
+    console.log(element);
+    element.scrollIntoView(true);
 }
